@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="VisualStudioFirstConsoleApp.cpp">
+    <ClCompile Include="AddExistingFiles.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
