@@ -1,5 +1,5 @@
-# LearnCpp
-Repo to Learn C Plus Plus
+# Objective 
+1. Repo to Learn C Plus Plus
 
 ## References
 
@@ -11,3 +11,5 @@ Repo to Learn C Plus Plus
 
 4. https://eecs280staff.github.io/tutorials/
 
+## Here we go..
+1. 
