@@ -64,3 +64,37 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
+# VS Code files for those working on multiple tools
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# MSBuild Binary and Structured Log
+*.binlog
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
