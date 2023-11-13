@@ -18,6 +18,9 @@
 7. https://eecs280staff.github.io/p1-stats/#setup
 
 8. https://eecs280staff.github.io/p1-stats/starter-files.tar.gz
+9. https://eecs280staff.github.io/p1-stats/starter-files.tar.gz
+
+https://www.youtube.com/@ProfessorHankStalica/playlists
 
 ## Here we go..
 1. 

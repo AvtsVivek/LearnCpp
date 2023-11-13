@@ -13,6 +13,6 @@
 4. Take a look at this to understand filters file. 
    1. https://stackoverflow.com/q/1826901/1977871
 
-5. asdf
+5. 
 
 6. 
