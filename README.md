@@ -25,5 +25,7 @@
 
 https://www.youtube.com/@ProfessorHankStalica/playlists
 
+https://www.youtube.com/watch?v=GQp1zzTwrIg
+
 ## Here we go..
 1. 
