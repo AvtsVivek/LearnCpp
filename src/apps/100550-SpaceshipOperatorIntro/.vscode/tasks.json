@@ -3,12 +3,13 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "gcc 11.2.0",
+			"label": "Gcc 11.2.0 single file",
 			"command": "C:\\Program Files\\mingw64\\bin\\g++.exe",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
 				"-std=c++20",
+				"-static",
 				"${file}",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
