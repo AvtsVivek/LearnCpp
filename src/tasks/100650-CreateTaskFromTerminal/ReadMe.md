@@ -1,6 +1,6 @@
-# Spaceship operator.
+# Create Task from Terminal.
 
-## Introduces space ship operator.
+## How to create vs code build tasks from terminal.
 1. Also called as Three way comparision operator.
 
 
