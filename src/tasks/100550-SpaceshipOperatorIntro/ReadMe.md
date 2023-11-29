@@ -43,3 +43,4 @@
 3. https://devblogs.microsoft.com/cppblog/simplify-your-code-with-rocket-science-c20s-spaceship-operator/
 4. https://youtu.be/8jLOx1hD3_o?t=1816
 5. https://stackoverflow.com/a/58789865/1977871
+6. https://code.visualstudio.com/docs/cpp/config-mingw#_modifying-tasksjson

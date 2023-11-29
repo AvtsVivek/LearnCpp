@@ -10,7 +10,7 @@
 
 2. Then there are their different versions released regularly.
 
-3. Also theere is C++ standard
+3. Also there is C++ standard
 
 4. So take a look at https://en.cppreference.com/w/cpp/compiler_support
    1. This gives an overview of different compilers and their support to various features.
