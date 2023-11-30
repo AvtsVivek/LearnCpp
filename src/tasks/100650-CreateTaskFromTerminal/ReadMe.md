@@ -35,7 +35,9 @@
 
 13. Note, you should add "-static" flag to the compiler arg. See the [SO answer](https://stackoverflow.com/a/58789865/1977871). Without this, its not outputing anything. 
 
-14. 
+14. Modifying tasks.json. You can modify your tasks.json to build multiple C++ files by using an argument like "${workspaceFolder}/*.cpp" instead of ${file}.This will build all .cpp files in your current folder. You can also modify the output filename by replacing "${fileDirname}\\${fileBasenameNoExtension}.exe" with a hard-coded filename (for example "${workspaceFolder}\\myProgram.exe").
+
+15. https://code.visualstudio.com/docs/cpp/config-mingw#_modifying-tasksjson
 
 ## References
 1. https://en.wikipedia.org/wiki/Three-way_comparison
