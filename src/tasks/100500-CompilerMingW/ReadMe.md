@@ -1,5 +1,8 @@
 # Compilers
 
+## Notes
+1. There is no corresponding apps folder for this.
+
 ## Many compilers by different vendors.
 1. Mingw
 2. Msvc

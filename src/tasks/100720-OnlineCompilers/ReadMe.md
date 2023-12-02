@@ -1,5 +1,8 @@
 # Online Compilers
 
+## Notes
+1. There is no corresponding apps folder for this.
+
 ## Some Online Compilers
 1. [Wandbox](https://wandbox.org/)
 2. [Compiler Explorer](https://godbolt.org/)
