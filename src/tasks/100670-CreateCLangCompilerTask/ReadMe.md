@@ -17,11 +17,13 @@
    2. And when you have "-static" flag, you get thread related errors, so you need "-pthread". See this [SO answer](https://stackoverflow.com/a/21116684/1977871).
 
 5. Then finally Terminal -> Run Task.
+6. Modifying tasks.json. You can modify your tasks.json to build multiple C++ files by using an argument like "${workspaceFolder}/*.cpp" instead of ${file}.This will build all .cpp files in your current folder. You can also modify the output filename by replacing "${fileDirname}\\${fileBasenameNoExtension}.exe" with a hard-coded filename (for example "${workspaceFolder}\\myProgram.exe").
 
 
 
 ## References
 1. https://youtu.be/8jLOx1hD3_o?t=2704
 2. https://stackoverflow.com/a/21116684/1977871
+3. https://code.visualstudio.com/docs/cpp/config-mingw#_modifying-tasksjson
 
 
