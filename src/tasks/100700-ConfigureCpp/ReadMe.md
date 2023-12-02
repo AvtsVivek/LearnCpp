@@ -12,7 +12,11 @@
 
     ![Config Part 2](images/52_50_C_CPP_Config.jpg)
 
-4. This will create a file called c_cpp_properties.json inside .vscode folder. Take a note of this file.
+4. This will create a file called c_cpp_properties.json inside .vscode folder. Take a look into this file.
 
-5. 
+
+
+## References
+1. https://youtu.be/8jLOx1hD3_o?t=3206
+2. 
 

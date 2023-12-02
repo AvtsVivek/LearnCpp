@@ -26,5 +26,8 @@
 
 ## References
 1. https://code.visualstudio.com/docs/cpp/config-mingw#_modifying-tasksjson
+2. https://youtu.be/8jLOx1hD3_o?t=2732
+3. https://code.visualstudio.com/docs/cpp/config-msvc
+4. https://youtu.be/8jLOx1hD3_o?t=3066
 
 
