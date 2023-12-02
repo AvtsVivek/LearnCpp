@@ -1,22 +1,27 @@
 # First Cpp Example
 
-## Steps
-1. Open Command Palette... or Ctrl + Shift + P
-2. Search for C/C++ and choose as follows.
+## Notes
+1. iostream contains std::cout etc.
+2. To shift focus between terminal and editor, use Ctrl + J
+3. Also note comments look like the following
 
-    ![Choose Edit Config UI](images/50_50_EditConfig_Ui.jpg)
+```cpp
+// Single line comment
 
-3. Conigure as follows.
+/*
+Multi line comment. Also called as Block comment.
+*/
+```
 
-    ![Configure Part 1](images/51_50_C_CPP_Config.jpg)
+4. Errors and Warnings
+   1. There are complie time Errors
+   2. Run time errors
+   3. Warnings
 
-    ![Config Part 2](images/52_50_C_CPP_Config.jpg)
-
-4. This will create a file called c_cpp_properties.json inside .vscode folder. Take a look into this file.
+5. 
 
 
 
 ## References
-1. https://youtu.be/8jLOx1hD3_o?t=3206
-2. 
-
+1. https://youtu.be/8jLOx1hD3_o?t=6557
+2. https://stackoverflow.com/a/49420439/1977871
