@@ -12,4 +12,5 @@ int number3 = 0x0F; // Hexadecimal
 int number4 = 0b00001111; // Binary
 ```
 
-## 
+## References
+1. https://youtu.be/8jLOx1hD3_o?t=11018
