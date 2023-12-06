@@ -28,4 +28,10 @@ https://www.youtube.com/@ProfessorHankStalica/playlists
 https://www.youtube.com/watch?v=GQp1zzTwrIg
 
 ## Here we go..
-1. 
+1. asdf
+
+
+## To do 
+1. Memory Model, Execution Model and Dev Workflow
+2. https://youtu.be/8jLOx1hD3_o?t=10887
+

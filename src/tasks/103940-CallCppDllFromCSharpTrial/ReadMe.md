@@ -1,5 +1,8 @@
 # Demos Renaming of Project steps.
 
+## Pre Req
+1. 101900-VisualStudioFirstConsoleApp
+
 ## How the solution is built.
 1. Create a blank solution.
 2. Create a DLL Project
@@ -59,12 +62,14 @@
 extern "C" __declspec(dllexport) int Multiply(int numberOne, int numberTwo);
 extern "C" __declspec(dllexport) BSTR GetCalOptions();
 ```
-   1.  What is `extern "C"`?
-   2.  What is `comdef.h`?
-   3.  What is `__declspec(dllexport)`?
-   4.  What is `BSTR`?
-   5.  What is a header file?
+Some questions from the above are as follows.
+
+1.  What is `extern "C"`?
+2.  What is `comdef.h`?
+3.  What is `__declspec(dllexport)`?
+4.  What is `BSTR`?
+5.  What is a header file?
 
 
-
+102950-VariablesAndDataTypes
 
