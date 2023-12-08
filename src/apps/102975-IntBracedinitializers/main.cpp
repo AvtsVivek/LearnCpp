@@ -29,5 +29,25 @@ int main()
     std::cout << "Cat count : " << cat_count << std::endl;
     std::cout << "Domesticated animal count : " << domesticated_animals << std::endl;
 
+    std::cout << " --------------------------------------------- " << std::endl;
+    std::cout << "The type id - typeid(int).name() " << typeid(int).name() << std::endl;
+    std::cout << "The type id - typeid(0).name() " << typeid(0).name() << std::endl;
+    std::cout << "The type id - typeid(elephant_count).name() " << typeid(elephant_count).name() << std::endl;
+
+    if (typeid(elephant_count) == typeid(int))
+    {
+        std::cout << "elephant_count is an int" << std::endl;
+    }
+    else
+    {
+        std::cout << "elephant_count is NOT an int" << std::endl;
+    }
+
+    if (typeid(0) == typeid(int))
+        std::cout << "The number constant 0 is an int" << std::endl;    
+    else
+        std::cout << "The number constant 0 is NOT an int" << std::endl;
+   
+
     return 0;
 }
