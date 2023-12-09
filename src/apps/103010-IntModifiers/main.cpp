@@ -108,6 +108,28 @@ int main(){
         << sizeof (unsigned long long int) << " bytes" << std::endl;
         
     std::cout << "---------------------" << std::endl;
-   
+
+    std::cout << "The type id - typeid(value1).name() " << typeid(value1).name() << std::endl;
+    std::cout << "The type id - typeid(value3).name() " << typeid(value3).name() << std::endl;
+    std::cout << "The type id - typeid(short_var).name() " << typeid(short_var).name() << std::endl;
+    std::cout << "The type id - typeid(short_int).name() " << typeid(short_int).name() << std::endl;
+    std::cout << "The type id - typeid(signed_short).name() " << typeid(signed_short).name() << std::endl;
+    std::cout << "The type id - typeid(signed_short_int).name() " << typeid(signed_short_int).name() << std::endl;
+    std::cout << "The type id - typeid(unsigned_short_int).name() " << typeid(unsigned_short_int).name() << std::endl;
+    std::cout << "The type id - typeid(int_var).name() " << typeid(int_var).name() << std::endl;
+    std::cout << "The type id - typeid(signed_var).name() " << typeid(signed_var).name() << std::endl;
+    std::cout << "The type id - typeid(signed_int).name() " << typeid(signed_int).name() << std::endl;
+    std::cout << "The type id - typeid(unsigned_int).name() " << typeid(unsigned_int).name() << std::endl;
+    std::cout << "The type id - typeid(long_var).name() " << typeid(long_var).name() << std::endl;
+    std::cout << "The type id - typeid(long_int).name() " << typeid(long_int).name() << std::endl;
+    std::cout << "The type id - typeid(signed_long).name() " << typeid(signed_long).name() << std::endl;
+    std::cout << "The type id - typeid(signed_long_int).name() " << typeid(signed_long_int).name() << std::endl;
+    std::cout << "The type id - typeid(unsigned_long_int).name() " << typeid(unsigned_long_int).name() << std::endl;
+    std::cout << "The type id - typeid(long_long).name() " << typeid(long_long).name() << std::endl;
+    std::cout << "The type id - typeid(long_long_int).name() " << typeid(long_long_int).name() << std::endl;
+    std::cout << "The type id - typeid(signed_long_long).name() " << typeid(signed_long_long).name() << std::endl;
+    std::cout << "The type id - typeid(signed_long_long_int).name() " << typeid(signed_long_long_int).name() << std::endl;
+    std::cout << "The type id - typeid(unsigned_long_long_int).name() " << typeid(unsigned_long_long_int).name() << std::endl;
+
     return 0;
 }
