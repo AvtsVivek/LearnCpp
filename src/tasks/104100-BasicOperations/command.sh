@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/103135-WrongAssignments
+cd src/tasks/104100-BasicOperations
 
-cd src/apps/103135-WrongAssignments
+cd src/apps/104100-BasicOperations
 
 start .
 

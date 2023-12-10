@@ -2,36 +2,34 @@
 
 int main()
 {
-   //Addition
-   int firstNumber{2};
-   int secondNumber{7};
+    // Addition
+    int firstNumber{23};
+    int secondNumber{71};
 
-   int result = firstNumber + secondNumber;
-   std::cout << "result : " << result << std::endl;
+    int additionResult = firstNumber + secondNumber;
+    std::cout << "additionResult : " << additionResult << std::endl;
 
-    //Subtraction
-    result = secondNumber - firstNumber ;
-   std::cout << "result : " << result << std::endl;
+    // Subtraction
+    int subtractionResult1 = secondNumber - firstNumber;
+    std::cout << "subtractionResult1 : " << subtractionResult1 << std::endl;
 
-   result = firstNumber - secondNumber;
-   std::cout << "result : " << result << std::endl;
+    int subtractionResult2 = firstNumber - secondNumber;
+    std::cout << "subtractionResult2 : " << subtractionResult2 << std::endl;
 
-   //Multiplication
-   result = firstNumber * secondNumber;
-   std::cout << "result : " << result << std::endl;
+    // Multiplication
+    int multiplicationResult = firstNumber * secondNumber;
+    std::cout << "multiplicationResult : " << multiplicationResult << std::endl;
 
+    // Division
+    auto divisionResult = secondNumber / firstNumber;
+    std::cout << "divisionResult : " << divisionResult << std::endl;
 
-   //Division
-   result = secondNumber / firstNumber;
-   std::cout << "result : " << result << std::endl;
+    // Modulus
+    auto modulusResult1 = secondNumber % firstNumber;                
+    std::cout << "modulusResult1 : " << modulusResult1 << std::endl; 
 
+    auto modulusResult2 = 58 % 10;
+    std::cout << "modulusResult2 : " << modulusResult2 << std::endl; 
 
-   //Modulus
-   result = secondNumber % firstNumber; // 7 % 2
-   std::cout << "result : " << result << std::endl; // 1
-
-   result = 31 % 10;
-   std::cout << "result : " << result << std::endl; // 1
-    
     return 0;
 }
