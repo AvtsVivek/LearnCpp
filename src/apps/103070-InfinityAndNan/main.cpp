@@ -3,32 +3,27 @@
 int main()
 {
 
-    //Infinity and Nan
-    std::cout << std::endl;
-    std::cout << "Infinity and NaN" << std::endl;
-    
-    double number10{ -5.6 };
-    double number11{};//Initialized to 0
-    double number12{};  //Initialized to 0
+    double doubleNegativeNumber{ -31.6 };
+    double doubleZero1{};//Initialized to 0
+    double doubleZero2{};  //Initialized to 0
 
     //Infinity
-    double result { number10 / number11 };
+    double devideByZero { doubleNegativeNumber / doubleZero1 };
     
-    std::cout << "double number10 is : " << number10 << std::endl; 
-    std::cout << "double number11 is : " << number11 << std::endl;     
-    std::cout << "double number12 is : " << number12 << std::endl; 
+    std::cout << "double doubleNegativeNumber is : " << doubleNegativeNumber << std::endl; 
+    std::cout << "double doubleZero1 is : " << doubleZero1 << std::endl;     
+    std::cout << "double doubleZero2 is : " << doubleZero2 << std::endl; 
 
-    std::cout << number10 << "/" << number11 << "  yields " << result << std::endl;
-    std::cout << result << " + " << number10 << " yields " << result + number10 << std::endl;
+    std::cout << doubleNegativeNumber << "/" << doubleZero1 << "  gives you " << devideByZero << std::endl;
+    std::cout << devideByZero << " + " << doubleNegativeNumber << " gives " << devideByZero + doubleNegativeNumber << std::endl;
     
-    //NaN
-    result = number11 / number12;
+    //The following NaN
+    double zeroByZero = doubleZero1 / doubleZero2;
 
+    std::cout << doubleZero1 << "/" << doubleZero2 << " = " << zeroByZero << std::endl;
 
-    std::cout << number11 << "/" << number12 << " = " << result << std::endl;
+    std::cout << "typeid(zeroByZero) : " << typeid(zeroByZero).name() << std::endl;
 
-    std::cout << "typeid(result) : " << typeid(result).name() << std::endl;
-
-    std::cout << "typeid(number11/number12) : " << typeid(number11/number12).name() << std::endl;
+    std::cout << "typeid(doubleZero1/doubleZero2) : " << typeid(doubleZero1/doubleZero2).name() << std::endl;
 
 }

@@ -3,7 +3,6 @@
 int main()
 {
 
-	// 1. typeid with fundemental types : returns static type
 	std::cout << "typeid(int) : " << typeid(int).name() << std::endl;
 
 	std::cout << "typeid(typeid(int)) : " << typeid(typeid(int)).name() << std::endl;

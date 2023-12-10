@@ -3,24 +3,17 @@
 int main()
 {
 
-    //Scientific notation
-    //What we have seen so far in terms of floating point types
-    //is fixed notation. There is another notation, scientific
-    //that is handy if you have really huge numbers or small numbers
-    //to represent
+    double doubleNumber5{987654321};
+    double doubleNumber6{9.87654321e8};
+    double doubleNumber7{9.876e8}; // Note Here 54321 is ommitted.
 
-    std::cout << "-------------------------" << std::endl;
-    
-    double number5 {192400023};
-    double number6 {1.92400023e8};
-    double number7 {1.924e8};           // Can ommit the lower 00023
-                                        // for simplicity if our application allows that.
-    double number8 {0.00000000003498};
-    double number9 {3.498e-11}; // multiply with 10 exp(-11)
-    
-    std::cout << "number5 is : " << number5 << std::endl;
-    std::cout << "number6 is : " << number6 << std::endl;
-    std::cout << "number7 is : " << number7 << std::endl;
-    std::cout << "number8 is : " << number8 << std::endl;
-    std::cout << "number9 is : " << number9 << std::endl;
+    double electronMass8{9.108e-31}; // Electron mass 9.108×10−31 kg
+    double electronMass9{0.0000000000000000000000000000009108}; // 9.108×10−31 kg
+
+    std::cout << "doubleNumber5 is : " << doubleNumber5 << std::endl;
+    std::cout << "doubleNumber6 is : " << doubleNumber6 << std::endl;
+    std::cout << "doubleNumber7 is : " << doubleNumber7 << std::endl;
+
+    std::cout << "electronMass8 is : " << electronMass8 << std::endl;
+    std::cout << "electronMass9 is : " << electronMass9 << std::endl;
 }

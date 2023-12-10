@@ -9,8 +9,8 @@
 
 int main()
 {
-    auto result = (10 <=> 20) > 0;
-    std::cout << result << std::endl;
+    auto is_c_twenty = (10 <=> 20) > 0;
+    std::cout << is_c_twenty << std::endl;
     std::cout << "Hello ";
     std::cout << "World" << std::endl;
     std::cout << "Welcome to cpp tuts.";

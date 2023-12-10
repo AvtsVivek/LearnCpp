@@ -9,7 +9,7 @@
 
 int main()
 {
-    bool result = (10 <=> 20) > 0;
-    std::cout << result << std::endl;
+    bool is_c_twenty = (10 <=> 20) > 0;
+    std::cout << is_c_twenty << std::endl;
     std::cout << "Hellow....";
 }

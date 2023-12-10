@@ -5,7 +5,7 @@ int main(){
 
    //Printing data
   
-   /*
+  
 
    std::cout << "Hello C++20 " << std::endl;
 
@@ -15,7 +15,7 @@ int main(){
    std::cerr << "Error message : Something is wrong" << std::endl;
    std::clog << "Log message : Something happened " << std::endl; 
   
-    */
+  
 
    //Data input
 
