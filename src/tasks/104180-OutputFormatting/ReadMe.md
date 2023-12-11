@@ -8,6 +8,5 @@
 
 ## References
 
-1. https://youtu.be/8jLOx1hD3_o?t=16781
-2. https://youtu.be/8jLOx1hD3_o?t=17164
+1. https://youtu.be/8jLOx1hD3_o?t=21370
 
