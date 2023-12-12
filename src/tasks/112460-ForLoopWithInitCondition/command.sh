@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/110410-SwitchScope
+cd src/tasks/112460-ForLoopWithInitCondition
 
-cd src/apps/110410-SwitchScope
+cd src/apps/112460-ForLoopWithInitCondition
 
 start .
 

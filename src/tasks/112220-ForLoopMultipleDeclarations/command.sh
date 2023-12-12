@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/110410-SwitchScope
+cd src/tasks/112220-ForLoopMultipleDeclarations
 
-cd src/apps/110410-SwitchScope
+cd src/apps/112220-ForLoopMultipleDeclarations
 
 start .
 

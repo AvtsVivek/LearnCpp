@@ -1,46 +1,85 @@
 #include <iostream>
 
-
-
 int main(){
 
-    int condition{0};
+	//Print I love C++ 10 times : The bad way
+    /*
+    std::cout << "I love C++" << std::endl;
+    std::cout << "I love C++" << std::endl;
+    std::cout << "I love C++" << std::endl;
+    std::cout << "I love C++" << std::endl;
+    std::cout << "I love C++" << std::endl;
+    std::cout << "I love C++" << std::endl;
+    std::cout << "I love C++" << std::endl;
+    std::cout << "I love C++" << std::endl;
+    std::cout << "I love C++" << std::endl;
+    std::cout << "I love C++" << std::endl;
+    */
 
-    int my_var{4};
+   //for loop : the good way
+    /*
+   for( unsigned int i{0} ; i < 10000 ;++i){
+       //Whatever we want the loop to run
+       std::cout << i <<  " : I love C++" << std::endl;
+   }
+   std::cout << "Loop done!" << std::endl;
+   */
 
-    switch (int data{7}; condition)
-    {
-        //int x{9}; // Never going to run
-        int x;
-    case 0 :
+  //Use size_t : a representation of some unsigned int for positive numbers [sizes]
+  /*
+  for(size_t i{0} ; i < 10 ; ++i){
+      std::cout << i << " : I love C++" << std::endl;
+  }
+  std::cout << "Loop done!" << std::endl;
+  */
+    /*
+    //sizeof(size_t)
+    std::cout << "sizeof(size_t) : " << sizeof(size_t) << std::endl;
+    */
 
-        //int y {5};
-        int y;
-        x = 6;
-        x++;
-        //z =6;
-        std::cout << "x : " << x << std::endl;
-        std::cout << "Statement1" << std::endl;
-        std::cout << "Statement2" << std::endl;
-        break;
 
-    case 1 : 
-        int z;
-        my_var++;
-        y = 5;
-        std::cout << "y : " << y << std::endl;
-        std::cout << "Statement3" << std::endl;
-        std::cout << "Statement4" << std::endl;
-        break;
-    
-    default:
-        int u;
-        z = 10;
-        std::cout << "Statement5" << std::endl;
-        std::cout << "Statement6" << std::endl;
-        break;
+    //Scope of the iterator
+    /*
+    for(size_t i{0} ; i < 10 ; ++i){
+        std::cout << i << " : I love C++" << std::endl;
     }
-    std::cout << "Moving on..." << std::endl;
+    std::cout << "Loop done!" << std::endl;
+    // std::cout << "i : " << i << std::endl;Compiler error : i is not in scope
+    */
+
+
+   //Iterator declared outside the loop
+   /*
+    size_t i{0}; // Iterator defined outside
+
+    for(i ; i < 10 ; ++i){
+        std::cout << i << " : I love C++" << std::endl;
+    }
+    std::cout << "Loop done!" << std::endl;
+    std::cout << "i : " << i << std::endl;
+    */
+
+
+    //Leave out the iterator declaration part
+    /*
+    size_t i{0}; // Iterator defined outside
+
+    for(  ; i < 10 ; ++i){
+        std::cout << i << " : I love C++" << std::endl;
+    }
+    std::cout << "Loop done!" << std::endl;
+    std::cout << "i : " << i << std::endl;
+    */
+
+
+   //Don't hard code values : BAD!
+
+    const size_t COUNT{100};
+
+    for(size_t i{0} ; i < COUNT ; ++i){
+        std::cout << i << " : I love C++" << std::endl;
+    }
+    std::cout << "Loop done!" << std::endl;
    
     return 0;
 }

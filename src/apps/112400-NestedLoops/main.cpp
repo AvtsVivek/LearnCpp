@@ -1,46 +1,75 @@
 #include <iostream>
-
-
+#include <iomanip>
 
 int main(){
 
-    int condition{0};
+    //Setw on numbers before you print them
+	const size_t ROWS {12}; 
+	const size_t COLS {3};
 
-    int my_var{4};
 
-    switch (int data{7}; condition)
-    {
-        //int x{9}; // Never going to run
-        int x;
-    case 0 :
+    /*
+	std::cout << "Tabular data visualization with nested for loops : " << std::endl;
+	
 
-        //int y {5};
-        int y;
-        x = 6;
-        x++;
-        //z =6;
-        std::cout << "x : " << x << std::endl;
-        std::cout << "Statement1" << std::endl;
-        std::cout << "Statement2" << std::endl;
-        break;
+	
+	for (size_t row{0} ; row < ROWS ; ++ row){
+        
+		for (size_t col{0} ; col < COLS ; ++col){
 
-    case 1 : 
-        int z;
-        my_var++;
-        y = 5;
-        std::cout << "y : " << y << std::endl;
-        std::cout << "Statement3" << std::endl;
-        std::cout << "Statement4" << std::endl;
-        break;
-    
-    default:
-        int u;
-        z = 10;
-        std::cout << "Statement5" << std::endl;
-        std::cout << "Statement6" << std::endl;
-        break;
+			std::cout  << "( row "  <<  std::setw(2) << row << ",col " << std::setw(2) <<  col << ")  ";
+		}
+        std::cout << std::endl;
     }
-    std::cout << "Moving on..." << std::endl;
+
+    */
+
+
+   //While loop
+   /*
+	std::cout << std::endl;
+	std::cout << "Tabular data visualization with nested while loops : " << std::endl;
+	
+	//Remember to reset col to 0 after the inner loop is done for the next row 
+    // to use the right columns.
+    size_t row {0};
+    size_t col {0};
+    
+    while(row < ROWS){
+        
+        while(col < COLS){
+            std::cout  << "( row " << std::setw(2) <<  row << ",col "<< std::setw(2) <<  col << ") ";
+            ++col;
+        }
+        std::cout << std::endl;
+        col = 0 ;   // Reset col to 0 to allow printing from col 0 . col is in main
+                    // function local scope now.
+        ++row;
+    }
+
+    */
+
+
+
+	std::cout << std::endl;
+	std::cout << "Tabular data visualization with nested do while loops : " << std::endl;
+	
+    size_t row = 0;
+    size_t col = 0;
+    
+    do { // row
+    
+        do {
+			std::cout  << "( row " << std::setw(2) <<  row << ",col "<< std::setw(2) <<  col << ")   ";
+            ++col;
+        }while(col < COLS);
+        
+        std::cout << std::endl;
+        col = 0 ; 	// Reset col to 0 to allow printing from col 0 . col is in main
+					// function local scope now.
+        ++row;
+    }while(row < ROWS);
+
    
     return 0;
 }

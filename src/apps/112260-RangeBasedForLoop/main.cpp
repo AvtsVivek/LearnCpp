@@ -4,43 +4,37 @@
 
 int main(){
 
-    int condition{0};
-
-    int my_var{4};
-
-    switch (int data{7}; condition)
-    {
-        //int x{9}; // Never going to run
-        int x;
-    case 0 :
-
-        //int y {5};
-        int y;
-        x = 6;
-        x++;
-        //z =6;
-        std::cout << "x : " << x << std::endl;
-        std::cout << "Statement1" << std::endl;
-        std::cout << "Statement2" << std::endl;
-        break;
-
-    case 1 : 
-        int z;
-        my_var++;
-        y = 5;
-        std::cout << "y : " << y << std::endl;
-        std::cout << "Statement3" << std::endl;
-        std::cout << "Statement4" << std::endl;
-        break;
-    
-    default:
-        int u;
-        z = 10;
-        std::cout << "Statement5" << std::endl;
-        std::cout << "Statement6" << std::endl;
-        break;
+    int bag_of_values [] {1,2,3,4,5,6,7,8,9,10}; // This is a collection of integers
+    // The variable value will be assigned a value from the values array on each iteration
+	
+    /*
+    for(size_t i {0} ; i < 10 ; ++i){
+        std::cout << "value : " << bag_of_values[i] << std::endl;
     }
-    std::cout << "Moving on..." << std::endl;
+    */
+	
+
+    /*
+    for (int value : bag_of_values){
+        //value holds a copy of the current iteration in the whole bag
+        std::cout << " value : " << value << std::endl;
+    }
+    */
+
+
+   //Specify the collection in place
+   /*
+    for (int value : {1,2,3,4,5,6,7,8,9,10}){
+        //value holds a copy of the current iteration in the whole bag
+        std::cout << " value : " << value << std::endl;
+    }
+    */
+
+   //Auto type deduction
+	for (auto value : {1,2,3,4,5,6,7,8,9,10}){
+        //value holds a copy of the current iteration in the whole bag
+        std::cout << " value : " << value << std::endl;
+    }
    
     return 0;
 }

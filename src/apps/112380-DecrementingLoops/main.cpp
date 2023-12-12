@@ -1,46 +1,90 @@
 #include <iostream>
 
-
-
 int main(){
 
-    int condition{0};
+    const size_t COUNT {5};
 
-    int my_var{4};
-
-    switch (int data{7}; condition)
-    {
-        //int x{9}; // Never going to run
-        int x;
-    case 0 :
-
-        //int y {5};
-        int y;
-        x = 6;
-        x++;
-        //z =6;
-        std::cout << "x : " << x << std::endl;
-        std::cout << "Statement1" << std::endl;
-        std::cout << "Statement2" << std::endl;
-        break;
-
-    case 1 : 
-        int z;
-        my_var++;
-        y = 5;
-        std::cout << "y : " << y << std::endl;
-        std::cout << "Statement3" << std::endl;
-        std::cout << "Statement4" << std::endl;
-        break;
-    
-    default:
-        int u;
-        z = 10;
-        std::cout << "Statement5" << std::endl;
-        std::cout << "Statement6" << std::endl;
-        break;
+    /*
+    // For loops
+	
+	
+	std::cout << "Incrementing for loop : " << std::endl;
+    for (size_t i{} ; i < COUNT ; ++i){
+        std::cout << "i  : " << i << std::endl;
     }
-    std::cout << "Moving on..." << std::endl;
-   
+	
+	
+	std::cout << std::endl;
+	std::cout << "Decrementing for loop : " << std::endl;
+	
+    for(size_t i{COUNT} ; i > 0 ; --i){
+        std::cout << "i : " << i << std::endl;
+    }
+    */
+
+    //Range based for loops can't be made to run in reverse order
+
+
+    //While loop
+    /*
+    //Incrementing while
+	std::cout << std::endl;
+	std::cout << "Incrementing while" << std::endl;
+	
+    size_t i{0};
+    
+    while( i < COUNT){
+        std::cout << "i : " << i << std::endl;
+        ++i;
+    }
+    
+    //Decrementing while
+	std::cout << std::endl;
+	std::cout << "Decrementing while : " << std::endl;
+    i = COUNT;
+    
+    while( i > 0){
+        std::cout << "i : " << i << std::endl;
+        --i;
+    }
+    */
+
+   //Do while loop
+    /*
+	//Incrementing do while
+    std::cout << std::endl;
+	std::cout << "Incrementing do while" << std::endl;
+    size_t i = 0;
+    
+    do {
+        std::cout << "i : " << i << std::endl;
+        ++i;
+        
+    }while ( i < COUNT);
+    
+    
+    //Decrementing do while
+	std::cout << std::endl;
+	std::cout << "Decrementing do while" << std::endl;
+    i = COUNT;
+    
+    do {
+        std::cout << "i : " << i << std::endl;
+        --i;
+    }while ( i > 0);
+    */
+
+
+   //Infinite loop
+    //Decrementing do while
+	std::cout << std::endl;
+	std::cout << "Decrementing do while" << std::endl;
+    unsigned int i = COUNT;
+    
+    do {
+        std::cout << "i : " << i << std::endl;
+        --i;
+    }while ( i >= 0);
+
     return 0;
 }

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/110410-SwitchScope
+cd src/tasks/112340-InfiniteLoops
 
-cd src/apps/110410-SwitchScope
+cd src/apps/112340-InfiniteLoops
 
 start .
 

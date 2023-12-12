@@ -1,46 +1,20 @@
 #include <iostream>
 
-
-
 int main(){
 
-    int condition{0};
-
-    int my_var{4};
-
-    switch (int data{7}; condition)
-    {
-        //int x{9}; // Never going to run
-        int x;
-    case 0 :
-
-        //int y {5};
-        int y;
-        x = 6;
-        x++;
-        //z =6;
-        std::cout << "x : " << x << std::endl;
-        std::cout << "Statement1" << std::endl;
-        std::cout << "Statement2" << std::endl;
-        break;
-
-    case 1 : 
-        int z;
-        my_var++;
-        y = 5;
-        std::cout << "y : " << y << std::endl;
-        std::cout << "Statement3" << std::endl;
-        std::cout << "Statement4" << std::endl;
-        break;
+    //The comma operator combines
+    //two or more  expressions into a single expression,
+    // where the value of the operation is the value of its right operand
     
-    default:
-        int u;
-        z = 10;
-        std::cout << "Statement5" << std::endl;
-        std::cout << "Statement6" << std::endl;
-        break;
-    }
-    std::cout << "Moving on..." << std::endl;
+    int increment {5};
+    int number1 {10};
+    int number2 {20};
+    int number3 {25};
+    int result = (number1 *= ++increment, number2 - (++increment), number3 += ++increment);
+    std::cout << "number1 : " << number1 << std::endl; // 60
+    std::cout << "number2 : " << number2 << std::endl; // 20
+    std::cout << "number3 : " << number3 << std::endl; // 33
+    std::cout << "result : " <<  result << std::endl; // 33
    
     return 0;
 }

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/110410-SwitchScope
+cd src/tasks/112280-WhileLoop
 
-cd src/apps/110410-SwitchScope
+cd src/apps/112280-WhileLoop
 
 start .
 

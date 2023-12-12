@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/110410-SwitchScope
+cd src/tasks/112440-FixCalculator
 
-cd src/apps/110410-SwitchScope
+cd src/apps/112440-FixCalculator
 
 start .
 

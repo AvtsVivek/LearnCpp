@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/110410-SwitchScope
+cd src/tasks/112260-RangeBasedForLoop
 
-cd src/apps/110410-SwitchScope
+cd src/apps/112260-RangeBasedForLoop
 
 start .
 
