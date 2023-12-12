@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/108650-PackingColorInformation
+cd src/tasks/108700-VariableScope
 
-cd src/apps/108650-PackingColorInformation
+cd src/apps/108700-VariableScope
 
 start .
 

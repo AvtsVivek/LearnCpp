@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/110200-PackingColorInformation
+cd src/tasks/110200-IfStatements
 
-cd src/apps/110200-PackingColorInformation
+cd src/apps/110200-IfStatements
 
 start .
 

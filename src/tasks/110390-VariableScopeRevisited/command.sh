@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/110370-SwitchWithInitializer
+cd src/tasks/110390-VariableScopeRevisited
 
-cd src/apps/110370-SwitchWithInitializer
+cd src/apps/110390-VariableScopeRevisited
 
 start .
 
