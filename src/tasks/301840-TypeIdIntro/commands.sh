@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/101840-TypeIdIntro
+cd src/tasks/301840-TypeIdIntro
 
-cd src/apps/101840-TypeIdIntro
+cd src/apps/301840-TypeIdIntro
 
 code .
 

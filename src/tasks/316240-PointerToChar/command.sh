@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116240-PointerToChar
+cd src/tasks/316240-PointerToChar
 
-cd src/apps/116240-PointerToChar
+cd src/apps/316240-PointerToChar
 
 start .
 

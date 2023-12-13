@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/100700-ConfigureCpp
+cd src/tasks/300700-ConfigureCpp
 
-cd src/apps/100700-ConfigureCpp
+cd src/apps/300700-ConfigureCpp
 
 code .
 

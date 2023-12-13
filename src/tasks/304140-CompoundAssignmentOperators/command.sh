@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/104140-CompoundAssignmentOperators
+cd src/tasks/304140-CompoundAssignmentOperators
 
-cd src/apps/104140-CompoundAssignmentOperators
+cd src/apps/304140-CompoundAssignmentOperators
 
 start .
 

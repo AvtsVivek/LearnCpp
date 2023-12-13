@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/112220-ForLoopMultipleDeclarations
+cd src/tasks/312220-ForLoopMultipleDeclarations
 
-cd src/apps/112220-ForLoopMultipleDeclarations
+cd src/apps/312220-ForLoopMultipleDeclarations
 
 start .
 

@@ -2,9 +2,9 @@
 
 cd ../../..
 
-cd src/tasks/100670-CreateCLangCompilerTask
+cd src/tasks/300670-CreateCLangCompilerTask
 
-cd src/apps/100670-CreateCLangCompilerTask
+cd src/apps/300670-CreateCLangCompilerTask
 
 code .
 

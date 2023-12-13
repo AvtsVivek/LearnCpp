@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/103070-InfinityAndNan
+cd src/tasks/303070-InfinityAndNan
 
-cd src/apps/103070-InfinityAndNan
+cd src/apps/303070-InfinityAndNan
 
 start .
 

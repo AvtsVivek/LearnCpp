@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116480-PointerArithmetic_Navigation
+cd src/tasks/316480-PointerArithmetic_Navigation
 
-cd src/apps/116480-PointerArithmetic_Navigation
+cd src/apps/316480-PointerArithmetic_Navigation
 
 start .
 

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/120400-AccessingCharactersInStdString
+cd src/tasks/320400-AccessingCharactersInStdString
 
-cd src/apps/120400-AccessingCharactersInStdString
+cd src/apps/320400-AccessingCharactersInStdString
 
 start .
 

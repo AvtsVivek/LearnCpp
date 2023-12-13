@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/103105-CharactersAndTextIntro
+cd src/tasks/303105-CharactersAndTextIntro
 
-cd src/apps/103105-CharactersAndTextIntro
+cd src/apps/303105-CharactersAndTextIntro
 
 start .
 

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/110310-TernaryOperators
+cd src/tasks/310310-TernaryOperators
 
-cd src/apps/110310-TernaryOperators
+cd src/apps/310310-TernaryOperators
 
 start .
 

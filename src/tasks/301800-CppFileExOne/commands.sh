@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/101800-CppFileExOne
+cd src/tasks/301800-CppFileExOne
 
-cd src/apps/101800-CppFileExOne
+cd src/apps/301800-CppFileExOne
 
 code .
 

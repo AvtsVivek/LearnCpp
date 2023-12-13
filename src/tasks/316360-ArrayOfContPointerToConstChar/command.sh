@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116360-ArrayOfContPointerToConstChar
+cd src/tasks/316360-ArrayOfContPointerToConstChar
 
-cd src/apps/116360-ArrayOfContPointerToConstChar
+cd src/apps/316360-ArrayOfContPointerToConstChar
 
 start .
 

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/104515-MathFunctions
+cd src/tasks/304515-MathFunctions
 
-cd src/apps/104515-MathFunctions
+cd src/apps/304515-MathFunctions
 
 start .
 

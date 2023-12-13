@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/110220-ElseIf
+cd src/tasks/310220-ElseIf
 
-cd src/apps/110220-ElseIf
+cd src/apps/310220-ElseIf
 
 start .
 

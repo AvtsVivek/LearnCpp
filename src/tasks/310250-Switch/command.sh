@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/110250-Switch
+cd src/tasks/310250-Switch
 
-cd src/apps/110250-Switch
+cd src/apps/310250-Switch
 
 start .
 

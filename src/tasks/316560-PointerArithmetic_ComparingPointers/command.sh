@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116560-PointerArithmetic_ComparingPointers
+cd src/tasks/316560-PointerArithmetic_ComparingPointers
 
-cd src/apps/116560-PointerArithmetic_ComparingPointers
+cd src/apps/316560-PointerArithmetic_ComparingPointers
 
 start .
 

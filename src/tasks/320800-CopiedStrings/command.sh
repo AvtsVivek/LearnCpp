@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/120800-CopiedStrings
+cd src/tasks/320800-CopiedStrings
 
-cd src/apps/120800-CopiedStrings
+cd src/apps/320800-CopiedStrings
 
 start .
 

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/110370-SwitchWithInitializer
+cd src/tasks/310370-SwitchWithInitializer
 
-cd src/apps/110370-SwitchWithInitializer
+cd src/apps/310370-SwitchWithInitializer
 
 start .
 

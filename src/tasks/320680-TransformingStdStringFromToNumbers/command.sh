@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/120680-TransformingStdStringFromToNumbers
+cd src/tasks/320680-TransformingStdStringFromToNumbers
 
-cd src/apps/120680-TransformingStdStringFromToNumbers
+cd src/apps/320680-TransformingStdStringFromToNumbers
 
 start .
 

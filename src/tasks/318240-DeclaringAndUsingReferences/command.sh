@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/118240-DeclaringAndUsingReferences
+cd src/tasks/318240-DeclaringAndUsingReferences
 
-cd src/apps/118240-DeclaringAndUsingReferences
+cd src/apps/318240-DeclaringAndUsingReferences
 
 start .
 

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/112240-CommaOperator
+cd src/tasks/312240-CommaOperator
 
-cd src/apps/112240-CommaOperator
+cd src/apps/312240-CommaOperator
 
 start .
 

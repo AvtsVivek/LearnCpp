@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/120640-SearchingStdString
+cd src/tasks/320640-SearchingStdString
 
-cd src/apps/120640-SearchingStdString
+cd src/apps/320640-SearchingStdString
 
 start .
 

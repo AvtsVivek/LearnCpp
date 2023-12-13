@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/120840-StringView
+cd src/tasks/320840-StringView
 
-cd src/apps/120840-StringView
+cd src/apps/320840-StringView
 
 start .
 

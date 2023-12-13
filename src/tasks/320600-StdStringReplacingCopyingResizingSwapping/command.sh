@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/120600-StdStringReplacingCopyingResizingSwapping
+cd src/tasks/320600-StdStringReplacingCopyingResizingSwapping
 
-cd src/apps/120600-StdStringReplacingCopyingResizingSwapping
+cd src/apps/320600-StdStringReplacingCopyingResizingSwapping
 
 start .
 

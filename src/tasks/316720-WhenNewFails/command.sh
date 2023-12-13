@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116720-WhenNewFails
+cd src/tasks/316720-WhenNewFails
 
-cd src/apps/116720-WhenNewFails
+cd src/apps/316720-WhenNewFails
 
 start .
 

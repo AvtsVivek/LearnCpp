@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/102995-IntFunctionalInitializers
+cd src/tasks/302995-IntFunctionalInitializers
 
-cd src/apps/102995-IntFunctionalInitializers
+cd src/apps/302995-IntFunctionalInitializers
 
 code .
 

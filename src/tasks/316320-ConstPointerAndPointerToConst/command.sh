@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116320-ConstPointerAndPointerToConst
+cd src/tasks/316320-ConstPointerAndPointerToConst
 
-cd src/apps/116320-ConstPointerAndPointerToConst
+cd src/apps/316320-ConstPointerAndPointerToConst
 
 start .
 

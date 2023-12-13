@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/104130-PrefixPostfixIncrementDecrement
+cd src/tasks/304130-PrefixPostfixIncrementDecrement
 
-cd src/apps/104130-PrefixPostfixIncrementDecrement
+cd src/apps/304130-PrefixPostfixIncrementDecrement
 
 start .
 

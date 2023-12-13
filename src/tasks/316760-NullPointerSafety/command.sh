@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116760-NullPointerSafety
+cd src/tasks/316760-NullPointerSafety
 
-cd src/apps/116760-NullPointerSafety
+cd src/apps/316760-NullPointerSafety
 
 start .
 

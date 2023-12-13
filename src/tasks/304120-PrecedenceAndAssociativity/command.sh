@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/104150-PrecedenceAndAssociativity
+cd src/tasks/304150-PrecedenceAndAssociativity
 
-cd src/apps/104150-PrecedenceAndAssociativity
+cd src/apps/304150-PrecedenceAndAssociativity
 
 start .
 

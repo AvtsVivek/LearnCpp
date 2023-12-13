@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/105440-ConstantExpressions
+cd src/tasks/305440-ConstantExpressions
 
-cd src/apps/105440-ConstantExpressions
+cd src/apps/305440-ConstantExpressions
 
 start .
 

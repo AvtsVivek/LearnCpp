@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/104150-RelationalOperators
+cd src/tasks/304150-RelationalOperators
 
-cd src/apps/104150-RelationalOperators
+cd src/apps/304150-RelationalOperators
 
 start .
 

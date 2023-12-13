@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116600-SwappingArrayData_PointerArithmetic
+cd src/tasks/316600-SwappingArrayData_PointerArithmetic
 
-cd src/apps/116600-SwappingArrayData_PointerArithmetic
+cd src/apps/316600-SwappingArrayData_PointerArithmetic
 
 start .
 

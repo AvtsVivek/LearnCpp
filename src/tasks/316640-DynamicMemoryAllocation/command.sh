@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116640-DynamicMemoryAllocation
+cd src/tasks/316640-DynamicMemoryAllocation
 
-cd src/apps/116640-DynamicMemoryAllocation
+cd src/apps/316640-DynamicMemoryAllocation
 
 start .
 

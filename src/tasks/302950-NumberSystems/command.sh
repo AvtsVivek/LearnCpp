@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/102950-NumberSystems
+cd src/tasks/302950-NumberSystems
 
-cd src/apps/102950-NumberSystems
+cd src/apps/302950-NumberSystems
 
 code .
 

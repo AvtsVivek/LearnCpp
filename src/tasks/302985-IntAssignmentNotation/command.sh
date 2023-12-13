@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/102985-IntAssignmentNotation
+cd src/tasks/302985-IntAssignmentNotation
 
-cd src/apps/102985-IntAssignmentNotation
+cd src/apps/302985-IntAssignmentNotation
 
 code .
 

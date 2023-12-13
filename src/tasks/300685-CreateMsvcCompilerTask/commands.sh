@@ -2,9 +2,9 @@
 
 cd ../../..
 
-cd src/tasks/100685-CreateMsvcCompilerTask
+cd src/tasks/300685-CreateMsvcCompilerTask
 
-cd src/apps/100685-CreateMsvcCompilerTask
+cd src/apps/300685-CreateMsvcCompilerTask
 
 code .
 

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/112260-RangeBasedForLoop
+cd src/tasks/312260-RangeBasedForLoop
 
-cd src/apps/112260-RangeBasedForLoop
+cd src/apps/312260-RangeBasedForLoop
 
 start .
 

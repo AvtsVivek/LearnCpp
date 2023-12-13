@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/120720-EscapeSequences
+cd src/tasks/320720-EscapeSequences
 
-cd src/apps/120720-EscapeSequences
+cd src/apps/320720-EscapeSequences
 
 start .
 

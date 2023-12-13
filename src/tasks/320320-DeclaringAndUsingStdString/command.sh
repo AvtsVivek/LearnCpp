@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/120320-DeclaringAndUsingStdString
+cd src/tasks/320320-DeclaringAndUsingStdString
 
-cd src/apps/120320-DeclaringAndUsingStdString
+cd src/apps/320320-DeclaringAndUsingStdString
 
 start .
 

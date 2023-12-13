@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/114400-Practice_FortuneTellerV1
+cd src/tasks/314400-Practice_FortuneTellerV1
 
-cd src/apps/114400-Practice_FortuneTellerV1
+cd src/apps/314400-Practice_FortuneTellerV1
 
 start .
 

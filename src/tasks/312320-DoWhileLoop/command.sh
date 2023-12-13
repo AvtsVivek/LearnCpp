@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/112320-DoWhileLoop
+cd src/tasks/312320-DoWhileLoop
 
-cd src/apps/112320-DoWhileLoop
+cd src/apps/312320-DoWhileLoop
 
 start .
 

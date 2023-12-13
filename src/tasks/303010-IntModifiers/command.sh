@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/103010-IntModifiers
+cd src/tasks/303010-IntModifiers
 
-cd src/apps/103010-IntModifiers
+cd src/apps/303010-IntModifiers
 
 code .
 

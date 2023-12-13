@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/112400-NestedLoops
+cd src/tasks/312400-NestedLoops
 
-cd src/apps/112400-NestedLoops
+cd src/apps/312400-NestedLoops
 
 start .
 

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/120520-ComparingStdStrings
+cd src/tasks/320520-ComparingStdStrings
 
-cd src/apps/120520-ComparingStdStrings
+cd src/apps/320520-ComparingStdStrings
 
 start .
 

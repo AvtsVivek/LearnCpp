@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/104180-OutputFormatting
+cd src/tasks/304180-OutputFormatting
 
-cd src/apps/104180-OutputFormatting
+cd src/apps/304180-OutputFormatting
 
 start .
 

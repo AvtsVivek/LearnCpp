@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/108530-ShiftOperators
+cd src/tasks/308530-ShiftOperators
 
-cd src/apps/108530-ShiftOperators
+cd src/apps/308530-ShiftOperators
 
 start .
 

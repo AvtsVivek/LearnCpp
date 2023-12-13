@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/118280-ComparingPointersAndReferences
+cd src/tasks/318280-ComparingPointersAndReferences
 
-cd src/apps/118280-ComparingPointersAndReferences
+cd src/apps/318280-ComparingPointersAndReferences
 
 start .
 

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/114320-SizeOfAnArray
+cd src/tasks/314320-SizeOfAnArray
 
-cd src/apps/114320-SizeOfAnArray
+cd src/apps/314320-SizeOfAnArray
 
 start .
 

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/102900-InputOutput
+cd src/tasks/302900-InputOutput
 
-cd src/apps/102900-InputOutput
+cd src/apps/302900-InputOutput
 
 code .
 

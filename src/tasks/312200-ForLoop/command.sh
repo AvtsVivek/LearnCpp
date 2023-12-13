@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/112200-ForLoop
+cd src/tasks/312200-ForLoop
 
-cd src/apps/112200-ForLoop
+cd src/apps/312200-ForLoop
 
 start .
 

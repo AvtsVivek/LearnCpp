@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/103090-BoolianIntro
+cd src/tasks/303090-BoolianIntro
 
-cd src/apps/103090-BoolianIntro
+cd src/apps/303090-BoolianIntro
 
 start .
 

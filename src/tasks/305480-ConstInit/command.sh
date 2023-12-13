@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/105480-ConstInit
+cd src/tasks/305480-ConstInit
 
-cd src/apps/105480-ConstInit
+cd src/apps/305480-ConstInit
 
 start .
 

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/105405-Literals
+cd src/tasks/305405-Literals
 
-cd src/apps/105405-Literals
+cd src/apps/305405-Literals
 
 start .
 

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/101825-StatementsAndFunctions
+cd src/tasks/301825-StatementsAndFunctions
 
-cd src/apps/101825-StatementsAndFunctions
+cd src/apps/301825-StatementsAndFunctions
 
 code .
 

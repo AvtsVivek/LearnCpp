@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/120360-ConcatenatingStdStrings
+cd src/tasks/320360-ConcatenatingStdStrings
 
-cd src/apps/120360-ConcatenatingStdStrings
+cd src/apps/320360-ConcatenatingStdStrings
 
 start .
 

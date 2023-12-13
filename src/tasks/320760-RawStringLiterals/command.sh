@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/120760-RawStringLiterals
+cd src/tasks/320760-RawStringLiterals
 
-cd src/apps/120760-RawStringLiterals
+cd src/apps/320760-RawStringLiterals
 
 start .
 

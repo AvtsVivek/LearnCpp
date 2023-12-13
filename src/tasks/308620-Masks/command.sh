@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/108620-Masks
+cd src/tasks/308620-Masks
 
-cd src/apps/108620-Masks
+cd src/apps/308620-Masks
 
 start .
 

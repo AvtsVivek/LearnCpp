@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/114420-MultiDimensionalArrays
+cd src/tasks/314420-MultiDimensionalArrays
 
-cd src/apps/114420-MultiDimensionalArrays
+cd src/apps/314420-MultiDimensionalArrays
 
 start .
 

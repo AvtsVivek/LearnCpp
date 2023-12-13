@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/104100-BasicOperations
+cd src/tasks/304100-BasicOperations
 
-cd src/apps/104100-BasicOperations
+cd src/apps/304100-BasicOperations
 
 start .
 
