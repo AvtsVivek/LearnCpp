@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116840-DynamicallyAllocatedArrays
+cd src/tasks/120720-EscapeSequences
 
-cd src/apps/116840-DynamicallyAllocatedArrays
+cd src/apps/120720-EscapeSequences
 
 start .
 

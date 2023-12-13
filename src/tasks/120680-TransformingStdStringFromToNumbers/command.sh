@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116840-DynamicallyAllocatedArrays
+cd src/tasks/120680-TransformingStdStringFromToNumbers
 
-cd src/apps/116840-DynamicallyAllocatedArrays
+cd src/apps/120680-TransformingStdStringFromToNumbers
 
 start .
 

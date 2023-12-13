@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116840-DynamicallyAllocatedArrays
+cd src/tasks/118240-DeclaringAndUsingReferences
 
-cd src/apps/116840-DynamicallyAllocatedArrays
+cd src/apps/118240-DeclaringAndUsingReferences
 
 start .
 

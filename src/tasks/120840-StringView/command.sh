@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/116840-DynamicallyAllocatedArrays
+cd src/tasks/120840-StringView
 
-cd src/apps/116840-DynamicallyAllocatedArrays
+cd src/apps/120840-StringView
 
 start .
 
