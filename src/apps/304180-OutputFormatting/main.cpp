@@ -73,11 +73,24 @@ int main()
     std::cout << std::setw(10) << "Joe" << std::setw(10) << "Ball" << std::setw(5) << "21" << std::endl;
     std::cout << std::setw(10) << "Josh" << std::setw(10) << "Carr" << std::setw(5) << "27" << std::endl;
     std::cout << std::setw(10) << "Izaiah" << std::setw(10) << "Robinson" << std::setw(5) << "29" << std::endl;
+    std::cout << std::setw(10) << "LongFirstName" << std::setw(10) << "LongSecondName" << std::setw(5) << "29" << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "The formatting will go for a toss if the length of the string is longer than, in this case, 10 : " << std::endl;
+    std::cout << "Note LongFirstName and LongSecondName in the following table, and how they are formatted. : " << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "Formatted table : " << std::endl;
+    std::cout << std::setw(10) << "Lastname" << std::setw(10) << "Firstname" << std::setw(5) << "Age" << std::endl;
+    std::cout << std::setw(10) << "Daniel" << std::setw(10) << "Gray" << std::setw(5) << "25" << std::endl;
+    std::cout << std::setw(10) << "LongFirstName" << std::setw(10) << "LongSecondName" << std::setw(5) << "29" << std::endl;
 
     std::cout << std::endl;
     std::cout << "Formatted table with variables: " << std::endl;
 
     int col_width{14};
+
+    std::cout << "The column widht is: " << col_width << std::endl;
 
     std::cout << std::setw(col_width) << "Lastname" << std::setw(col_width) << "Firstname" << std::setw(col_width / 2) << "Age" << std::endl;
     std::cout << std::setw(col_width) << "Daniel" << std::setw(col_width) << "Gray" << std::setw(col_width / 2) << "25" << std::endl;

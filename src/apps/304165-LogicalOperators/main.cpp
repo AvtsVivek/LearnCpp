@@ -7,6 +7,15 @@ int main()
     bool b{false};
     bool c{true};
 
+    std::cout << " Setting std::noboolalpha " << (a && b) << std::endl;
+
+    std::cout << std::noboolalpha; // 1 / 0
+    std::cout << "a : " << a << std::endl;
+    std::cout << "b : " << b << std::endl;
+    std::cout << "c : " << c << std::endl;
+
+    std::cout << " Setting std::boolalpha " << (a && b) << std::endl;
+
     std::cout << std::boolalpha; // true / false
     std::cout << "a : " << a << std::endl;
     std::cout << "b : " << b << std::endl;
