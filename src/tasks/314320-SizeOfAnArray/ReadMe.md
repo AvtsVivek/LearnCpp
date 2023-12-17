@@ -6,5 +6,4 @@
 
 ## References
 
-1. 
 

@@ -1,10 +1,14 @@
-# Auto
+# Const
 
 ## Notes
-1. Its like var in C# or javascript.
-2. If you assign a differetn type object, then it could be a problem.
-3. Run the example and see.
+1. Const cannot be modified once assigned.
+2. If you attempt to modify, you will get error message something like this.
 
+```txt
+error: assignment of read-only variable 'age'
+```
+
+3. 
 
 ## References
 

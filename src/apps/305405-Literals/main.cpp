@@ -1,4 +1,5 @@
 #include <iostream>
+#include <bitset>
 
 int main()
 {
@@ -48,23 +49,46 @@ int main()
     // With number systems - Hex : prefix with 0x
     unsigned int hex_number{0x22BU}; // Dec 555
     int hex_number2{0x400};          // Dec 1024
-    std::cout << std::hex << "The hex number is : " << hex_number << std::endl;
-    std::cout << std::dec << "The hex number2 is : " << hex_number2 << std::endl;
+    std::cout << std::hex << "The hex number - hex_number{0x22BU} in hex format is : " << hex_number << std::endl;
+    std::cout << std::dec << "The hex number - hex_number{0x22BU} in dec format is : " << hex_number << std::endl;
+    std::cout << std::hex << "The hex number - hex_number2{0x400} in hex format is is : " << hex_number2 << std::endl;
+    std::cout << std::dec << "The hex number - hex_number2{0x400} in dec format is is : " << hex_number2 << std::endl;
 
     // Representing colors with hex
     int black_color{0xffffff};
-    std::cout << "Black color is : " << std::dec << black_color << std::endl;
+    std::cout << "Black color - black_color{0xffffff} in dec format is: " << std::dec << black_color << std::endl;
 
     // Octal literals : prefix with 0
     int octal_number{0777u}; // 511 Dec
-    std::cout << "The octal number is : " << octal_number << std::endl;
+    std::cout << std::oct << "The octal number - octal_number{0777u} in octal is: " << octal_number << std::endl;
+    std::cout << std::dec << "The octal number - octal_number{0777u} in decimal is: " << octal_number << std::endl;
     //!!BE CAREFUL NOT TO PREFIX YOUR INTEGERS WITH 0 IF YOU MEAN DEC
     int error_octal{055}; // This is not 55 in memory , it is 45 dec
-    std::cout << "The erronous octal number is : " << error_octal << std::endl;
+    std::cout << std::dec << "The erronous octal number - error_octal{055} in dec is : " << error_octal << std::endl;
+    std::cout << std::oct << "The erronous octal number - error_octal{055} in oct is : " << error_octal << std::endl;
 
     // Binary literals
     unsigned int binary_literal{0b11111111u}; // 255 dec
-    std::cout << "The binary literal is : " << binary_literal << std::endl;
+    std::cout << "The binary literal - binary_literal{0b11111111u} - std::bitset<4>(binary_literal) is : " << std::bitset<4>(binary_literal) << std::endl;
+    std::cout << "The binary literal - binary_literal{0b11111111u} - std::bitset<8>(binary_literal) is : " << std::bitset<8>(binary_literal) << std::endl;
+    std::cout << "The binary literal - binary_literal{0b11111111u} - std::bitset<16>(binary_literal) is : " << std::bitset<16>(binary_literal) << std::endl;
+    std::cout << "The binary literal - binary_literal{0b11111111u} - std::bitset<32>(binary_literal) is : " << std::bitset<32>(binary_literal) << std::endl;
+    std::cout << "The binary literal - binary_literal{0b11111111u} - std::bitset<64>(binary_literal) is : " << std::bitset<64>(binary_literal) << std::endl;
+    std::cout << "The binary literal - binary_literal{0b11111111u} - std::bitset<132>(binary_literal) is : " << std::bitset<132>(binary_literal) << std::endl;
+
+    // dec literals in binary format
+    unsigned int dec_literal{12};
+    std::cout << "The binary literal - dec_literal{12} - std::bitset<4>(dec_literal) is : " << std::bitset<4>(dec_literal) << std::endl;
+    std::cout << "The binary literal - dec_literal{12} - std::bitset<8>(dec_literal) is : " << std::bitset<8>(dec_literal) << std::endl;
+    std::cout << "The binary literal - dec_literal{12} - std::bitset<16>(dec_literal) is : " << std::bitset<16>(dec_literal) << std::endl;
+    std::cout << "The binary literal - dec_literal{12} - std::bitset<32>(dec_literal) is : " << std::bitset<32>(dec_literal) << std::endl;
+    std::cout << "The binary literal - dec_literal{12} - std::bitset<64>(dec_literal) is : " << std::bitset<64>(dec_literal) << std::endl;
+    std::cout << "The binary literal - dec_literal{12} - std::bitset<132>(dec_literal) is : " << std::bitset<132>(dec_literal) << std::endl;
+
+    std::cout << std::dec << "The binary literal - binary_literal{0b11111111u} in dec is : " << binary_literal << std::endl;
+    std::cout << std::oct << "The binary literal - binary_literal{0b11111111u} in oct is : " << binary_literal << std::endl;
+
+    std::cout << std::dec; // Turn this back on to the default decimal.
 
     // Other literals. This is just an example and we will learn
     // more about  strings as we progress in the course.

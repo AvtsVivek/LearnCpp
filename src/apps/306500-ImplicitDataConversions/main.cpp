@@ -18,6 +18,7 @@ int main()
 
     std::cout << "Total price : " << total_price << std::endl;
     std::cout << "sizeof total_price : " << sizeof(total_price) << std::endl;
+    std::cout << "typeid(total_price).name() : " << typeid(total_price).name() << std::endl;    
 
     // Implicit conversions in assignments
     //  The assignment operation is going to cause an implicit
@@ -25,8 +26,12 @@ int main()
     int x;
     double y{45.44};
     x = y;                                                 // double to int
+
     std::cout << "The value of x is : " << x << std::endl; // 45
     std::cout << "sizeof x : " << sizeof(x) << std::endl;  // 4
+    std::cout << "typeid(x).name() : " << typeid(x).name() << std::endl;  
+    std::cout << "sizeof y : " << sizeof(y) << std::endl;  
+    std::cout << "typeid(y).name() : " << typeid(y).name() << std::endl;  
 
     return 0;
 }
