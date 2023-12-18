@@ -2,7 +2,7 @@
 
 ## Notes 
 1. This is used to multiply and devide by 2. Take a look at the video(Ref 2). 
-2. 
+2. Bit shifting is not supported for types which are shorter than integer. see 304530-WeirdIntegralTypes
 
 ## References
 
