@@ -1,4 +1,4 @@
-# Auto
+# Compound Bit wise operations
 
 ## Notes
 1. 

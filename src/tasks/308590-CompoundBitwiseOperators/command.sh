@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/308560-LogicalBitwiseOperators
+cd src/tasks/308590-CompoundBitwiseOperators
 
-cd src/apps/308560-LogicalBitwiseOperators
+cd src/apps/308590-CompoundBitwiseOperators
 
 start .
 

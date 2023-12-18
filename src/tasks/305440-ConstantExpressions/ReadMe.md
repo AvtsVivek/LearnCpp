@@ -1,8 +1,18 @@
 # constexpr 
 
 ## Notes
-1. Its similar to const.
-2. But the difference is subtle.
+1. The constant is evaluated at compile time. Then that evaluated value is set as a const to that variable.
+2. Later during execution, that variable is used directly without evaluation. This saves sometime during actual execution.
+3. constexpr are also const so you canot reassign.
+4. Also you can use static_assert to so dome compile checks.
+
+```cpp
+static_assert( SOME_LIB_MAJOR_VERSION == 123);
+```
+
+5. If the above test fails, then you can get compile error. We can use this to check some version of a library. If that version is not available, then we can throw compile time error.
+
+6. What we can have inside of static_assert is a static expression, which can be evaluated at compile time.
 
 
 ## References

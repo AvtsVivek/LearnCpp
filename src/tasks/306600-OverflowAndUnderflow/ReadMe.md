@@ -1,8 +1,7 @@
 # Auto
 
 ## Notes
-1. 
-
+1. Its not very clear whats overflow and undreflow.
 
 ## References
 
