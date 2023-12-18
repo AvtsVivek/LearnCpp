@@ -1,7 +1,8 @@
 # Auto
 
 ## Notes
-1. 
+1. Equavalent of foreach in C#. 
+2. Works on collections.
 
 
 ## References

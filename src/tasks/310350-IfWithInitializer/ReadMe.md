@@ -1,7 +1,7 @@
-# Auto
+# if with Init
 
 ## Notes
-1. 
+1. if(int speed {10};go){
 
 
 ## References

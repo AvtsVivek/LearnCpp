@@ -1,6 +1,6 @@
 #include <iostream>
 
-
+// Same as foreach in C#. Works on collections
 
 int main(){
 

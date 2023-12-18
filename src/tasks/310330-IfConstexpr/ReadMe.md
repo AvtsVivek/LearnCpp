@@ -1,7 +1,11 @@
-# Auto
+# if with constexpr
 
 ## Notes
-1. 
+
+
+```cpp
+if constexpr (condition){
+```
 
 
 ## References
