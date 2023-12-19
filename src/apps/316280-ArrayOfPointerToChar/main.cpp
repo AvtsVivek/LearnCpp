@@ -37,7 +37,7 @@ int main(){
     */
 
    	// METHOD3.
-    const char * predictions []  {
+    const char * predictionsArrayPointer []  {
         "a lot of kids running in the backyard!",
         "a lot of empty beer bootles on your work table.",
         "you Partying too much with kids wearing weird clothes.",
@@ -62,9 +62,9 @@ int main(){
     while (!end) {
         std::cout << "Oh dear " << name << ", I see ";
 
-        size_t rand_num = static_cast<size_t>((std::rand() % std::size(predictions)));
+        size_t rand_num = static_cast<size_t>((std::rand() % std::size(predictionsArrayPointer)));
 
-        std::cout << predictions[rand_num] << std::endl;
+        std::cout << predictionsArrayPointer[rand_num] << std::endl;
 
 
 

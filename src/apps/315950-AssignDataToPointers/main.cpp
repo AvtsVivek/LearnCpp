@@ -7,9 +7,6 @@ int main()
     int *p_number7{};
     int other_int_var7{}; // No room for confusion this time
 
-    std::cout << std::endl;
-    std::cout << std::endl;
-
     // Initializing pointers and assigning them data
     // We know that pointers store addresses of variables
     int int_var{43};

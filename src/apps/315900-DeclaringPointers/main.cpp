@@ -11,6 +11,7 @@ int main()
     int *p_fractional_number1{nullptr};
 
     // Pointers to different variables are  of the same size
+    std::cout << "sizeof(char) : " << sizeof(char) << std::endl;    
     std::cout << "sizeof(int) : " << sizeof(int) << std::endl;       // 4
     std::cout << "sizeof(double) : " << sizeof(double) << std::endl; // 8
     std::cout << "sizeof(double*) : " << sizeof(double *) << std::endl;

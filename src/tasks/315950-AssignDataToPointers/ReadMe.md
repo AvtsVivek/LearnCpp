@@ -1,7 +1,8 @@
-# Auto
+# Pointers Intro
 
 ## Notes
-1. 
+1. The size of a pointer will depend on the architecture and compiler. 
+2. The address of operator (&);
 
 
 ## References
