@@ -24,12 +24,14 @@ int main()
 
     //Prints size of pointer
     std::cout << "sizeof(message2) : " << sizeof(message2) << std::endl;
+    
     */
 
     // std::strcmp - signature : int strcmp( const char *lhs, const char *rhs );
     // Returns negative value if lhs appears before rhs in lexicographical order,
     // Zero if lhs and rhs compare equal.
     // and Positive value if lhs appears after rhs in lexicographical order.
+    
     /*
     std::cout << std::endl;
     std::cout << "std::strcmp : " << std::endl;
@@ -58,7 +60,7 @@ int main()
         << std::strcmp(string_data1, string_data2) << std::endl;
 
 
-        string_data1 = "Alacama";
+    string_data1 = "Alacama";
     string_data2 = "Alabama";
 
     //Print out the comparison
@@ -85,9 +87,10 @@ int main()
     // Returns : Negative value if lhs appears before rhs in lexicographical order.
     // Zero if lhs and rhs compare equal, or if count is zero.
     // Positive value if lhs appears after rhs in lexicographical order.
-    /*
+    
     //Print out the comparison
 
+    /*
     const char* string_data1{ "Alabama" };
     const char* string_data2{ "Blabama" };
     size_t n{3};
@@ -114,11 +117,12 @@ int main()
 
     std::cout << "std::strncmp (" << string_data1 << "," << string_data2 << "," << n << ") : "
               << std::strncmp(string_data1,string_data2,n) << std::endl;
+    
     */
 
     // Find the first occurrence of a character
     // CODE STOLEN FROM THE DOCS :
-    /*
+    
     std::cout << std::endl;
     std::cout << "std::strchr : " << std::endl;
     //doc : https://en.cppreference.com/w/cpp/string/byte/strchr
@@ -141,7 +145,7 @@ int main()
         ++iterations;
     }
     std::cout << "iterations : " << iterations << std::endl;
-    */
+    
 
     // A lesser version that will loop 25 times
     /*

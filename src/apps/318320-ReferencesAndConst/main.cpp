@@ -8,7 +8,7 @@ int main()
 	std::cout << "Non const reference : " << std::endl;
 	int age{27};
 	const int &ref_age{age};
-	/*
+	
 	std::cout << "age : " << age << std::endl;
 	std::cout << "ref_age : " << ref_age << std::endl;
 
@@ -18,11 +18,11 @@ int main()
 	std::cout << std::endl;
 	std::cout << "Modify original variable through reference : " << std::endl;
 
-	ref_age++; //Mofify through reference
+	// ref_age++; //Mofify through reference
 
 	std::cout << "age : " << age << std::endl;
 	std::cout << "ref_age : " << ref_age << std::endl;
-	*/
+	
 
 	// Simulating reference behavior with pointers
 	// const int * const p_age {&age};

@@ -3,7 +3,6 @@
 
 int main()
 {
-
     /*
     std::string str1 {"Hello there"};
 
@@ -20,46 +19,52 @@ int main()
     for(size_t i{}; i < str1.size(); ++i){
         std::cout << " " << str1[i] ;
     }
+
+    std::cout << std::endl;
     std::cout << std::endl;
     */
 
     // Can also use range based for loop
-    /*
-    std::string str1 {"Hello there"};
-    std::cout << std::endl;
-    std::cout << "Using range based for loop : "<< std::endl;
 
-    std::cout << "str1(range based for loop) : " ;
-    for(char value : str1){
-        std::cout << " " << value ;
+    /*
+    std::string str1{"Hello there"};
+    std::cout << std::endl;
+    std::cout << "Using range based for loop : " << std::endl;
+
+    std::cout << "str1(range based for loop) : ";
+    for (char value : str1)
+    {
+        std::cout << " " << value;
     }
+
+    std::cout << std::endl;
     std::cout << std::endl;
     */
 
     // at() syntax to target characters
+
     /*
-     std::cout << std::endl;
-     std::cout << "Using the std::string::at() method : "<< std::endl;
+    std::cout << std::endl;
+    std::cout << "Using the std::string::at() method : " << std::endl;
 
-     std::string str1 {"Hello there"};
-     std::cout << "str1 : (for loop with at()) : " ;
+    std::string str1{"Hello there"};
+    std::cout << "str1 : (for loop with at()) : ";
 
-     for(size_t i{}; i < str1.size(); ++i){
-         std::cout << " " << str1.at(i) ;
-     }
-     std::cout << std::endl;
-     */
+    for (size_t i{}; i < str1.size(); ++i)
+        std::cout << " " << str1.at(i);
+    
+    std::cout << std::endl;
+    */
 
     // Modifying with operator[] and at()
-    /*
+    
     std::string str1 {"Hello there"};
     str1[0] = 'B';
     str1.at(1) = 'a';
-    std::cout << "str1(modified) : " << str1 << std::endl;
-    */
+    std::cout << "str1(modified) : " << str1 << std::endl;   
 
     // Getting the front and back characters
-    /*
+    
     std::string str2{"The Phoenix King"};
     char& front_char = str2.front();
     char& back_char = str2.back();
@@ -70,7 +75,7 @@ int main()
     back_char = 'd';
 
     std::cout << "str2 : " << str2 << std::endl;
-    */
+    
 
     // c_str method
     /*
@@ -84,15 +89,15 @@ int main()
     */
 
     // data()
-    std::string str2{"Hello World"};
+    std::string str4{"Hello World"};
 
-    char *data = str2.data();
+    char *data = str4.data();
     std::cout << "Wrapped c string : " << data << std::endl;
 
     data[0] = 'B'; // This also changes std::string.
 
     std::cout << "Wrapped c string (after modification) : " << data << std::endl;
-    std::cout << "Original string (after modification ) :" << str2 << std::endl;
+    std::cout << "Original string (after modification ) :" << str4 << std::endl;
 
     return 0;
 }

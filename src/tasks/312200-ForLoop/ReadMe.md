@@ -1,7 +1,7 @@
 # Loops
 
 ## Notes
-1. 
+1. Use size_t : a representation of some unsigned int for positive numbers [sizes]
 
 
 ## References

@@ -1,7 +1,7 @@
-# Auto
+# Const pointer arrays.
 
 ## Notes
-1. 
+1. Similar to earlier, but with arrays.
 
 
 ## References

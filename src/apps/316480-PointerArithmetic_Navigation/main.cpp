@@ -11,7 +11,7 @@ int main(){
     
     int * p_score { scores};
     
-    /*
+    
     std::cout << "Values in scores array (p_score pointer increment) : " << std::endl;
 	
     std::cout << "Address : " << p_score << " value : " <<  *(p_score) << std::endl;
@@ -44,7 +44,7 @@ int main(){
 	std::cout << "Address : " << p_score << " value : " <<  *(p_score) << std::endl;
 	++p_score; // Moves froward by sizeof(int) : 4 bytes
 	std::cout << std::endl;
-    */
+    
 
    /*
 	std::cout << std::endl;

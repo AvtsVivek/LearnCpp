@@ -2,6 +2,34 @@
 
 int main()
 {
+    std::cout << "Introducing & - the address of operator : " << std::endl;
+    
+    int number {22}; // Stack
+	int * p_number = &number;
+	
+	std::cout << std::endl;
+	std::cout << "Declaring pointer and assigning address : " << std::endl;
+	std::cout << "number : " << number << std::endl;
+	std::cout << "p_number : " << p_number << std::endl;
+
+    std::cout << std::endl;
+
+	std::cout << "&number : " << &number << std::endl;
+    std::cout << "*&number : " << *&number << std::endl;
+    std::cout << "&*&number : " << &*&number << std::endl;
+    std::cout << "*&*&number : " << *&*&number << std::endl;
+    std::cout << "&*&*&number : " << &*&*&number << std::endl;
+    std::cout << std::endl;
+
+	std::cout << "*p_number : " << *p_number <<  std::endl;
+	std::cout << "&*p_number : " << &*p_number <<  std::endl;
+	std::cout << "*&*p_number : " << *&*p_number <<  std::endl;
+	std::cout << "&*&*p_number : " << &*&*p_number <<  std::endl;
+	std::cout << "*&*&*p_number : " << *&*&*p_number <<  std::endl;
+	std::cout << "&*&*&*p_number : " << &*&*&*p_number <<  std::endl;
+
+    std::cout << std::endl;
+    std::cout << std::endl;
 
     // It is better to separate these declarations on different lines though
     int *p_number7{};
@@ -32,9 +60,9 @@ int main()
     p_int2 = &int_data;
 
     std::cout << "value - *p_int2 - : " << *p_int2 << std::endl; // Dereferencing a pointer
-    std::cout << "Address - p_int2 - : " << p_int2 << std::endl; 
-    std::cout << "Address - &int_data : " << &int_data << std::endl; 
-    std::cout << "value - int_data : " << int_data << std::endl; 
+    std::cout << "Address - p_int2 - : " << p_int2 << std::endl;
+    std::cout << "Address - &int_data : " << &int_data << std::endl;
+    std::cout << "value - int_data : " << int_data << std::endl;
     std::cout << "value - *&int_data : " << *&int_data << std::endl;
     return 0;
 }
