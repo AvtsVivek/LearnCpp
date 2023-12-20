@@ -1,7 +1,7 @@
-# Auto
+# Function Declaration
 
 ## Notes
-1. 
+1. Prototype, Header, Function definition. 
 
 
 ## References
