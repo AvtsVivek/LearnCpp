@@ -25,7 +25,7 @@ int main()
      std::cout << "hint : " << hint << std::endl;
      */
 
-    std::cout << "\a" << std::endl;
+    std::cout << "A" << "\a" << "B" << std::endl;
 
     return 0;
 }

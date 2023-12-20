@@ -6,65 +6,62 @@ int main()
 {
 
     // Showing the problem
-    /*
-    std::string string {"Hello"};
-    std::string string1 {string}; // Copy
-    std::string string2 {string}; // Copy
 
-    std::cout  << "address of string : " <<  &string << std::endl;
-    std::cout  << "address of string1 : " <<  &string1 << std::endl;
-    std::cout  << "address of string2 : " <<  &string2 << std::endl;
-    */
+    std::string string{"Hello"};
+    std::string string1{string}; // Copy
+    std::string string2{string}; // Copy
+
+    std::cout << "address of string : " << &string << std::endl;
+    std::cout << "address of string1 : " << &string1 << std::endl;
+    std::cout << "address of string2 : " << &string2 << std::endl;
 
     // Using string_view
-    /*
-     std::string_view sv {"Hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"};
-     std::string_view sv1 {sv}; // View viewing the hello literal
-     std::string_view sv2 {sv1}; // Another view viewing hello
 
-     std::cout << "Size of string_view : " << sizeof(std::string_view) << std::endl;
-     std::cout << "size of sv1 : " << sizeof(sv1) << std::endl;
+    std::string_view sv{"Hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"};
+    std::string_view sv1{sv};  // View viewing the hello literal
+    std::string_view sv2{sv1}; // Another view viewing hello
 
-     std::cout << "sv : " << sv << std::endl;
-     std::cout << "sv1 : " << sv1 << std::endl;
-     std::cout << "sv2 : " << sv2 << std::endl;
-     */
+    std::cout << "Size of string_view : " << sizeof(std::string_view) << std::endl;
+    std::cout << "Type of string_view : " << typeid(std::string_view).name() << std::endl;
+    std::cout << "size of sv1 : " << sizeof(sv1) << std::endl;
+
+    std::cout << "sv : " << sv << std::endl;
+    std::cout << "sv1 : " << sv1 << std::endl;
+    std::cout << "sv2 : " << sv2 << std::endl;
 
     // Constructing string_view's
-    /*
-     std::string string3 {"Regular std::string"};
-     const char * c_string {"Regular C-String"};
-     const char char_array[]{"Char array"}; // Null terminated
-     char char_array2[]{'H','u','g','e'}; // Non null terminated char array
 
-     std::string_view sv3{"String litteral"};
-     std::string_view sv4{string3};
-     std::string_view sv5{c_string};
-     std::string_view sv6{char_array};
-     std::string_view sv7{sv3};
-     std::string_view sv8{char_array2,std::size(char_array2)};//Non null terminated char array
-                                                              //Need to pass in size info
-     std::cout << "sv3 : " << sv3 << std::endl;
-     std::cout << "sv4 : " << sv4 << std::endl;
-     std::cout << "sv5 : " << sv5 << std::endl;
-     std::cout << "sv6 : " << sv6 << std::endl;
-     std::cout << "sv7 (constructed from other string_view) : " << sv7 << std::endl;
-     std::cout << "Non null terminated string with std::string_view : " << sv8 << std::endl;
-     */
+    std::string string3{"Regular std::string"};
+    const char *c_string{"Regular C-String"};
+    const char char_array[]{"Char array"};  // Null terminated
+    char char_array2[]{'H', 'u', 'g', 'e'}; // Non null terminated char array
+
+    std::string_view sv3{"String litteral"};
+    std::string_view sv4{string3};
+    std::string_view sv5{c_string};
+    std::string_view sv6{char_array};
+    std::string_view sv7{sv3};
+    std::string_view sv8{char_array2, std::size(char_array2)}; // Non null terminated char array
+                                                               // Need to pass in size info
+    std::cout << "sv3 : " << sv3 << std::endl;
+    std::cout << "sv4 : " << sv4 << std::endl;
+    std::cout << "sv5 : " << sv5 << std::endl;
+    std::cout << "sv6 : " << sv6 << std::endl;
+    std::cout << "sv7 (constructed from other string_view) : " << sv7 << std::endl;
+    std::cout << "Non null terminated string with std::string_view : " << sv8 << std::endl;
 
     // Changes to the original string are reflected in the string_view
-    /*
-     char word [] {"Dog"};
-     std::string_view sv9{word};
 
-     std::cout << "word : " << sv9 << std::endl;
+    char word[]{"Dog"};
+    std::string_view sv9{word};
 
-     std::cout << "Changing data... " << std::endl;
-     //Change the data
-     word[2] = 't';
+    std::cout << "word : " << sv9 << std::endl;
 
-     std::cout << "word : " << sv9 << std::endl;
-     */
+    std::cout << "Changing data... " << std::endl;
+    // Change the data
+    word[2] = 't';
+
+    std::cout << "word : " << sv9 << std::endl;
 
     // Changing the view window : SHRINKING
     /*

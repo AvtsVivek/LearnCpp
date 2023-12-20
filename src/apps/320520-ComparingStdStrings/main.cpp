@@ -24,7 +24,7 @@ int main()
     */
 
     // Can even compare std::strings to C-strings
-    /*
+    
     const char * c_string1 {"Bello"};
     hello_str = "Hello";
 
@@ -34,7 +34,7 @@ int main()
     std::cout << c_string1 << " (C-String) ==" <<  hello_str <<" : " << (c_string1 == hello_str) << std::endl;//false
     std::cout << c_string1 << " (C-String) >=" <<  hello_str <<" : " << (c_string1 >= hello_str) << std::endl;//false
     std::cout << c_string1 << " (C-String) <" <<  hello_str <<" : " << (c_string1 < hello_str) << std::endl; // true
-    */
+    
 
     // Be careful about char arrays not terminated with null character
     hello_str = "hello";
