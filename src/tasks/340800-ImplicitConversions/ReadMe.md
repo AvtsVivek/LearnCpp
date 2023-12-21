@@ -1,4 +1,4 @@
-# Auto
+# Implicit conversions.
 
 ## Notes
 1. 

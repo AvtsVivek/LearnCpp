@@ -13,7 +13,7 @@ int main(){
 }
 
 
-void say_age(int* age){ // Parameter
-    ++(*age); 
-    std::cout <<  "Hello , you are " << *age << " years old! &age : " << &age <<  std::endl;//24
+void say_age(int* agepointer){ // Parameter
+    ++(*agepointer); 
+    std::cout <<  "Hello , you are " << *agepointer << " years old!, &agepointer : " << &agepointer << ", agepointer " << agepointer <<  std::endl;//24
 }

@@ -35,3 +35,18 @@ https://www.youtube.com/watch?v=GQp1zzTwrIg
 1. Memory Model, Execution Model and Dev Workflow
 2. https://youtu.be/8jLOx1hD3_o?t=10887
 
+## Some topics to be revisited.
+1. const int&
+   1. src\apps\340560-PassByConstReference
+
+2. const int*
+   1. src\apps\340440-PassByPointerToConst
+   2. src\apps\316320-ConstPointer
+   3. src\apps\316325-PointerToConst
+
+3. const  char * const
+   1. src\apps\316360-ArrayOfContPointerToConstChar\
+
+4. Passing by reference
+   1. src\tasks\340840-ImplicitConversionsWithReferences
+   2. src\apps\318240-DeclaringAndUsingReferences
