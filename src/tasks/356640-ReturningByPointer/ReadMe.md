@@ -1,7 +1,7 @@
-# Auto
+# Returning by pointer
 
 ## Notes
-1. 
+1. Demos functions that return by pointer 
 
 
 ## References

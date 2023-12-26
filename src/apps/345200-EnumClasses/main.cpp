@@ -13,9 +13,10 @@ enum class Month :  char {
 
 int main(){
 
-    Month month {Month::Jan};
-    std::cout << "month : " << static_cast<int>(month) << std::endl;
-    std::cout << "sizeof(month) : " << sizeof(month) << std::endl;
-
+    Month janMonth {Month::Jan};
+    std::cout << "month : " << static_cast<int>(janMonth) << std::endl;
+    std::cout << "sizeof(month) : " << sizeof(janMonth) << std::endl;
+    std::cout << "typeid(month) : " << typeid(janMonth).name() << std::endl;
+    std::cout << "typeid(Month) : " << typeid(Month).name() << std::endl;    
     return 0;
 }

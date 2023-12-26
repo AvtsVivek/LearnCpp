@@ -1,6 +1,6 @@
 #include <iostream>
 
-
+// int main(int argc , char ** argv){
 int main(int argc , char * argv[]){
 
     std::cout << "We have " << argc << " parameters in our program" << std::endl;
