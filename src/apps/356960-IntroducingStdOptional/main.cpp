@@ -16,7 +16,7 @@ int main()
 											   // for std::optional
 	std::optional<char> letter = std::nullopt; // Triggers unused warning
 	std::optional<double> height = {};		   // Initializes to std::nullopt
-									   //  Triggers unused warning.
+											   //  Triggers unused warning.
 
 	// Read from an std::optional variable
 	std::cout << "items : " << items.value() << std::endl;
@@ -80,6 +80,16 @@ int main()
 	{
 		std::cout << "dog_name contains std::nullopt" << std::endl;
 	}
+
+	std::cout << "typeid(dog_name) : " << typeid(dog_name).name() << std::endl;
+	std::cout << "typeid(dog_name.value()) : " << typeid(dog_name.value()).name() << std::endl;
+	std::cout << "typeid(*dog_name) : " << typeid(*dog_name).name() << std::endl;
+	std::cout << "typeid(name) : " << typeid(name).name() << std::endl;
+	std::cout << "typeid(name.value()) : " << typeid(name.value()).name() << std::endl;
+	std::cout << "typeid(*name) : " << typeid(*name).name() << std::endl;
+	std::cout << "typeid(items) : " << typeid(items).name() << std::endl;
+	std::cout << "typeid(weight) : " << typeid(weight).name() << std::endl;
+	std::cout << "typeid(character) : " << typeid(character).name() << std::endl;
 
 	return 0;
 }

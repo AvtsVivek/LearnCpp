@@ -22,14 +22,19 @@ std::optional<size_t> find_character_v3(const std::string &str,
 {
     // If found set return index, else return empty
     // If c is specified, find it else just find 'z'
+
     /*
+
     char char_to_find;
     if(c.has_value()){
         char_to_find = c.value();
     }else{
         char_to_find = 'z'; // Will find z by default
     }
+
     */
+    // The above is same as the following.
+
     char char_to_find = c.value_or('z');
 
     for (size_t i{}; i < str.size(); ++i)
@@ -49,15 +54,16 @@ int main()
     std::string str1{"Hello World in C++20!"};
     char c{'C'};
 
-    /*
-    std::optional<size_t> result = find_character_v2(str1,c);
+    std::optional<size_t> result = find_character_v2(str1, c);
 
-    if(result.has_value()){
-        std::cout << "Found our character at index : " << result.value() << std::endl;
-    }else{
-        std::cout << "Didn't find our character" << std::endl;
+    if (result.has_value())
+    {
+        std::cout << "Found our character " << c <<" at index : " << result.value() << std::endl;
     }
-    */
+    else
+    {
+        std::cout << "Didn't find our character" << c << std::endl;
+    }
 
     str1 = "Hello Worldz in C++20!";
 

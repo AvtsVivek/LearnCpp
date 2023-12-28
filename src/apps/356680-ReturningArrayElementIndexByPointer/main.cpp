@@ -26,5 +26,8 @@ const double *find_max_address(const double scores[], size_t count)
             max_index = i;
         }
     }
+
+    std::cout << "max : " << max << " scores[max_index]: " << scores[max_index] << std::endl;
+
     return &scores[max_index];
 }
