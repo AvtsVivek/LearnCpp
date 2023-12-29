@@ -3,7 +3,7 @@
 
 int main(){
 
-    //Capture everything by value
+    //Capture everything by value. Use = inside the capture list sqare brackets.
     /*
      int c{42};
      
@@ -19,7 +19,7 @@ int main(){
      */
 
 
-    //Capturing all reference
+    //Capturing all reference. Use & inside the capture list sqare brackets.
      int c{42};
      int d{5};
      
