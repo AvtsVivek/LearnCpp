@@ -21,6 +21,7 @@ int main()
     auto result = minimum<int, double, int>(a, b);
     std::cout << "result : " << result << std::endl;
     std::cout << "sizeof(result) : " << sizeof(result) << std::endl; // 4
+    std::cout << "typeid(result).name() : " << typeid(result).name() << std::endl; // 4
 
     return 0;
 }

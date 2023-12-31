@@ -30,18 +30,17 @@ T *maximum(T *a, T *b)
 int main()
 {
 
-    /*
-    const char* g{"wild"};
-    const char* h{"animal"};
+    const char *g{"wild"};
+    const char *h{"animal"};
 
-    const char* result = maximum(g,h);
-    */
+    const char *result = maximum(g, h);
+    std::cout << "result : " << *result << std::endl;
 
     int a{810};
     int b{23};
 
-    auto result = maximum(&a, &b);
-    std::cout << "result : " << *result << std::endl;
+    auto result_int = maximum(&a, &b);
+    std::cout << "result_int : " << *result_int << std::endl;
 
     return 0;
 }

@@ -24,6 +24,9 @@ int main()
     const int table_count{5};
     constexpr int chair_count{table_count * 5}; // Works
 
+    // https://en.cppreference.com/w/cpp/language/static_assert
+    // Performs compile-time assertion checking.
+
     // static_assert( SOME_LIB_MAJOR_VERSION == 123);
 
     // int age = 5;

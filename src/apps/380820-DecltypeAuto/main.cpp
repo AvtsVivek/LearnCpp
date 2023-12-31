@@ -14,6 +14,6 @@ int main()
     auto result = maximum(x, y);
     std::cout << "max : " << result << std::endl;
     std::cout << "sizeof(result) : " << sizeof(result) << std::endl;
-
+    std::cout << "typeid(result).name() : " << typeid(result).name() << std::endl;
     return 0;
 }
