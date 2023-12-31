@@ -32,9 +32,9 @@ private:
 
 int main()
 {
-    // Cylinder cylinder1(10,4); // Object
-    Cylinder cylinder1;
-    std::cout << "volume : " << cylinder1.volume() << std::endl;
-
+    Cylinder cylinder1(10, 4); // Object
+    Cylinder cylinder2;
+    std::cout << "volume of cylinder 1 : " << cylinder1.volume() << std::endl;
+    std::cout << "volume of cylinder 2 : " << cylinder2.volume() << std::endl;
     return 0;
 }

@@ -11,8 +11,5 @@ int main(){
    //dog1.name() = "Milou"; // Setter
    dog1.print_info();
 
-
-
-
     return 0;
 }

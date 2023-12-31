@@ -29,5 +29,7 @@ int main()
 
     std::cout << "sizeof(name) : " << sizeof(name) << std::endl;
 
+    std::cout << "typeid(Dog).name() : " << typeid(Dog).name() << std::endl;
+
     return 0;
 }
