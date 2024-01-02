@@ -1,8 +1,11 @@
 # Auto
 
 ## Notes
-1. 
+1. Structured bindings
 
+```cpp
+auto [a,b] = point1;
+```
 
 ## References
 

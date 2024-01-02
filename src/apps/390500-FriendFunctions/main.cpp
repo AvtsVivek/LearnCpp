@@ -28,7 +28,7 @@ void debug_dog_info(){
 
 
 int main(){
-    Dog dog1("Fluffy",4);
+    Dog dog1("Fluffy", 4);
     //debug_dog_info(dog1);
 
     debug_dog_info();
