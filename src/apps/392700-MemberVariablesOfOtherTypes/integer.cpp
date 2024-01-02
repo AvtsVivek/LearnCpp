@@ -9,4 +9,3 @@ Integer::Integer(int value) : inner_int(value)
 Integer::~Integer()
 {
 }
-
