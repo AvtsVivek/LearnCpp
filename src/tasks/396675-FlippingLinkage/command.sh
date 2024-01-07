@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/396660-FlippingLinkage
+cd src/tasks/396675-FlippingLinkage
 
-cd src/apps/396660-FlippingLinkage
+cd src/apps/396675-FlippingLinkage
 
 start .
 
