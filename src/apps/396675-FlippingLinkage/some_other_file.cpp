@@ -15,6 +15,7 @@ static void some_other_function(){
 */
 
 //Internal linkage
+
 namespace{
      void some_other_function(){
         std::cout << "Hello there" << std::endl;

@@ -17,10 +17,14 @@ item_count(main) : 6 &item_count : 0x7ff7d5d40010
 -----
 item_count(other_file) : 6 &item_count : 0x7ff7d5d40010
 ```
-4. Note here the address is same. Thats because the variable is same.
 
+4. Note here the address is same. Thats because the variable is same.
+5. Finally note external by default. The following is not needed. extern keyword is redundent here.
+
+```cpp
+extern void print_item_count();
+```
 
 ## References
-
 1. https://learn.microsoft.com/en-us/cpp/cpp/program-and-linkage-cpp
 
