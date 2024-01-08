@@ -14,11 +14,13 @@ void print_age_2(){
 }
 
 
-static double distance {23.9};
+namespace{
+	double distance {23.9};
 
-static void some_distance_function(){
-	std::cout << "distance : " << distance << std::endl;
-	std::cout << "&distance : " << &distance << std::endl;
+	void some_distance_function(){
+		std::cout << "distance : " << distance << std::endl;
+		std::cout << "&distance : " << &distance << std::endl;
+	}
 }
 
 void print_distance_2(){

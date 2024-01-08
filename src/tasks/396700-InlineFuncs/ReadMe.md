@@ -11,7 +11,8 @@ C:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x8
 collect2.exe: error: ld returned 1 exit status
 ```
 
-4. To avoid that, we can prefix with `inline` keyword at all the four places, two before funcsion in both the files, and similarly two before the variable in both files.
+4. To avoid that, we can prefix with `inline` keyword at all the four places, two before function in both the files, and similarly two before the variable in both files.
+
 5. Note the main.cpp file, we are not calling the some_function() from main. Its only declared and defined. Defined in multiple files.
 
 6. Also finally note that you can only compile, will will not be able to call that function from the main function.
@@ -23,7 +24,7 @@ collect2.exe: error: ld returned 1 exit status
 
 7. The reason, the function is accessible from the two translation units utility1.cpp and utility2.cpp. But at the same time, this is still not accessible from main. Note this is prefixed with inline.
 
-
+8. The idea here is, if we want to define the same function in two differnt files, then we can use inline function. Also note that when we use inline keyword, then the compiler will merge the two definitions into one, so there is only function in the end.
 
 
 

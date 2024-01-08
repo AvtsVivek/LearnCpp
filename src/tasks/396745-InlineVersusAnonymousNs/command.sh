@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/396740-InlineVersusStatic
+cd src/tasks/396745-InlineVersusAnonymousNs
 
-cd src/apps/396740-InlineVersusStatic
+cd src/apps/396745-InlineVersusAnonymousNs
 
 start .
 
