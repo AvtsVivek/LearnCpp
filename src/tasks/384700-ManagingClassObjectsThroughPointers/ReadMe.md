@@ -2,6 +2,7 @@
 
 ## Notes
 1. When to use the new keyword, see the reference below.
+2. -> is called the pointer access operator.
 
 
 ## References
