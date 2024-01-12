@@ -22,10 +22,11 @@ C:/Program Files/mingw64/include/c++/13.2.0/bits/unique_ptr.h:522:7: note: decla
 ```
 
 2. We are trying to make a copy. But copying is not allowed with unique pointers.
+3. Passing by value means, we are going make copies.
 
-3. Here we go.
+4. Here we go.
 
-4. 
+5. 
 
 ## References
 

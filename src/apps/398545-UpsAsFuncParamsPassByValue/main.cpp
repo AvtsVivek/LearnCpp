@@ -1,7 +1,6 @@
 #include <iostream>
 #include <memory>
 #include "dog.h"
-#include "person.h"
 
 void do_something_with_dog_v1(std::unique_ptr<Dog> d)
 {
