@@ -11,8 +11,9 @@ int main()
     // destructor is called before the line : std::cout << "Doing something" << std::endl; SHOW THIS.
 
     std::unique_ptr<Dog> up_dog_13 = std::make_unique<Dog>("Dog13");
+    std::cout << "About to call reset up_dog_13.reset(): " << std::endl;
     up_dog_13.reset(); // releases memory and sets pointer to nullptr
-
+    std::cout << "reset done " << std::endl;
     // Can use unique pointer in if statement to see if it points somewhere valid
     if (up_dog_13)
     {
