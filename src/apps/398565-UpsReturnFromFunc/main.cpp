@@ -18,5 +18,7 @@ int main()
 
 	p_dog_3->print_info();
 
+	get_unique_ptr()->print_info();
+
 	return 0;
 }
