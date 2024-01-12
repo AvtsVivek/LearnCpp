@@ -1,15 +1,12 @@
 #include <iostream>
 #include <memory>
 #include "dog.h"
-#include "person.h"
 
 std::unique_ptr<Dog> get_unique_ptr()
 {
 	std::unique_ptr<Dog> p_dog = std::make_unique<Dog>("Function Local");
 	std::cout << "unique_ptr address(in) : " << &p_dog << std::endl;
 	return p_dog;
-
-
 }
 
 int main()

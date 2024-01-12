@@ -1,13 +1,12 @@
 #include <iostream>
 #include <memory>
 #include "dog.h"
-#include "person.h"
 
 void do_something_with_dog_v2(const std::unique_ptr<Dog> &d)
 {
 	d->set_dog_name("Rior");
 	d->print_info();
-	d.reset(); // Compiler error
+	// d.reset(); // Compiler error
 }
 
 int main()

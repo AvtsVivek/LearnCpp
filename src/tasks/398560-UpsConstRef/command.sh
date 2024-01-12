@@ -27,5 +27,3 @@ get-childitem -path . -file -recurse -include ('*.exe', '*.pdb', '*.ilk', '*.obj
 
 dir
 
-
-
