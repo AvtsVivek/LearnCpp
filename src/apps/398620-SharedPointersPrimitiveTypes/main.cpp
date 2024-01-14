@@ -1,6 +1,5 @@
 #include <iostream>
 #include <memory>
-#include "dog.h"
 
 int main()
 {
@@ -84,6 +83,15 @@ int main()
         std::cout << "Use count for int_ptr_3 : " << int_ptr_3.use_count() << std::endl;
         std::cout << "Use count for int_ptr_4 : " << int_ptr_4.use_count() << std::endl;
         std::cout << "Use count for int_ptr_5 : " << int_ptr_5.use_count() << std::endl;
+
+        if (int_ptr_5)
+        {
+            std::cout << "int_ptr5 pointing to something valid" << std::endl;
+        }
+        else
+        {
+            std::cout << "int_ptr5 pointing to nullptr" << std::endl;
+        }
     }
 
     return 0;
