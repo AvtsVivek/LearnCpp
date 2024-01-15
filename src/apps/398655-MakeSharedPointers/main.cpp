@@ -39,5 +39,7 @@ int main()
         std::cout << "dog_ptr_7 use count : " << dog_ptr_7.use_count() << std::endl;
     }
 
+    std::cout << "Returning ... " << std::endl;
+
     return 0;
 }
