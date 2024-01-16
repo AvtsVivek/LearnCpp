@@ -7,7 +7,7 @@ void use_dog_v2(std::shared_ptr<Dog> &dog)
 {
 	// Since no copy is made, we won't see the reference count increment here
 	dog->set_dog_name("Riol");
-	// dog.reset(new Dog()); // Passed by non const ref
+	dog.reset(new Dog()); // Passed by non const ref
 	std::cout << "shared_ptr passed by non const reference (dog name changed in function) , dog_name : " << dog->get_name() << std::endl;
 	std::cout << "use count in use_dog_v2 : " << dog.use_count() << std::endl;
 }
