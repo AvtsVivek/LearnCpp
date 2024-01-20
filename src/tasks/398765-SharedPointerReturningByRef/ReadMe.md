@@ -26,5 +26,5 @@ std::shared_ptr<Dog> &shared_ptr_dog_5 = get_shared_ptr_v2();
 
 ## References
 
-1. 
+1. https://stackoverflow.com/q/15648844/1977871
 

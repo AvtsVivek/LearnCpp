@@ -20,4 +20,5 @@
 ## References
 
 1. https://en.cppreference.com/w/cpp/memory/weak_ptr
+2. https://stackoverflow.com/q/15648844/1977871
 
