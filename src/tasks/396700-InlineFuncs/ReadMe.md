@@ -2,8 +2,8 @@
 
 ## Notes
 1. In two different files(or translation units) we have the same function and a variable defined.
-2. First let there be no inline keyword.
-3. Without inline keyword, if we compile, then we get error as follows.
+2. First let there be no `inline` keyword.
+3. Without `inline` keyword, if we compile, then we get error as follows.
 
 ```txt
 C:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\koppviv\AppData\Local\Temp\ccLu75Qj.o:utility2.cpp:(.text+0x0): multiple definition of `some_function()'; C:\Users\koppviv\AppData\Local\Temp\ccgxEBJz.o:utility1.cpp:(.text+0x0): first defined here
@@ -22,9 +22,9 @@ C:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x8
 collect2.exe: error: ld returned 1 exit status
 ```
 
-7. The reason, the function is accessible from the two translation units utility1.cpp and utility2.cpp. But at the same time, this is still not accessible from main. Note this is prefixed with inline.
+7. The reason, the function is accessible from the two translation units utility1.cpp and utility2.cpp. But at the same time, this is still not accessible from main. Note this is prefixed with `inline`.
 
-8. The idea here is, if we want to define the same function in two differnt files, then we can use inline function. Also note that when we use inline keyword, then the compiler will merge the two definitions into one, so there is only function in the end.
+8. The idea here is, if we want to define the same function in two differnt files, then we can use `inline` function. Also note that when we use `inline` keyword, then the compiler will merge the two definitions into one, so there is only function in the end.
 
 
 
