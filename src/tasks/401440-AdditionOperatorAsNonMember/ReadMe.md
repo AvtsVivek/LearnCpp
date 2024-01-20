@@ -16,6 +16,10 @@ Point operator+(const Point& left, const Point& right){
 }
 ```
 
+3. Also note the following
+```cpp
+friend Point operator+(const Point& left, const Point& right);
+```
 
 ## References
 
