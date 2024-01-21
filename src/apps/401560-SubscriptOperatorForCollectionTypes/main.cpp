@@ -8,16 +8,10 @@ int main()
     math.print_info();
 
     for (size_t i{}; i < 20; ++i)
-    {
         if (i == 0)
-        {
             math[0] = 100.1;
-        }
         else
-        {
             math[i] = math[i - 1] + 10.01;
-        }
-    }
 
     math.print_info();
 
