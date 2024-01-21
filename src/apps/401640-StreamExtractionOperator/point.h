@@ -38,6 +38,8 @@ inline std::ostream& operator<<(std::ostream& os, const Point& p){
 	return os;
 }
 
+// We pass the second parameter by non const reference. 
+// Thats because, we need to modify this point parameter in the body of our function.
 inline std::istream& operator>>(std::istream& is, Point& p){
 	double x;
 	double y;
