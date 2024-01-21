@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/401600-StreamInsertionOperator
+cd src/tasks/401610-StreamInsertionOperatorMember
 
-cd src/apps/401600-StreamInsertionOperator
+cd src/apps/401610-StreamInsertionOperatorMember
 
 start .
 
