@@ -1,7 +1,8 @@
 #include <iostream>
 #include "number.h"
 
-int main(){
+int main()
+{
 
     Number n1(22);
     std::cout << "n1 : " << n1 << std::endl;

@@ -18,9 +18,13 @@
 7. https://eecs280staff.github.io/p1-stats/#setup
 
 8. https://eecs280staff.github.io/p1-stats/starter-files.tar.gz
+
 9. https://eecs280staff.github.io/p1-stats/starter-files.tar.gz
+
 10. https://github.com/rutura/The-C-20-Masterclass-Source-Code/tree/main
+
 11. https://www.freecodecamp.org/news/learn-c-with-free-31-hour-course/
+
 12. https://www.youtube.com/watch?v=8jLOx1hD3_o
 
 https://www.youtube.com/@ProfessorHankStalica/playlists
@@ -28,11 +32,13 @@ https://www.youtube.com/@ProfessorHankStalica/playlists
 https://www.youtube.com/watch?v=GQp1zzTwrIg
 
 ## Here we go..
-1. asdf
+1. Use the following command to delete the exes
 
+2. .\..\..\..\src\DeleteOutputFiles.ps1
 
 ## To do 
 1. Memory Model, Execution Model and Dev Workflow
+
 2. https://youtu.be/8jLOx1hD3_o?t=10887
 
 ## Some topics to be revisited.
@@ -51,4 +57,4 @@ https://www.youtube.com/watch?v=GQp1zzTwrIg
    1. src\tasks\340840-ImplicitConversionsWithReferences
    2. src\apps\318240-DeclaringAndUsingReferences
 
-Test push
+5. 

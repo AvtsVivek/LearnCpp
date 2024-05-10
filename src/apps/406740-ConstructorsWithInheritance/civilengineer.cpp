@@ -9,8 +9,6 @@ CivilEngineer::CivilEngineer()
     std::cout << "Default constructor called for CivilEnginner ... " << std::endl;
 }
 
-
-
 CivilEngineer::CivilEngineer(std::string_view fullname,int age,
     std::string_view address,int contract_count, std::string_view speciality)
      : Engineer(fullname,age,address,contract_count), m_speciality(speciality)
@@ -31,6 +29,7 @@ CivilEngineer::CivilEngineer(std::string_view fullname,int age,
 }
 */
 
+// The following also does not work.
 /*
 CivilEngineer::CivilEngineer(std::string_view fullname,int age,
     std::string_view address,int contract_count, std::string_view speciality)

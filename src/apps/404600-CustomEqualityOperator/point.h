@@ -11,9 +11,12 @@ public:
 		m_x{x}, m_y{y}{}
 
 	Point(double x_y) : Point{x_y,x_y}{}
+
 	//Operators
     bool operator==(const Point& other) const;
-    //bool operator!=(const Point& other) const;
+    
+	//bool operator!=(const Point& other) const;
+
 private: 
 	double length() const;   // Function to calculate distance from the point(0,0)
 private : 

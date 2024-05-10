@@ -12,7 +12,7 @@ void operator++(Point& operand){
 	++(operand.m_y);
 }
 
-Point operator++(Point& operand,int){
+Point operator++(Point& operand, int){
 	Point local_point(operand);
 	++operand;
 	return local_point;
@@ -23,7 +23,7 @@ void operator--(Point& operand){
 	--(operand.m_y);
 }
 
-Point operator--(Point& operand,int){
+Point operator--(Point& operand, int){
 	Point local_point(operand);
 	--operand;
 	return local_point;

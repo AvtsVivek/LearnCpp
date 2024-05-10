@@ -8,7 +8,7 @@ int main(){
 
     //++p1;
   
-    operator++(p1);
+    operator++(p1);  // p1.operator++();
     
 
     std::cout << "p1 : " << p1 << std::endl; // 11

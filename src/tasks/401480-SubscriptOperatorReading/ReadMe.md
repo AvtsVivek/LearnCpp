@@ -1,7 +1,7 @@
 # Subscript operator introduction
 
 ## Notes
-1. The subscript operator is a binary operator. Binary means that which works on two objects.
+1. The subscript operator is a `binary operator`. Binary means that which works on two objects.
 2. The subscript operator look like this
 ```cpp
 operator[]

@@ -8,20 +8,15 @@ CivilEngineer::CivilEngineer()
 {
 }
 
-std::ostream& operator<<(std::ostream& out, const CivilEngineer& operand){
-    
-    /*
-     out << "CivilEngineer [Full name : " << operand.get_full_name() <<
-                    ",age : " << operand.get_age() << 
-                    //",address : " << operand.get_address() <<
-                    ",contract_count : " << operand.contract_count <<
-                    ",speciality : " << operand.m_speciality << "]";
-                    */
-                  
-				
-    return out;  
-}
+std::ostream &operator<<(std::ostream &out, const CivilEngineer &operand)
+{
 
+    // Compiler error
+    // out << "CivilEngineer [Full name : " << operand.get_full_name() << ",age : " << operand.get_age() << ",address : " << operand.get_address() << ",contract_count : " << operand.contract_count << ",speciality : " << operand.m_speciality << "]";
+
+    out << "Speciality: " << operand.m_speciality;
+    return out;
+}
 
 CivilEngineer::~CivilEngineer()
 {

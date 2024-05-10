@@ -1,7 +1,7 @@
 # Auto
 
 ## Notes
-1. When the binary operator like the addition operator, subraction operator or any operator that takes two operands, if it is implimented as a member function, the left operator is never implicitly converted.
+1. When the `binary operator` like the addition operator, subraction operator or any operator that takes two operands, if it is implimented as a member function, the left operator is never implicitly converted.
 2. Say we have the following. This will work.
 ```cpp
 Number n1(22);

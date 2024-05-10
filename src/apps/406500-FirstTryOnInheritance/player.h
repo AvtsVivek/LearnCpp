@@ -8,12 +8,18 @@
 
 class Player : public Person
 {
-    friend std::ostream& operator<<(std::ostream& out, const Player& player);
+    friend std::ostream &operator<<(std::ostream &out, const Player &player);
+
 public:
     Player() = default;
     Player(std::string_view game_param);
-    
-private : 
+
+    std::string get_game() const
+    {
+        return m_game;
+    }
+
+private:
     std::string m_game{"None"};
 };
 

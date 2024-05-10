@@ -41,6 +41,6 @@
             "environment": [],
             "console": "externalTerminal",
             "preLaunchTask": "Msvc: cl.exe build "
-          }
+        }
     ]
 }
