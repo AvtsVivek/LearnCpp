@@ -42,6 +42,12 @@ Destructor for dog Dog1 called
 
 5. So understand the role of stack. When the object gets out of scope and then destructor is called.
 
+6. Manually releasing memory yourself through the delete operator of raw pointers is a pain in the neck. Smart pointers are a a solution offered by modern C++ to release the memory automatically when the pointer manageing the memeory goes out of scope.   
+
+7. At any given moment there can only be one pointer managing the memory
+
+8. Memory is automatically released when the pointer goes out of scope. 
+9. We need to include <memory>, here is where the smart pointer stuff lives. 
 
 ## References
 

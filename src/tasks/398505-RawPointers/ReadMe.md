@@ -2,46 +2,24 @@
 
 ## Notes
 
-1. Consider the following within brackets `{}`
+1. Manually releasing memory yourself through the delete operator of raw pointers is a pain in the neck. Smart pointers are a a solution offered by modern C++ to release the memory automatically when the pointer manageing the memeory goes out of scope.
+
+2. In this example, we are manually deleting the object.   
 
 ```cpp
-{
-    Dog dog1("Dog1");
-    // Calling functions on stack objects
-    dog1.print_dog();
-}
+delete p_dog2; // Calls the destructor
 ```
 
-2. Build and run, you should see the following ouput.
-
-```txt
-Constructor for dog Dog1 called.
-Printing dog : Dog1
-Destructor for dog Dog1 called  
-Hitting outside scope
-Done!
-```
-
-
-4. Now remove the `{}`. Build and then run.
+3. If we do not do the above, then the object is not destroyed, and the memory is leaked.
+4. Commnetout the following three lines, and run again.
 
 ```cpp
-Dog dog1("Dog1");
-dog1.print_dog();
+delete p_dog2; // Calls the destructor
+delete p_int1;
+std::cout << "deleting done" << std::endl;
 ```
 
-You should see somehthing like the following.
-
-```txt
-Constructor for dog Dog1 called.
-Printing dog : Dog1
-Hitting outside scope
-Done!
-Destructor for dog Dog1 called  
-```
-
-5. So understand the role of stack. When the object gets out of scope and then destructor is called.
-
+5. Leaking of memory means, the memory stays in the process indefinitely. 
 
 ## References
 
