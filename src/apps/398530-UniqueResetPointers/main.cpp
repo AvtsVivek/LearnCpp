@@ -5,7 +5,6 @@
 int main()
 {
 
-    // Can reset unique_ptr : releases memory and sets the pointer to nullptr
     // If you comment out the reset line, the destructor is called after the doing
     // something print out, if it's not commented out, we reset the pointer and the
     // destructor is called before the line : std::cout << "Doing something" << std::endl; SHOW THIS.
