@@ -2,8 +2,18 @@
 
 ## Notes
 1. What we are trying to do in this example, is pass the unique pointer to a function by value.
-2. Passing a unique pointer to a function which takes a unique pointer by value.
-3. Build and Run. You will see something like this.
+
+2. We are setting up a member function which is going to be takeing a unique pointer to dog by value.
+
+3. Passing a unique pointer to a function which takes a unique pointer by value.
+
+4. Can't pass unique_ptr by value to a function. Copies not allowed.
+
+5. When we compile, we get a compile error. We are trying to pass a unique pointer by value. This is going to try and create a copy of the unique pointer. This is the problem. We cannot create a copy of a unique pointer in any way. 
+
+6. We will see that copies are not allowed.
+
+7. Build and Run. You will see something like this.
 
 ```txt
 .\main.cpp: In function 'int main()':
@@ -21,12 +31,9 @@ C:/Program Files/mingw64/include/c++/13.2.0/bits/unique_ptr.h:522:7: note: decla
 
 ```
 
-2. We are trying to make a copy. But copying is not allowed with unique pointers.
-3. Passing by value means, we are going make copies.
+8. We are trying to make a copy. But copying is not allowed with unique pointers.
 
-4. Here we go.
-
-5. 
+9. Passing by value means, we are going make copies.
 
 ## References
 
