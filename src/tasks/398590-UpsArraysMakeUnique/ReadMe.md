@@ -11,7 +11,8 @@
 auto arr_ptr = std::make_unique<Dog[]>(3);
 ```
 
-The following would not work. The syntax is not supported yet. 
+6. The following would not work. The syntax is not supported yet. make_unique array cannot really work to initiallize individual objects
+
 ```cpp
 auto arr_ptr = std::make_unique<Dog[]>(3) {Dog("Dog7"), Dog("Dog8") , Dog("Dog9")};//Compiler error
 auto arr_ptr = std::make_unique<Dog[]>{Dog("Dog7"), Dog("Dog8") , Dog("Dog9")};//Compiler error
