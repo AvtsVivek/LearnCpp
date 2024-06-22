@@ -5,6 +5,7 @@
    1. the last remaining shared_ptr owning the object is destroyed;
    2. the last remaining shared_ptr owning the object is assigned another pointer via `operator= or reset()`.
 
+2. Demos `make_shared` in this example.
 
 ## References
 1. 

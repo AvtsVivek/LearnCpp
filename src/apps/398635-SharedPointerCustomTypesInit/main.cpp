@@ -13,8 +13,8 @@ int main()
 
         std::shared_ptr<Dog> dog_ptr_2 = dog_ptr_1; // Use count : 2
 
-        std::cout << "Use count for dog_ptr_1 : " << dog_ptr_1.use_count() << std::endl;
-        std::cout << "Use count for dog_ptr_2 : " << dog_ptr_2.use_count() << std::endl;
+        std::cout << "Use count for dog_ptr_1 : " << dog_ptr_1.use_count() << std::endl; // Use count : 2
+        std::cout << "Use count for dog_ptr_2 : " << dog_ptr_2.use_count() << std::endl; // Use count : 2
         std::cout << "" << std::endl;
 
         std::cout << "Reseting, dog_ptr_2.reset()" << std::endl;
@@ -22,19 +22,33 @@ int main()
 
         std::cout << "" << std::endl;
         std::cout << "After reset" << std::endl;
-        std::cout << "Use count for dog_ptr_1 : " << dog_ptr_1.use_count() << std::endl;
-        std::cout << "Use count for dog_ptr_2 : " << dog_ptr_2.use_count() << std::endl;
+        std::cout << "Use count for dog_ptr_1 : " << dog_ptr_1.use_count() << std::endl; // Use count : 1
+        std::cout << "Use count for dog_ptr_2 : " << dog_ptr_2.use_count() << std::endl; // Use count : 0
 
         // Initializing
         std::cout << std::endl;
         std::cout << "Initializing..." << std::endl;
         std::shared_ptr<Dog> dog_ptr_3;
-        dog_ptr_3 = dog_ptr_1; // Use count : 3
+        dog_ptr_3 = dog_ptr_1; // Use count : 2
+
+        std::cout << "" << std::endl;
+        std::cout << "After std::shared_ptr<Dog> dog_ptr_3; and assigning it.." << std::endl;
+        std::cout << "Use count for dog_ptr_1 : " << dog_ptr_1.use_count() << std::endl; // Use count : 2
+        std::cout << "Use count for dog_ptr_2 : " << dog_ptr_2.use_count() << std::endl; // Use count : 0
+        std::cout << "Use count for dog_ptr_3 : " << dog_ptr_3.use_count() << std::endl; // Use count : 2
+
 
         std::shared_ptr<Dog> dog_ptr_4{nullptr};
-        dog_ptr_4 = dog_ptr_1; // Use count : 4
+        dog_ptr_4 = dog_ptr_1; // Use count : 3
 
-        std::shared_ptr<Dog> dog_ptr_5{dog_ptr_1}; // Use count : 5
+        std::cout << "" << std::endl;
+        std::cout << "After std::shared_ptr<Dog> dog_ptr_3; and assigning it.." << std::endl;
+        std::cout << "Use count for dog_ptr_1 : " << dog_ptr_1.use_count() << std::endl; // Use count : 3
+        std::cout << "Use count for dog_ptr_2 : " << dog_ptr_2.use_count() << std::endl; // Use count : 0
+        std::cout << "Use count for dog_ptr_3 : " << dog_ptr_3.use_count() << std::endl; // Use count : 3
+        std::cout << "Use count for dog_ptr_4 : " << dog_ptr_4.use_count() << std::endl; // Use count : 3
+
+        std::shared_ptr<Dog> dog_ptr_5{dog_ptr_1}; // Use count : 4
 
         std::cout << std::endl;
         std::cout << "Use count for dog_ptr_1 : " << dog_ptr_1.use_count() << std::endl;
@@ -53,7 +67,7 @@ int main()
         dog_ptr_raw = nullptr;
 
         dog_ptr_6->print_info();
-        std::cout << "Use count for dog_ptr_6 is : " << dog_ptr_6.use_count() << std::endl;
+        std::cout << "Use count for dog_ptr_6 is: " << dog_ptr_6.use_count() << std::endl; // 1
         std::cout << "dog_ptr_raw : " << dog_ptr_raw << std::endl;
 
         // Reset : decrements the use count and sets the pointer to nullptr

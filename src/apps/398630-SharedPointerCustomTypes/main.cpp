@@ -5,7 +5,7 @@
 int main()
 {
     // shared pointers to fundamental types
-    {
+    //{
         std::shared_ptr<Dog> dog_ptr_1{new Dog("Dog1")};
         dog_ptr_1->print_info();
 
@@ -24,8 +24,7 @@ int main()
         std::cout << "After reset" << std::endl;
         std::cout << "Use count for dog_ptr_1 : " << dog_ptr_1.use_count() << std::endl;
         std::cout << "Use count for dog_ptr_2 : " << dog_ptr_2.use_count() << std::endl;
-
-   }
+    //}
     std::cout << "Returning ... " << std::endl;
     return 0;
 }

@@ -56,6 +56,8 @@ int main()
         std::cout << "Use count for int_ptr_1 : " << int_ptr_1.use_count() << std::endl;
         std::cout << "Use count for int_ptr_2 : " << int_ptr_2.use_count() << std::endl;
 
+        std::cout << "" << std::endl;
+
         std::shared_ptr<int> int_ptr_3; // nullptr
         int_ptr_3 = int_ptr_2;          // Use count : 3
 
@@ -69,6 +71,28 @@ int main()
         std::cout << "Use count for int_ptr_3 : " << int_ptr_3.use_count() << std::endl;
         std::cout << "Use count for int_ptr_4 : " << int_ptr_4.use_count() << std::endl;
         std::cout << "Use count for int_ptr_5 : " << int_ptr_5.use_count() << std::endl;
+
+        std::cout << "" << std::endl;
+
+        std::cout << "The pointed to value is (through int_ptr1) : " << *int_ptr_1 << std::endl;
+        std::cout << "The pointed to value is (through int_ptr2) : " << *int_ptr_2 << std::endl;
+        std::cout << "The pointed to value is (through int_ptr3) : " << *int_ptr_3 << std::endl;
+        std::cout << "The pointed to value is (through int_ptr4) : " << *int_ptr_4 << std::endl;
+        std::cout << "The pointed to value is (through int_ptr5) : " << *int_ptr_5 << std::endl;
+
+        std::cout << "" << std::endl;
+
+        std::cout << "Assigning a different value as follows " << std::endl;
+        std::cout << "*int_ptr_4 = 170; " << std::endl;
+        *int_ptr_4 = 170;
+
+        std::cout << "" << std::endl;
+
+        std::cout << "The pointed to value is (through int_ptr1) : " << *int_ptr_1 << std::endl;
+        std::cout << "The pointed to value is (through int_ptr2) : " << *int_ptr_2 << std::endl;
+        std::cout << "The pointed to value is (through int_ptr3) : " << *int_ptr_3 << std::endl;
+        std::cout << "The pointed to value is (through int_ptr4) : " << *int_ptr_4 << std::endl;
+        std::cout << "The pointed to value is (through int_ptr5) : " << *int_ptr_5 << std::endl;
 
         int_ptr_5.reset(); // decrements reference count and sets int_ptr5 to nullptr
 
@@ -93,6 +117,8 @@ int main()
             std::cout << "int_ptr5 pointing to nullptr" << std::endl;
         }
     }
+
+    std::cout << "Done..!!" << std::endl;
 
     return 0;
 }
