@@ -1,11 +1,13 @@
 # Auto
 
 ## Notes
-1. The following does not give error, 
+1. The following gives error, 
 
 ```cpp
-dog.reset(new Dog()); // Passed by non const ref
+dog.reset(new Dog()); // Passed by const ref
 ```
+
+2. 
 
 
 ## References
