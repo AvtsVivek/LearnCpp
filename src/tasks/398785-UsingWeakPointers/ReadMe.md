@@ -15,7 +15,9 @@
 
 7. They are special, in the sence that they dont own the data that they point to, sof if the week pointer goes out of scope, the memory that they point to is not going to be released because they dont own the memory.
 
-8. They dont have the pointer access operator(->) or the reference operator(*).
+8. They dont have the pointer access operator(->) or the reference operator(*). You cannot use the week pointer to read or write into the data that is pointed to by the pointer. 
+
+9. So if you want to use, then there is not other choice than to turn it into a shared pointer. 
 
 ## References
 

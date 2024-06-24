@@ -13,6 +13,9 @@ int main()
 
         person_a->set_friend(person_b);
         person_b->set_friend(person_a);
+
+        std::cout << "ref count of person a : " << person_a.use_count() << std::endl;
+        std::cout << "ref count of person b : " << person_b.use_count() << std::endl;
     }
 
     std::cout << "Done " << std::endl;

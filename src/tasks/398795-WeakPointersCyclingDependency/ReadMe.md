@@ -13,7 +13,9 @@ private:
 2. Build and Run. You will see something like this.
 ```txt
 Constructor for person  Alison called.
-Constructor for person  Beth called.  
+Constructor for person  Beth called.
+ref count of person a : 2
+ref count of person b : 2
 Done
 ```
 
@@ -31,9 +33,11 @@ private:
 
 ```txt
 Constructor for person  Alison called.
-Constructor for person  Beth called.  
-Destructor for person  Beth called.   
-Destructor for person  Alison called. 
+Constructor for person  Beth called.
+ref count of person a : 1
+ref count of person b : 1
+Destructor for person  Beth called.
+Destructor for person  Alison called.
 Done
 ```
 
@@ -49,3 +53,5 @@ Done
 ## References
 
 1. https://stackoverflow.com/q/15648844/1977871
+
+

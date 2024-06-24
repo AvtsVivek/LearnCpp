@@ -1,7 +1,6 @@
 #include <iostream>
 #include <memory>
 #include "dog.h"
-#include "person.h"
 
 int main()
 {

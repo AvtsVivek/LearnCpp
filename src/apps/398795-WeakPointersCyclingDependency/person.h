@@ -20,6 +20,7 @@ public:
 
 private:
     std::weak_ptr<Person> m_friend; // Initialized to nullptr
+    // std::shared_ptr<Person> m_friend;
     std::string m_name{"Unnamed"};
 };
 
