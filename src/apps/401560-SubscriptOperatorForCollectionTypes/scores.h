@@ -39,6 +39,7 @@ public:
 
 private:
     std::string m_course_name;
-    double m_scores[20]{};
+    double m_scores[20]{}; // The default is 0
+    // double m_scores[20]{7}; // The default is 7
 };
 #endif // SCORES
