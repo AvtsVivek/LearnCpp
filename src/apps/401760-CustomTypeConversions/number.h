@@ -16,14 +16,14 @@ public:
     Number() = default;
     Number(int value);
 
-    // Type conversion. Can only be done as mumber function.
-    explicit operator double() const
+    // Type conversion. Can only be done as member function.
+    operator double() const
     {
         std::cout << "Using type conversion from Number to double" << std::endl;
         return (static_cast<double>(m_wrapped_int));
     }
 
-    explicit operator Point() const
+    operator Point() const
     {
         std::cout << "Custom conversion from Number to Point" << std::endl;
         return Point(static_cast<double>(m_wrapped_int),

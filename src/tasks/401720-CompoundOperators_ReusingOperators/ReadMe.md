@@ -18,6 +18,14 @@ inline Point operator+(const Point& left , const Point& right){
 }
 ```
 
+4. Here is the quiz, 
+   1. When our type has both operator+ and operator+= overloaded, you have to implement operator+ in terms of operator+= .
+
+   2. And the answer is - Yes. You don't have to implement operator+ in terms of operator+= . It's a possibility but not the only way.
+
+
+
+
 
 ## References
 
