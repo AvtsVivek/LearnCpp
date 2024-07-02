@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/401785-StringLeftRight
+cd src/tasks/401815-StringLeftRight
 
-cd src/apps/401785-StringLeftRight
+cd src/apps/401815-StringLeftRight
 
 start .
 
