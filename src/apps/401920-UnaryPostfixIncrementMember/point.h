@@ -14,10 +14,19 @@ public:
 	{
 	}
 
+	// Prefix
 	void operator++()
 	{
 		++m_x;
 		++m_y;
+	}
+
+	// Postfix
+	Point operator++(int)
+	{
+		Point local_point(*this);
+		++(*this);
+		return local_point;
 	}
 
 	~Point() = default;
@@ -29,6 +38,7 @@ private:
 	double m_x{};
 	double m_y{};
 };
+
 
 inline std::ostream &operator<<(std::ostream &os, const Point &p)
 {
