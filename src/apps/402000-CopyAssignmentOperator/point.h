@@ -17,6 +17,8 @@ public:
 		std::cout << "Copy assignment operator called" << std::endl;
 		if(this != & right_operand){
 			delete p_data;
+			// Here a new integer object is getting created which is at a new address
+			// Then the value is getting copied. 
 			p_data = new int(*(right_operand.p_data));
 			m_x =  right_operand.m_x;
 			m_y = right_operand.m_y;

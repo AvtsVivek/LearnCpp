@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/402005-CopyAssignmentOperator
+cd src/tasks/402005-CopyAssignmentOpAndCtor
 
-cd src/apps/402005-CopyAssignmentOperator
+cd src/apps/402005-CopyAssignmentOpAndCtor
 
 start .
 

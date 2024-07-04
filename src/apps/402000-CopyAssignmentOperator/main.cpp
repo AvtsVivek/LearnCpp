@@ -10,6 +10,7 @@ int main(){
 
     std::cout << "p1 : " << p1 << std::endl;
     std::cout << "p2 : " << p2 << std::endl;
+    std::cout << "p77 : " << p77 << std::endl;
 
     std::cout << "-----" << std::endl;
 
@@ -20,6 +21,7 @@ int main(){
 
     std::cout << "p1 : " << p1 << std::endl;
     std::cout << "p2 : " << p2 << std::endl;
+    std::cout << "p77 : " << p77 << std::endl;
 
     //Change data
     p1.set_data(55);
@@ -27,9 +29,9 @@ int main(){
     std::cout << "-----------" << std::endl;
     std::cout << "p1 : " << p1 << std::endl;
     std::cout << "p2 : " << p2 << std::endl;
-   
+    std::cout << "p77 : " << p77 << std::endl;   
 
-   //
+   // 
    /*
    Point p3(30,30,30);
    Point p4 = p3;
@@ -46,7 +48,6 @@ int main(){
 
    std::cout << "Done!" << std::endl;
    */
-
     
     return 0;
 }

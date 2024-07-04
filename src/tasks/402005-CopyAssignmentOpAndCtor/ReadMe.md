@@ -27,11 +27,18 @@ Point& operator= (const Point& right_operand){
 }
 ```
 
-   1. operator=
-   2. right_operand is what you want the as the second parameter
-   3. The copy assignment operator can only be done as a member function. Cpp compiler does not allow the operator method as a non member.
-   4. this != & right_operand. Here we ensure what we have on left is different from what we have on right.
+6. So in summary this examples shows two different kinds of assignemnts.
 
+```cpp
+Point p4 = p3;
+Point p5(p3);
+``` 
+
+```cpp
+p1 = p2 = p77;
+``` 
+
+7. The first uses the copy ctor, and the second one uses the copy operator. In the first we are constructing objects. In the second we are assigning to already created objects. 
 
 ## References
 
