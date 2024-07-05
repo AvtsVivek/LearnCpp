@@ -23,7 +23,7 @@ std::cout << "15 < n2 : " << (15 < n2) << std::endl;
 
 6. So we need logical operators. 
 
-7. Can std::rel_ops namesspace help? The answer is no. This is because the parameter data types are different on both sides of the operator. The first parameter is an int and the second is Number.
+7. Can std::rel_ops namesspace help? The answer is no. This is because the parameter data types are different on both sides of the operator. So (15 < n2), are of differet types on both side of the '<'. The first parameter is an int and the second is Number.
 
 
 ## References
