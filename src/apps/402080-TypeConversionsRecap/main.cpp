@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 	Point p1(10,10);
     Number n1(22);
 
-    //p1 = n1;
+    p1 = n1;
     // .(1) Copy assignment operator
     // .(2) Constructor taking in a Number
     // .(3) Type conversion operator : Number -> Point
