@@ -1,7 +1,7 @@
 # Auto
 
 ## Notes
-1. 
+1. Operators defined as member functions. 
 
 
 ## References
