@@ -16,14 +16,3 @@ class Print{
 void do_something(const Print& printer){
     printer("Snow");
 }
-
-
-int main(){
-
-    Print print;
-    print("John");
-    do_something(print);
-    std::cout << print("Daniel","Gray") << std::endl;
-   
-    return 0;
-}
