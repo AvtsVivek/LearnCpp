@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/404475-LogicalImplicitConversionWorking
+cd src/tasks/404470-LogicalImplicitConversionWorking
 
-cd src/apps/404475-LogicalImplicitConversionWorking
+cd src/apps/404470-LogicalImplicitConversionWorking
 
 start .
 
