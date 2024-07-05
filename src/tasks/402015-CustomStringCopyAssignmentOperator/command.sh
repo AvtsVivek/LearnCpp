@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/402010-CopyAssignmentOperatorMethod
+cd src/tasks/402015-CustomStringCopyAssignmentOperator
 
-cd src/apps/402010-CopyAssignmentOperatorMethod
+cd src/apps/402015-CustomStringCopyAssignmentOperator
 
 start .
 
