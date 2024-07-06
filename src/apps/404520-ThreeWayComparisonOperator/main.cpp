@@ -70,9 +70,6 @@ int main(){
     std::cout << "d1 == d2 : " << (d1 == d2) << std::endl; //false
     std::cout << "d1 < d2 : " << (d1 < d2) << std::endl; //false
 
-   
-
-
-
     return 0;
 }
+

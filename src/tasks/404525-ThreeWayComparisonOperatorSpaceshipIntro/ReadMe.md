@@ -5,7 +5,7 @@
    
 2. Know the result of a comparision :>, < or == in one go!
 
-3. Spaceship operator <=>
+3. Spaceship operator <=>. This is also called as three way conditional. 
 
 4. <=> does not return an int like std::string::compare() or strcmp. But a type whose value is comparable to literal 0, not an int with a value of 0. 
 
@@ -13,7 +13,7 @@
 
 6. It returns a type whose value is comparable to literal 0, not an int whose value is 0.
 
-7. It is meant to be used by the compiler to generate other operators(>, >=, <, <=), and it is rately used in user facing code. Although it is possible to do so.
+7. It is meant to be used by the compiler to generate other operators(>, >=, <, <=), and it is rarely used in user facing code. Although it is possible to do so.
 
 8. The type of the return type describes the kind of comparision we support for out type.
 

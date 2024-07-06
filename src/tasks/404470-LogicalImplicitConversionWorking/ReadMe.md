@@ -5,7 +5,7 @@
 
 2. The `left operand` is the current object on which you are calling the operator function. So implicit conversion will not work.
 
-3. So for the implicit conversions to work, the only choice we have is to impliment the operator as `non` member global functions.
+3. So for the implicit conversions to work, the only choice we have is to impliment the operator as free standing `non` member global functions.
 
 4. Note the ctor that takes an int here is explicit. Becuase we dont want to use it in an implicit conversion for this example.
 
