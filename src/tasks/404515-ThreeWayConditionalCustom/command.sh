@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/404510-ThreeWayConditionalDefault
+cd src/tasks/404515-ThreeWayConditionalCustom
 
-cd src/apps/404510-ThreeWayConditionalDefault
+cd src/apps/404515-ThreeWayConditionalCustom
 
 start .
 
@@ -15,7 +15,7 @@ dir
 
 g++ --version
 
-# -o flag means, compile as well as link. This will not work
+# -o flag means, compile as well as link.
 g++ "-static" -o main.exe .\*.cpp
 
 # Use the following, the above would not work. cpp 20 

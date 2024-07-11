@@ -91,6 +91,9 @@ int main()
 
 13. That one line will create a default implimentation. For a given type, that default one may not be the one that we want, and so we can define our own custom implimentation. 
 
+14. The default implimentation `auto operator <=> (const Widget &) const = default;` is good enough. The compiler generates all the rest of the operators. 
+
+15. When the compiler is thus generating, it simply invokes the same space ship operator on all of the fields on the type, which is `Widget` in this case. The Widget class has two fields, i and j. So the compiler simply  invokes the same space ship operator on i and j, when its creating the compiled version of the widget class.
 
 ## References
 

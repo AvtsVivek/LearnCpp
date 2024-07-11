@@ -26,6 +26,8 @@ int main()
 
   // Weak ordering
 
+  std::cout << "Weak ordering, String comparision of Hello and HELLO " << std::endl; //
+
   std::string m1{"Hello"};
   std::string m2{"HELLO"};
 

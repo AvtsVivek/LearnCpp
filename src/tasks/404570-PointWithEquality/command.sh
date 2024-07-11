@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/404510-ThreeWayConditionalDefault
+cd src/tasks/404570-PointWithEquality
 
-cd src/apps/404510-ThreeWayConditionalDefault
+cd src/apps/404570-PointWithEquality
 
 start .
 
@@ -15,10 +15,7 @@ dir
 
 g++ --version
 
-# -o flag means, compile as well as link. This will not work
-g++ "-static" -o main.exe .\*.cpp
-
-# Use the following, the above would not work. cpp 20 
+# -o flag means, compile as well as link.
 g++ "-static" -o main.exe .\*.cpp -std=c++20
 
 dir

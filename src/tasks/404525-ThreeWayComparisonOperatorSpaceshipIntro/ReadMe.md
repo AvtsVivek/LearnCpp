@@ -7,7 +7,7 @@
 
 3. Spaceship operator <=>. This is also called as three way conditional. 
 
-4. <=> does not return an int like std::string::compare() or strcmp. But a type whose value is comparable to literal 0, not an int with a value of 0. 
+4. <=> does not return an int like std::string::compare() or strcmp. But a type whose value is comparable to literal 0, not an int with a value of 0, that is not n3, where n3 is `int n3{0};`
 
 5. The Spaceship operator <=> embodies the result of a comparison in C++ 20.
 
