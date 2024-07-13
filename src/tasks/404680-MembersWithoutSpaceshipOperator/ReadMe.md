@@ -26,9 +26,26 @@ Integer d;
 
 5. So the three way comparision operator that is present in the Item class will be deleted by the compiler becuase it cannot use it. 
 
-6. Now uncomment the following from the Integer class.
+![Error Functions](50_50_Deleted_Operator_Errors.jpg)
 
+6. Now uncomment the above from the Integer class. Then inlcude the following in the item class.
 
+```cpp
+auto operator<=>(const Item &right_operand) const = default;
+// std::strong_ordering operator<=>(const Item &right_operand) const = default;
+```
+
+This will again give error. This is beacuse,
+first, the integer still does not have three way comparision opertor. And the compiler does not know what kind of comparision we want to do with the item class, strong, weak or partial.
+
+So we need to do this instead of the above. So here now, the return type is not auto, but std::strong_ordering. 
+
+```cpp
+// auto operator<=>(const Item &right_operand) const = default;
+std::strong_ordering operator<=>(const Item &right_operand) const = default;
+```
+
+7. 
 
 ## References
 
