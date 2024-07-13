@@ -31,6 +31,10 @@ int main()
   std::string m1{"Hello"};
   std::string m2{"HELLO"};
 
+  auto string_result = (m1 <=> m2);
+
+  std::cout << "typeid(string_result).name() - (m1 <=> m2) - : " << typeid(string_result).name() << std::endl;
+
   std::cout << std::boolalpha;
   std::cout << "m1 > m2 : " << (m1 > m2) << std::endl;   //
   std::cout << "m1 == m2 : " << (m1 == m2) << std::endl; // equivalence

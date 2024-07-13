@@ -29,6 +29,12 @@
 
 11. The <=> operator will m ostly be set up as a member function, and the compiler will put in the magic necessary to make generated comparisioin operators work with implicit conversions as much as possible.
 
+12. In case of strong ordering, we are going to support equality
+
+13. In case of weak ordering, we are going to support equivalence and not absolute equality
+
+14. In case of partial ordering, we are going to support incompariable values for our type.
+
 ## References
 
 1. https://en.cppreference.com/w/cpp/utility/compare/strong_ordering
