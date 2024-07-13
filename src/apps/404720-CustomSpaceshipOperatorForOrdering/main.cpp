@@ -32,11 +32,9 @@ int main()
     std::cout << "point1 > 20.1 : " << (point1 > 20.1) << std::endl;
     std::cout << "20.1 > point1 : " << (20.1 > point1) << std::endl;
 
-    // The compier will do the following when it has to evaluate the above.
+    std::cout << " The compier will do the following when it has to evaluate the above." << std::endl;
 
-    std::cout << "20.1 > point1 : " << ((point1 <=> 20.1) < 0) << std::endl;
     std::cout << "((point1 <=> 20.1) < 0) : " << ((point1 <=> 20.1) < 0) << std::endl;
 
     return 0;
 }
-
