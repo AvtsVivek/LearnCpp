@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/404730-CustomStringOrdering
+cd src/tasks/404720-CustomSpaceshipOperatorForOrdering
 
-cd src/apps/404730-CustomStringOrdering
+cd src/apps/404720-CustomSpaceshipOperatorForOrdering
 
 start .
 
