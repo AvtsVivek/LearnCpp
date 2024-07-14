@@ -23,7 +23,7 @@ bool operator==(int n)
 
 3. Also note that the above operators need not be non member global functions, they can simply be member fucntions as well. 
 4. With spaceship operators in cpp 20, the compiler itself does a lot of magic.  
-5. In the previous example, we have seen that all the operators need to be non members free standing global functions. With these operators as members, its not possible, because we want the possibility of having an integer as left operand as below.   
+5. In the previous example, we have seen that all the operators need to be non members free standing global functions. With these operators as members, its not possible, because we want the possibility of having an integer as left operand as below. Implicit conversions would not work with left operand. 
 
 ```cpp
 std::cout << "15 > n2 : " << (15 > n2) << std::endl;
