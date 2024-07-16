@@ -3,9 +3,7 @@
 
 int main()
 {
-
     std::cout << "Here we go... " << std::endl;
-    
 
     B b;
     b.set_values(10, 20, 30);
