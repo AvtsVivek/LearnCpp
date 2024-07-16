@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/406505-PublicInheritance
+cd src/tasks/406500-FirstTryOnInheritance
 
-cd src/apps/406505-PublicInheritance
+cd src/apps/406500-FirstTryOnInheritance
 
 start .
 

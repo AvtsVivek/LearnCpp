@@ -4,6 +4,9 @@
 int main()
 {
 
+    std::cout << "typeid(Person).name() : " << typeid(Person).name() << std::endl;
+    std::cout << "typeid(Player).name() : " << typeid(Player).name() << std::endl;
+
     Player player1("Basketball");
     player1.set_first_name("John");
     player1.set_last_name("Snow");
@@ -14,6 +17,7 @@ int main()
     std::cout << "player1.get_game() : " << player1.get_game() << std::endl;
 
     Person person = player1;
+
     std::cout << "typeid(person).name() : " << typeid(person).name() << std::endl;
 
     // The following will give error.
