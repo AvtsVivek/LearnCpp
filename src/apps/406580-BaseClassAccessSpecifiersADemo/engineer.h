@@ -1,6 +1,7 @@
 #ifndef ENGINEER_H
 #define ENGINEER_H
 #include "person.h"
+#include <iostream>
 
 // Engineer is doing private inheritance
 
@@ -17,6 +18,7 @@ public:
         m_full_name = "John Snow"; // OK
         m_age = 23;                // OK
         // m_address = "897-78-723"; Compiler error
+        std::cout << "Engineer " << m_full_name <<  " of age " << m_age << " is building." << std::endl;
     }
 
 private:

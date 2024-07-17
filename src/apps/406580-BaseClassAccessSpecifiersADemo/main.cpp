@@ -15,7 +15,9 @@ int main()
     Player player;
     player.m_full_name = "Samuel Jackson";
     // player.m_age = 55; Compier error
-    // player.m_address = "2i892317322"; Compiler
+    // player.m_address = "2i892317322"; Compiler error.
+
+    player.play();
 
     std::cout << "------------------" << std::endl;
 
@@ -23,11 +25,13 @@ int main()
     // nurse1.m_full_name = "Davy Johnes";Compiler error
     // nurse1.m_age = 51; // Compiler error
 
+    nurse1.treat_unwell_person();
+
     std::cout << "---------------" << std::endl;
     Engineer engineer1;
     // engineer1.m_full_name = "Olivier Godson"; // Compiler error
     // engineer1.m_age = 55; // Compiler error
     // engineer1.m_address = "dsakfd;aslfjd;laskf"; // Compiler error
-
+    engineer1.build_something();
     return 0;
 }

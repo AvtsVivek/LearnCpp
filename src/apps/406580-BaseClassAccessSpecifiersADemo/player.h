@@ -1,6 +1,6 @@
 #ifndef PLAYER_H
 #define PLAYER_H
-
+#include <iostream>
 #include "person.h"
 
 // Player will do public inheritance from Person
@@ -19,6 +19,7 @@ public:
         m_full_name = "John Snow"; // OK
         m_age = 55;                // OK
         // m_address = "DSAKFD;ASKFJ;DKAS"; Compiler error
+        std::cout << "player " << m_full_name << " of age " << m_age << " is playing " << std::endl;
     }
 
 private:
