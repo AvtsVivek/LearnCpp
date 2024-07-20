@@ -11,7 +11,7 @@
 
 4. C++ is weired. It gives a back door entry in this case.
 
-5. You need to use the using keyword as follows.
+5. You need to use the `using` keyword as follows.
 
 ```cpp
 public : 
@@ -29,6 +29,7 @@ int get_contract_count() const{
 ```
 
 6. What we have done above is to resurrect those members. 
+7. This is all something that is to be avoided, this only make things complicated, hard and difficult to purse. 
 
 ## References
 

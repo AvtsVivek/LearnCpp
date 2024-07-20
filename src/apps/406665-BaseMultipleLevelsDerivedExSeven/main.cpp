@@ -1,0 +1,12 @@
+#include <iostream>
+#include "BaseDerived.h"
+
+int main()
+{
+
+    Derived_1 d1;
+    d1.set_values(1, 2, 3, 4);
+    d1.print();
+
+    return 0;
+}

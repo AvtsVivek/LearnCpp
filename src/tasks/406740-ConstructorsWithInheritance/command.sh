@@ -23,3 +23,7 @@ dir
 .\main.exe
 
 
+# Clean up to start again.
+get-childitem -path . -file -recurse -include ('*.exe', '*.pdb', '*.ilk', '*.obj', '*.dll', '*.exp', '*.lib', '*.o') | Remove-Item
+
+dir
