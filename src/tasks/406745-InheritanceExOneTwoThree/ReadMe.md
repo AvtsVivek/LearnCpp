@@ -1,7 +1,7 @@
 # Auto
 
 ## Notes
-1. 
+1. This is an exercise. 
 
 
 ## References
