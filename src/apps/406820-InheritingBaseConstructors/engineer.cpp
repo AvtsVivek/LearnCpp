@@ -8,13 +8,8 @@ Engineer::Engineer()
     std::cout << "Default constructor for Engineer called..." << std::endl;
 }
 
-
-
-
-
 Engineer::Engineer(const Engineer& source)
-     : Person(source)
-        , contract_count(source.contract_count)
+     : Person(source), contract_count(source.contract_count)
 {
     std::cout << "Custom copy constructor for Engineer called..." << std::endl;
 }
