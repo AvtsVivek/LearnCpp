@@ -1,7 +1,7 @@
 # Auto
 
 ## Notes
-1. 
+1. In there we mark the methods as `virtual`
 
 
 ## References
