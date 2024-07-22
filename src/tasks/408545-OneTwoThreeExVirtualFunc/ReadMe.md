@@ -1,8 +1,7 @@
 # Auto
 
 ## Notes
-1. All you need is a `virtual` function in the base class. 
-
+1. In there we mark the methods as `virtual`. 
 2. This is also called late binding. 
 
 
