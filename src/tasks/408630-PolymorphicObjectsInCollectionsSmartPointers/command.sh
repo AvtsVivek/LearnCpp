@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/408620-PolymorphicObjectsStoredInarray
+cd src/tasks/408630-PolymorphicObjectsInCollectionsSmartPointers
 
-cd src/apps/408620-PolymorphicObjectsStoredInarray
+cd src/apps/408630-PolymorphicObjectsInCollectionsSmartPointers
 
 start .
 

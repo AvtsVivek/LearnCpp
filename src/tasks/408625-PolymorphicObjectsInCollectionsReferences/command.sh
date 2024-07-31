@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/408620-PolymorphicObjectsStoredInCollections
+cd src/tasks/408625-PolymorphicObjectsInCollectionsReferences
 
-cd src/apps/408620-PolymorphicObjectsStoredInCollections
+cd src/apps/408625-PolymorphicObjectsInCollectionsReferences
 
 start .
 
@@ -21,5 +21,4 @@ g++ "-static" -o main.exe .\*.cpp
 dir
 
 .\main.exe
-
 

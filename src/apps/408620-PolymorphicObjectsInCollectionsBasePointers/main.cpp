@@ -22,9 +22,11 @@ int main()
 
     for (Shape &s : shapes1)
     {
-        std::cout << "sizeof (object) : " << sizeof(s) << ", s.draw(): ";
-        s.draw();
+        std::cout << "sizeof (object) : " << sizeof(s) << std::endl;
+        s.draw(); //
     }
+
+
 
     return 0;
 }
