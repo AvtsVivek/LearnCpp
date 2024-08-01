@@ -8,4 +8,3 @@ Animal::Animal(std::string_view description)
 Animal::~Animal()
 {
 }
-
