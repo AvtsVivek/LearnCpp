@@ -17,4 +17,3 @@ Shape::~Shape()
 {
     --m_count;
 }
-
