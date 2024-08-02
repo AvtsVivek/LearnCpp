@@ -21,11 +21,12 @@ int main()
 
 	Base *b_ptr3 = &b3;
 	Base *b_ptr4 = &d4;
-	
+
 	b_ptr3->print();
 	std::cout << "\n";
 	b_ptr4->print();
 
+	std::cout << std::endl << " ----------- "  << std::endl;
 
 	return 0;
 }
