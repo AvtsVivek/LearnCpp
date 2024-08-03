@@ -2,6 +2,7 @@
 
 ## Notes
 1. Performs compile-time assertion checking.
+2. Introduces `static_assert`
 
 
 ## References
