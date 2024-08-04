@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/411500-TryCatchBlocks
+cd src/tasks/411500-DevideByZeroException
 
-cd src/apps/411500-TryCatchBlocks
+cd src/apps/411500-DevideByZeroException
 
 start .
 

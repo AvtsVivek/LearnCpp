@@ -12,7 +12,7 @@ Something went wrong. Exception thrown : 0
 END.
 ```
 
-
+2. Here we are not leaking the memory.
 
 ## References
 
