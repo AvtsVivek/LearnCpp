@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/411540-TheNeedForExceptions
+cd src/tasks/411540-FunctionExceptions
 
-cd src/apps/411540-TheNeedForExceptions
+cd src/apps/411540-FunctionExceptions
 
 start .
 
