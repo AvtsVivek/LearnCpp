@@ -21,3 +21,4 @@ g++ "-static" -o main.exe .\*.cpp
 dir
 
 .\main.exe
+
