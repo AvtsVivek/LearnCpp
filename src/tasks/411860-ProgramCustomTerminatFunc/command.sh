@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/411860-ProgramCustomTermimation
+cd src/tasks/411860-ProgramCustomTerminatFunc
 
-cd src/apps/411860-ProgramCustomTermimation
+cd src/apps/411860-ProgramCustomTerminatFunc
 
 start .
 

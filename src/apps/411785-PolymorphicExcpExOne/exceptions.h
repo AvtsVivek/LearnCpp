@@ -1,8 +1,6 @@
-#ifndef OUR_EXCEPTIONS_H
-#define OUR_EXCEPTIONS_H
+#include <iostream>
 
 #include <string>
-
 class SomethingIsWrong
 {
 public:
@@ -34,5 +32,3 @@ public:
     CriticalError(const std::string &s) : SmallError(s) {}
     virtual std::string what() const override { return m_message + " Red"; }
 };
-
-#endif // OUR_EXCEPTIONS_H
