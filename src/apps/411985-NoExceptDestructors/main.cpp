@@ -7,7 +7,7 @@ public:
     {
         std::cout << "From Item ctro..." << std::endl;
     }
-    ~Item()
+    ~Item() noexcept(false)
     {
         // try
         // {

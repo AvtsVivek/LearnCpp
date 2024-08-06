@@ -1,18 +1,22 @@
 # Auto
 
 ## Notes
-1. Class destructors have `noexcept` attached to them by default. 
-2. All destructors are `noexcept` by default. 
-3. If you try to propagate an exception out of the destructor, it will terminate or crash the program. 
+1. Demos `~Item() noexcept(false)`
 
 ```cpp
-class Item{
-public : 
-    Item(){}
-    ~Item()  {
+class Item
+{
+public:
+    Item()
+    {
+        std::cout << "From Item ctro..." << std::endl;
+    }
+    ~Item() noexcept(false)
+    {
+        std::cout << "From Item destructor ... about to throw .. " << std::endl;
         throw 0;
     }
-}
+};
 ```
 
 4. But if you want to alter it do the following.

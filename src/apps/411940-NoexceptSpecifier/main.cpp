@@ -15,7 +15,7 @@ public:
         catch (int ex)
         {
             std::cout << "Handling exception in Item::do_something_in_class" << std::endl;
-            // throw; // Rethrowing in noexcept function/method will terminate program
+            throw; // Rethrowing in noexcept function/method will terminate program
         }
     }
 
