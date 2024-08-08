@@ -55,13 +55,13 @@ int main()
 
         // We know that the thrown exception contains a DivideByZeroException
         // part do ws can downcast safely and call non virtual functions
-        /*
+        
         DivideByZeroException * d_z = dynamic_cast<DivideByZeroException*> (&ex);
         if(d_z){
             std::cout<< ex.what() << ": dividing " << d_z->get_a() <<
                 " by "<<  d_z->get_b() << std::endl;
         }
-        */
+        
 
         std::cout << ex.what() << std::endl;
     }
