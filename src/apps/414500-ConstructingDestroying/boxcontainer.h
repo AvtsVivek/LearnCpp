@@ -26,7 +26,7 @@ public:
 	// show a proper way to store in data starting from the next lecture
 	void dummy_initialize()
 	{
-
+		std::cout << "Initializing... " << std::endl;
 		// Put in 10 items
 		for (size_t i{}; i < 10; ++i)
 		{
