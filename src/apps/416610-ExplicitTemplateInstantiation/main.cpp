@@ -260,3 +260,8 @@ void BoxContainer<T, maximum>::operator=(const BoxContainer<T, maximum> &source)
 // Definitions moved in the header
 
 #endif // BOX_CONTAINER_H
+
+int main()
+{
+	return 0;
+}
