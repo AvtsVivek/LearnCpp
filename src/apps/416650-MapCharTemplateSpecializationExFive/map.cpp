@@ -1,5 +1,4 @@
-//map.cpp
+// map.cpp
 
 #include <cstring>
 #include "map.h"
-
