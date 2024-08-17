@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/416660-TemplateSpecializationWithSelectMemberFunctions
+cd src/tasks/416670-TemplateSpecializationWithSelectMemberFuncInCpp
 
-cd src/apps/416660-TemplateSpecializationWithSelectMemberFunctions
+cd src/apps/416670-TemplateSpecializationWithSelectMemberFuncInCpp
 
 start .
 
