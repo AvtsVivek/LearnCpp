@@ -16,12 +16,8 @@ class BoxContainer
 	//Good explanation on templates and friends : 
 	//		: https://isocpp.org/wiki/faq/templates#template-friends
 	
-	//The problem
-	//friend std::ostream& operator<< (std::ostream&, const BoxContainer<T>&);
-
-	//Either of these solutions will need the friend function template predeclared. More info in the shared isocpp link.
-	//friend std::ostream& operator<< <> (std::ostream&, const BoxContainer<T>&);
-	//friend std::ostream& operator<< <T> (std::ostream&, const BoxContainer<T>&);
+	//The following solution will need the friend function template predeclared. More info in the shared isocpp link.
+	friend std::ostream& operator<< <> (std::ostream&, const BoxContainer<T>&);
 	
 	static const size_t DEFAULT_CAPACITY = 5;  
 	static const size_t EXPAND_STEPS = 5;
