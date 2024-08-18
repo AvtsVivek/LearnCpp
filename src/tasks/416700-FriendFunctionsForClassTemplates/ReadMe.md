@@ -11,7 +11,9 @@
 
 3. Friend functions that take a parameter(or more) of our template class. The goal is so that we are able to model on aoperator << for our template class.
 
-4. He is using the term [private parts](https://www.udemy.com/course/the-modern-cpp-20-masterclass/learn/lecture/24464896#overview) at 1:55 
+4. He is using the term [private parts](https://www.udemy.com/course/the-modern-cpp-20-masterclass/learn/lecture/24464896#overview) at 1:55. This term should not be used, instead private members should be used.
+
+5. Here the function as well as class is a template. 
 
 ## References
 
