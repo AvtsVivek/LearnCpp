@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/416746-OutputStreamInsertionOperator
+cd src/tasks/416748-OutputStreamInsertionOperatorForMap
 
-cd src/apps/416746-OutputStreamInsertionOperator
+cd src/apps/416748-OutputStreamInsertionOperatorForMap
 
 start .
 

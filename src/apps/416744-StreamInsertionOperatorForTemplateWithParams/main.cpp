@@ -1,14 +1,17 @@
 #include <iostream>
-#include "point.h"
+#include "boxcontainer.h"
 
-int main()
-{
-    Point<int,3> point_3d;
-    point_3d.set_value(0,10);
-    point_3d.set_value(1,20);
-    point_3d.set_value(2,30);
 
-    std::cout << point_3d << std::endl;
 
+int main(){
+
+    BoxContainer<int> int_box;
+    int_box.add(1);
+    int_box.add(2);
+    int_box.add(10);
+    int_box.add(15);
+
+    std::cout << "int_box : " << int_box << std::endl;
+   
     return 0;
 }
