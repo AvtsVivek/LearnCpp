@@ -17,5 +17,5 @@
 
 ## References
 
-1. 
+1. Template code almost always goes in header files. https://stackoverflow.com/a/13025333/1977871
 
