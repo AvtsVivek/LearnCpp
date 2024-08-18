@@ -7,7 +7,7 @@
 friend std::ostream& operator<< <> (std::ostream&, const BoxContainer<T>&);
 ```
 
-2. 
+2. `inline ` does not matter. With or without `inline`, it works.
 
 ## References
 

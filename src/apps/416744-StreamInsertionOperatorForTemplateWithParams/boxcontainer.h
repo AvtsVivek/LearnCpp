@@ -25,22 +25,19 @@ public:
 	BoxContainer(const BoxContainer<T>& source);
 	~BoxContainer();
 	
-	friend std::ostream& operator<<(std::ostream& out, const BoxContainer<T>& operand)
-	{
-		out << "BoxContainer : [ size :  " << operand.m_size
-			<< ", capacity : " << operand.m_capacity << ", items : " ;
+	// friend std::ostream& operator<<(std::ostream& out, const BoxContainer<T>& operand)
+	// {
+	// 	out << "BoxContainer : [ size :  " << operand.m_size
+	// 		<< ", capacity : " << operand.m_capacity << ", items : " ;
 				
-		for(size_t i{0}; i < operand.m_size; ++i){
-			out << operand.m_items[i] << " " ;
-		}
-		out << "]";
+	// 	for(size_t i{0}; i < operand.m_size; ++i){
+	// 		out << operand.m_items[i] << " " ;
+	// 	}
+	// 	out << "]";
 		
-		return out;
-	}
+	// 	return out;
+	// }
 
-
-	
-	
 
 	// Helper getter methods
 	/*
@@ -73,29 +70,25 @@ template <typename T>
 BoxContainer<T> operator +(const BoxContainer<T>& left, const BoxContainer<T>& right);
 
 
-/*
-template < typename T>
-inline std::ostream& operator<<(std::ostream& out, const BoxContainer<T>& operand){
+// template < typename T>
+// inline std::ostream& operator<<(std::ostream& out, const BoxContainer<T>& operand){
     
-	out << "BoxContainer : [ size :  " << operand.size()
-		<< ", capacity : " << operand.capacity() << ", items : " ;
+// 	out << "BoxContainer : [ size :  " << operand.size()
+// 		<< ", capacity : " << operand.capacity() << ", items : " ;
 			
-	for(size_t i{0}; i < operand.size(); ++i){
-		out << operand.get_item(i) << " " ;
-	}
-	out << "]";
+// 	for(size_t i{0}; i < operand.size(); ++i){
+// 		out << operand.get_item(i) << " " ;
+// 	}
+// 	out << "]";
     
-    return out;
-}
-*/
-
-
+//     return out;
+// }
 
 
 // definition
-/*
+
 template<typename T>
-std::ostream& operator<<(std::ostream& out, const BoxContainer<T>& operand)
+inline std::ostream& operator<<(std::ostream& out, const BoxContainer<T>& operand)
 {
 	out << "BoxContainer : [ size :  " << operand.m_size
 		<< ", capacity : " << operand.m_capacity << ", items : " ;
@@ -107,7 +100,7 @@ std::ostream& operator<<(std::ostream& out, const BoxContainer<T>& operand)
     
     return out;
 }
-*/
+
 
 
 
