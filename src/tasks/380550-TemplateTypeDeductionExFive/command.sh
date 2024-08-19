@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/380540-TemplateTypeDeductionAndExplicitArguments
+cd src/tasks/380550-TemplateTypeDeductionExFive
 
-cd src/apps/380540-TemplateTypeDeductionAndExplicitArguments
+cd src/apps/380550-TemplateTypeDeductionExFive
 
 start .
 
