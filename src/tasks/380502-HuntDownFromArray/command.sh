@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/380500-TryingOutFunctionTemplates
+cd src/tasks/380502-HuntDownFromArray
 
-cd src/apps/380500-TryingOutFunctionTemplates
+cd src/apps/380502-HuntDownFromArray
 
 dir
 
