@@ -1,7 +1,9 @@
 #include <iostream>
 
-template <typename T> const T &maximum_by_ref(const T &a, const T &b); // Declaration
-template <typename T> T maximum_by_val(T a, T b); // Declaration
+template <typename T>
+const T &maximum_by_ref(const T &a, const T &b); // Declaration
+template <typename T>
+T maximum_by_val(T a, T b); // Declaration
 
 int main()
 {
@@ -9,9 +11,10 @@ int main()
     double a{23.5};
     double b{51.2};
 
-
     std::cout << "Out - &a: " << &a << std::endl; // 0x111abc
     auto result_by_ref = maximum_by_ref(a, b);
+
+    std::cout << "--------------- " << std::endl;
 
     std::cout << "Out - &a: " << &a << std::endl; // 0x111abc
     auto result_by_val = maximum_by_val(a, b);
@@ -26,15 +29,17 @@ int main()
 }
 
 // Definition
-template <typename T> const T &maximum_by_ref(const T &a, const T &b)
+template <typename T>
+const T &maximum_by_ref(const T &a, const T &b)
 {
     std::cout << "In - &a: " << &a << std::endl; // // 0x111abc
     return (a > b) ? a : b;
 }
 
 // Definition
-template <typename T> T maximum_by_val(T a, T b){
+template <typename T>
+T maximum_by_val(T a, T b)
+{
     std::cout << "In - &a: " << &a << std::endl; // // 0x111abc
-    return (a > b) ? a : b ;
+    return (a > b) ? a : b;
 }
-

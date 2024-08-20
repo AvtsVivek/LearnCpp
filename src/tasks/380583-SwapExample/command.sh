@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/388780-InitializerListConstructors
+cd src/tasks/380583-SwapExample
 
-cd src/apps/388780-InitializerListConstructors
+cd src/apps/380583-SwapExample
 
 start .
 
