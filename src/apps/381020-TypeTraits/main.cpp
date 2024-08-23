@@ -12,15 +12,26 @@ int main()
 {
 
     std::cout << std::boolalpha;
+
+    std::cout << "-------------" << std::endl;
+
     std::cout << "std::is_integral<int>::value : " << std::is_integral<int>::value << std::endl;
     std::cout << "std::is_floating_point<int>::value : " << std::is_floating_point<int>::value << std::endl;
+
+    std::cout << "-------------" << std::endl;
+
+    std::cout << "std::is_integral<double>::value : " << std::is_integral<double>::value << std::endl;
 
     std::cout << "-------------" << std::endl;
 
     std::cout << "std::is_integral_v<int> : " << std::is_integral_v<int> << std::endl;
     std::cout << "std::is_floating_point_v<int> : " << std::is_floating_point_v<int> << std::endl;
 
+    std::cout << "-------------" << std::endl;
     int a_int{45};
+    // ERROR: have to pass in a type, not a variable like a
+    // std::cout << "std::is_integral<int> : " << std::is_integral<a_int> << std::endl; 
+
 
     print_number(a_int); // Since a is int, this will give no error.
 

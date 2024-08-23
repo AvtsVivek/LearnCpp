@@ -27,5 +27,9 @@ int main()
 
     func(12);
 
+    func(12.5);
+
+    
+
     return 0;
 }

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/381020-TypeTraits
+cd src/tasks/381015-StaticAssertsIntro
 
-cd src/apps/381020-TypeTraits
+cd src/apps/381015-StaticAssertsIntro
 
 start .
 
@@ -20,6 +20,4 @@ g++ "-static" -o main.exe .\*.cpp
 dir
 
 .\main.exe
-
-
 
