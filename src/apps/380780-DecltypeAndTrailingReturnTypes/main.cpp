@@ -7,7 +7,6 @@ auto maximum(T a, P b) -> decltype((a > b) ? a : b);
 int main()
 {
 
-    // declytpe
     int a{9};
     double b{15.8};
 
@@ -45,3 +44,4 @@ auto maximum(T a, P b) -> decltype((a > b) ? a : b)
 {
     return (a > b) ? a : b;
 }
+
