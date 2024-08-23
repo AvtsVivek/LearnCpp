@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/380775-DecltypeIntro
+cd src/tasks/380770-DecltypeIntro
 
-cd src/apps/380775-DecltypeIntro
+cd src/apps/380770-DecltypeIntro
 
 start .
 
