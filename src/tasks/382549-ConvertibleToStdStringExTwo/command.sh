@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/382660-ConceptsAndAuto
+cd src/tasks/382549-ConvertibleToStdStringExTwo
 
-cd src/apps/382660-ConceptsAndAuto
+cd src/apps/382549-ConvertibleToStdStringExTwo
 
 start .
 

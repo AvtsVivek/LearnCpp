@@ -11,6 +11,11 @@ std::integral auto add(std::integral auto a, std::integral auto b)
 int main()
 {
 
+    // The following fails.
+    std::floating_point auto x = add(5, 8);
+
+    // Here we go...
+
     std::floating_point auto x = add(5, 8);
 
     return 0;

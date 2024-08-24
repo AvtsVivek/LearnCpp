@@ -1,15 +1,16 @@
 
 cd ../../..
 
-cd src/tasks/382660-ConceptsAndAuto
+cd src/tasks/382626-ConvertibleToStdStringExTwo
 
-cd src/apps/382660-ConceptsAndAuto
+cd src/apps/382626-ConvertibleToStdStringExTwo
 
 start .
 
 code .
 
 code . -r
+
 
 g++ --version
 
@@ -22,5 +23,4 @@ g++ "-static" -o main.exe .\*.cpp -std=c++20
 dir
 
 .\main.exe
-
 
