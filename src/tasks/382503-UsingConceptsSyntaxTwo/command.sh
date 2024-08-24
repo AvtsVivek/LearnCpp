@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/382500-UsingConcepts
+cd src/tasks/382503-UsingConceptsSyntaxTwo
 
-cd src/apps/382500-UsingConcepts
+cd src/apps/382503-UsingConceptsSyntaxTwo
 
 start .
 
