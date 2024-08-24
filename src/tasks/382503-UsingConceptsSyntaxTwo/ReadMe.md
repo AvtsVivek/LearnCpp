@@ -10,11 +10,23 @@
    1. Standard Built in 
    2. Custom
 
-7. 
+7. The following gives compile error because its called with `double`. But this works with `int` and `char`.
+
+```cpp
+double c_0{11.1};
+double c_1{1.9};
+auto result_c = add(c_0, c_1);
+std::cout << "result_c : " << result_c << std::endl;
+```
+
+8. 
 
 ## References
 
 1. https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters
 2. https://en.cppreference.com/w/cpp/language/constraints
+3. https://stackoverflow.com/a/69796825/1977871
+4. https://stackoverflow.com/q/78908274/1977871
+5. 
 
 
