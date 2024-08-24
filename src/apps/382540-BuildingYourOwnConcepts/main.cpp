@@ -3,14 +3,14 @@
 #include <concepts>
 
 // Syntax1
-/*
+
 template <typename T>
 concept MyIntegral = std::is_integral_v<T>;
 
-MyIntegral auto add( MyIntegral auto a, MyIntegral auto b) {
+MyIntegral auto add(MyIntegral auto a, MyIntegral auto b)
+{
     return a + b;
 }
-*/
 
 template <typename T>
 concept Multipliable = requires(T a, T b) {
@@ -24,8 +24,7 @@ concept Incrementable = requires(T a) {
     a++;
 };
 
-template <typename T>
-    requires Incrementable<T>
+template <typename T> requires Incrementable<T>
 T add(T a, T b)
 {
     return a + b;
@@ -37,10 +36,14 @@ int main()
     double x{6};
     double y{7};
 
-    // std::string x{"Hello"};
-    // std::string y{"World"};
-
     add(x, y);
+
+    std::string a{"Hello"};
+    std::string b{"World"};
+
+    // The following will give compilation error.
+    // Strings are integeral.
+    // add(a, b);
 
     std::cout << "Done!" << std::endl;
 
