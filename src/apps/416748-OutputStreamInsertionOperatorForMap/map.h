@@ -16,9 +16,8 @@ private:
 
 public:
     Map(T key, P value)
-        : m_key(key), m_value(value)
-    {
-    };
+        : m_key(key), m_value(value) {
+          };
 };
 
 template <typename T, typename P>
