@@ -10,7 +10,7 @@
 
 5. RValues are transient or temporary in nature, they only exist for a short time, and are quickly destroyed by the system when no longer needed. 
 
-6. 
+6. rvalues are ment to live for a very short time in memory. By the time you try to use their addresses, chances are the actual rvalue has been cleaned up from memory and you will be using pointers to nowhere. A perfect recipe for all sorts of crashes and undefined behaviors.
 
 ![One](50_50_Box_Container.jpg)
 
