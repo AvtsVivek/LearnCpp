@@ -34,7 +34,7 @@ int main(){
     //int * ptr1 = &(x + y); // Compiler error. The error clearly says what's wrong here
     //int * ptr2 = &add(10.1,20.2); // Compiler error. Can only take address of an lvalue, 
                                     // add(10.1 , 20.2) evaluates to an rvalue.
-    //int* ptr3 = &45; // Compiler error.
+    //int* ptr3 = &45; // Compiler error. Literals are supposed to be assigned to somehting. So these are RValues.
     int* ptr4 = &x; //OK. x is an lvalue, so we can grab its address
    
     return 0;
