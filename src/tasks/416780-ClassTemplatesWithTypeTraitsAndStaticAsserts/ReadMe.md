@@ -1,7 +1,8 @@
 # Auto
 
 ## Notes
-1. The following gives compiler error.
+1. Need to include type traits in the header. 
+2. The following gives compiler error. Thats because we have static asserts.
 
 ```cpp
 // Point<std::string> point_string("Hello", "World");

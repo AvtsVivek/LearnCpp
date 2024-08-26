@@ -49,8 +49,6 @@ int main(){
 	//static_assert(std::totally_ordered<int>);
 	//static_assert(std::totally_ordered<Point<int>>); // Needs all comparison operators
 
-
-
 	//Others
 	//std::same_as
 	//static_assert(std::same_as<int,int>); // Success

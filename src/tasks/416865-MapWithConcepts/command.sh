@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/416782-TypeTraitsAndStaticAssertsMapEx
+cd src/tasks/416865-MapWithConcepts
 
-cd src/apps/416782-TypeTraitsAndStaticAssertsMapEx
+cd src/apps/416865-MapWithConcepts
 
 start .
 
