@@ -74,6 +74,8 @@ std::ostream &operator<<(std::ostream &out, const BoxContainer<T> &operand)
 template <typename T>
 BoxContainer<T>::BoxContainer(size_t capacity)
 {
+	std::cout << "BoxContainer constructor called with capicity: "
+			  << capacity << std::endl;
 	m_items = new T[capacity];
 	m_capacity = capacity;
 	m_size = 0;

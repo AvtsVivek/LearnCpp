@@ -19,11 +19,12 @@ BoxContainer<int> make_box(int modifier)
 int main()
 {
 
-	BoxContainer<int> box_array[2];
+	BoxContainer<int> box_array[1];
 
+	std::cout << "Size of array: " << std::size(box_array) << std::endl;
 	std::cout << "--------" << std::endl;
 
-	for (size_t i{0}; i < 2; ++i)
+	for (size_t i{0}; i < std::size(box_array); ++i)
 	{
 		box_array[i] = make_box(i + 1); // Move assignment operator called
 	}
