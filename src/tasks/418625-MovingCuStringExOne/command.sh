@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/418660-MovingLvaluesWithStdMove
+cd src/tasks/418625-MovingCuStringExOne
 
-cd src/apps/418660-MovingLvaluesWithStdMove
+cd src/apps/418625-MovingCuStringExOne
 
 start .
 
