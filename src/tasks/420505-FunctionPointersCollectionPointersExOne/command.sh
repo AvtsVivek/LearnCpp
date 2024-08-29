@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/420500-FunctionPointers
+cd src/tasks/420505-FunctionPointersCollectionPointersExOne
 
-cd src/apps/420500-FunctionPointers
+cd src/apps/420505-FunctionPointersCollectionPointersExOne
 
 start .
 
