@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/420540-CallbackFunctions
+cd src/tasks/420545-ModifyScoresExOne
 
-cd src/apps/420540-CallbackFunctions
+cd src/apps/420545-ModifyScoresExOne
 
 start .
 
