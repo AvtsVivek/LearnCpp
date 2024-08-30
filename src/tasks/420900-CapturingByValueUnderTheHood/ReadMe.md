@@ -7,6 +7,8 @@
 
 3. 
 
+![cpp insights](50_50_Lambda.jpg)
+
 
 ## References
 
