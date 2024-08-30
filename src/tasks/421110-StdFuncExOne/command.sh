@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/420980-MixinCapturing
+cd src/tasks/421110-StdFuncExOne
 
-cd src/apps/420980-MixinCapturing
+cd src/apps/421110-StdFuncExOne
 
 start .
 
@@ -19,7 +19,7 @@ g++ --version
 g++ "-static" -o main.exe .\*.cpp
 
 # Try the following, if the above does not work.
-tr
+g++ "-static" -o main.exe .\*.cpp -std=c++20
 
 dir
 
