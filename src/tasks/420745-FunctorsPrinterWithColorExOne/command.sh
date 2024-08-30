@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/420740-FunctorsWithParameters
+cd src/tasks/420745-FunctorsPrinterWithColorExOne
 
-cd src/apps/420740-FunctorsWithParameters
+cd src/apps/420745-FunctorsPrinterWithColorExOne
 
 start .
 
