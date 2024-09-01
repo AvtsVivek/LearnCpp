@@ -26,6 +26,8 @@ int main()
     std::vector<int>::iterator it_begin = ints1.begin();
     std::vector<int>::iterator it_end = ints1.end();
 
+    std::cout << "typeid(it_begin).name() : " << typeid(it_begin).name() << std::endl;
+
     std::cout << std::boolalpha;
     std::cout << "first elt : " << *it_begin << std::endl;
     std::cout << "it == end_it : " << (it_begin == it_end) << std::endl;
