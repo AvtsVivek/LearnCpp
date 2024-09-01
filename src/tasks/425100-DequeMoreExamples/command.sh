@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/425500-Deque
+cd src/tasks/425100-DequeMoreExamples
 
-cd src/apps/425500-Deque
+cd src/apps/425100-DequeMoreExamples
 
 start .
 
