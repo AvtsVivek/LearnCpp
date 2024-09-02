@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/427660-Copy
+cd src/tasks/425585-ListMoreExamples
 
-cd src/apps/427660-Copy
+cd src/apps/425585-ListMoreExamples
 
 start .
 
