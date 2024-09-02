@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/425540-ForwardList
+cd src/tasks/425545-ForwardListMoreExamples
 
-cd src/apps/425540-ForwardList
+cd src/apps/425545-ForwardListMoreExamples
 
 start .
 
