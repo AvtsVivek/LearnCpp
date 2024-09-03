@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/425620-Vector
+cd src/tasks/425660-ArrayRevisited
 
-cd src/apps/425620-Vector
+cd src/apps/425660-ArrayRevisited
 
 start .
 
@@ -20,6 +20,7 @@ g++ "-static" -o main.exe .\*.cpp
 
 # Try the following, if the above does not work.
 g++ "-static" -o main.exe .\*.cpp -std=c++20
+
 
 dir
 

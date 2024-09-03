@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/425660-Array
+cd src/tasks/425590-PrintPositionsExOne
 
-cd src/apps/425660-Array
+cd src/apps/425590-PrintPositionsExOne
 
 start .
 
@@ -20,7 +20,6 @@ g++ "-static" -o main.exe .\*.cpp
 
 # Try the following, if the above does not work.
 g++ "-static" -o main.exe .\*.cpp -std=c++20
-
 
 dir
 
