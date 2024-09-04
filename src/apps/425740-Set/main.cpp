@@ -229,7 +229,7 @@ int main()
     std::cout << std::endl;
     std::cout << "change comparator : " << std::endl;
 
-    std::set<int> numbers1 {11,16,2,9,12,15,6,15,2};  // Use default functor (std::less)
+    std::set<int> numbers1{11, 16, 2, 9, 12, 15, 6, 15, 2}; // Use default functor (std::less)
     // std::set<int,std::less<int>> numbers1 {11,16,2,9,12,15,6,15,2};  // Built in functor
     // std::set<int,std::greater<int>> numbers1 {11,16,2,9,12,15,6,15,2}; // Built in functor
     // std::set<int,IntComparator> numbers1 {11,16,2,9,12,15,6,15,2}; // Use Custom functor
