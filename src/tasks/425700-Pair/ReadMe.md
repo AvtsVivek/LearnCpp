@@ -9,6 +9,13 @@
 2. `std::pair` is used to store two data components as a single entity. Key value paris.
    1. It provides facilities to manipulate the components through the first and second data members. 
 
+3. Stream output operator is not available. The following gives error.
+
+```cpp
+std::cout << "pair1 : " << pair1 << std::endl;
+```
+
+4. 
 
 ## References
 

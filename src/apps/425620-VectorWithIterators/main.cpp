@@ -81,7 +81,8 @@ int main()
     std::cout << " numbers[3] (with underlying data array) : " << (*(numbers.data() + 3)) << std::endl;
 
     // Code2 : Iterators
-    std::cout <<  std::endl << "111111111111111111111111111" << std::endl;
+    std::cout << std::endl
+              << "111111111111111111111111111" << std::endl;
 
     std::cout << std::endl;
     std::cout << "Iterators : " << std::endl;
@@ -108,7 +109,8 @@ int main()
     }
     std::cout << " ]" << std::endl;
 
-    std::cout <<  std::endl << "222222222222222222222222" << std::endl;
+    std::cout << std::endl
+              << "222222222222222222222222" << std::endl;
 
     // Code3 : Capacity
 
@@ -140,7 +142,8 @@ int main()
     std::cout << " numbers size : " << numbers.size() << std::endl;
     std::cout << " numbers capacity : " << numbers.capacity() << std::endl;
 
-    std::cout <<  std::endl << "3333333333333333333333333" << std::endl;
+    std::cout << std::endl
+              << "3333333333333333333333333" << std::endl;
 
     // Code4 : Modifier methods
 
@@ -183,7 +186,8 @@ int main()
     print_collection(numbers);
     std::cout << "*it_pos : " << *it_pos << std::endl;
 
-    std::cout <<  std::endl << "44444444444444444444444444" << std::endl;
+    std::cout << std::endl
+              << "44444444444444444444444444" << std::endl;
 
     // Emplace
     std::cout << std::endl;
@@ -228,7 +232,8 @@ int main()
 
     print_collection(items);
 
-    std::cout <<  std::endl << "55555555555555555555555555" << std::endl;
+    std::cout << std::endl
+              << "55555555555555555555555555" << std::endl;
 
     // Pop back
     std::cout << std::endl;
@@ -265,7 +270,9 @@ int main()
     std::cout << "other_items : ";
     print_collection(other_items);
 
-    std::cout << std::endl << "66666666666666666666666666" << std::endl << std::endl;
+    std::cout << std::endl
+              << "66666666666666666666666666" << std::endl
+              << std::endl;
 
     // items.swap(other_items);
     other_items.swap(items);
