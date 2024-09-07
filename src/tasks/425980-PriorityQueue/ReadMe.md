@@ -16,6 +16,13 @@ bool operator<(const Book &right_operand) const
 
 3. You can also specify a lambda or a functor. 
 
+```cpp
+auto cmp = [](int left, int right)
+{ return left < right; };
+// This uses a different constructor. Let's be honest, this syntax is weird.
+std::priority_queue<int, std::vector<int>, decltype(cmp)> numbers2(cmp);
+```
+
 ## References
 
 1. 
