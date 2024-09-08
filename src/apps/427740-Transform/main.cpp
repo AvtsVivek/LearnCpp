@@ -28,7 +28,7 @@ int main(){
     //std::transform(input.begin(),input.end(),output.begin(),[](int n){return n*2;});
 
     //std::back_inserter_iterator : appends to the back, extends capacity if necessary.
-    std::transform(input.begin(),input.end(),std::back_inserter(output),[](int n){return n*2;});
+    std::transform(input.begin(), input.end(), std::back_inserter(output),[](int n){return n*2;});
 
     print_collection(output);
     std::cout << "output size : " << output.size() << std::endl;
