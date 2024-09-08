@@ -6,5 +6,5 @@
 
 ## References
 
-1. 
+1. https://en.cppreference.com/w/cpp/algorithm/find
 
