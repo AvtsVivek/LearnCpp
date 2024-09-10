@@ -1,8 +1,7 @@
 # Auto
 
 ## Notes
-1. Here we go..
-
+1. 
 
 ## References
 
