@@ -8,6 +8,7 @@
 4. Some containers are good for some things and really bad at some other things
 5. Choosing the right container for the job is a very strong skill
 6. If you dont know before hand which container to choose, pick std::vector. This is a good starting point. 
+7. If you need the size, you need to use size() method on the collection. Find size() in the example. 
 
 ## References
 
