@@ -2,6 +2,7 @@
 
 ## Notes
 1. Some algorithms support projections. 
+
 2. Suppose, you have a class that represents a person. See the example. Naturally, you want to sort persons by a specific data member. You can write your own compare function.
 
 ```cpp
@@ -37,7 +38,11 @@ std::sort( persons, []( auto & a, auto & b ) { return a.age < b.height ; } ) ;
 std::ranges::sort( persons, {}, &Person::age ) ;
 ```
 
+6. A projection is something that you pass as a third parameter to the sort function. We can pass a lambda as well. 
+
+7. 
+
 ## References
 
-1. 
+1. https://stackoverflow.com/q/78973764/1977871
 
