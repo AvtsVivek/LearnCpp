@@ -2,8 +2,9 @@
 
 ## Notes
 
-1. 
+1. Range Adaptors. They live in std::views namespace.
 
+2. 
 
 ## References
 
