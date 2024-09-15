@@ -12,18 +12,6 @@ void print(auto view)
     std::cout << std::endl;
 }
 
-struct Student
-{
-    friend std::ostream &operator<<(std::ostream &out, const Student &s)
-    {
-        out << "Student [ name : " << s.m_name << ", age : " << s.m_age << "]";
-        return out;
-    }
-    auto operator<=>(const Student &s) const = default;
-    std::string m_name;
-    unsigned int m_age;
-};
-
 int main()
 {
 
@@ -64,6 +52,10 @@ int main()
     std::cout << "vi : ";
     print(vi);
 
+    std::cout << "The following is what you get when you pass in a predicate to a transform_view" << std::endl;
+    std::ranges::transform_view v_transformed_evens = std::ranges::transform_view(vi, evens);
+    print(v_transformed_evens);
+
     // std::ranges::take_view
     std::cout << std::endl;
     std::cout << "std::ranges::take_view : " << std::endl;
@@ -75,7 +67,8 @@ int main()
 
     // is met
     std::cout << std::endl;
-    std::cout << "std::views::take_while : " << std::endl;
+    std::cout << "std::views::take_while. Takes numbers untill a given predicate is statisfied. " << std::endl;
+    std::cout << "In the following, numbers are taken Till you get 2. " << std::endl;
     vi = {1, 11, 23, 131, 2, 3, 4, 5, 6, 7, 8, 9};
     std::ranges::take_while_view v_taken_while = std::ranges::take_while_view(vi, [](int i)
                                                                               { return (i % 2) != 0; });
@@ -86,7 +79,7 @@ int main()
 
     // std::ranges::drop_view : drop n first elements
     std::cout << std::endl;
-    std::cout << "std::ranges::drop_view : " << std::endl;
+    std::cout << "std::ranges::drop_view. Drops the first 5 numbers " << std::endl;
     vi = {1, 11, 23, 131, 2, 3, 4, 5, 6, 7, 8, 9};
     std::ranges::drop_view v_drop = std::ranges::drop_view(vi, 5);
     std::cout << "vi : ";
@@ -96,7 +89,8 @@ int main()
 
     // std::views::drop_while_view : drops elements as long as the predicate is met
     std::cout << std::endl;
-    std::cout << "std::ranges::drop_while_view : " << std::endl;
+    std::cout << "std::views::drop_while_view : drops elements as long as the predicate is met" << std::endl;
+    std::cout << "In the following, the view drops untill you see an even number." << std::endl;
     vi = {1, 11, 23, 4, 2, 3, 4, 5, 6, 7, 8, 9};
     std::ranges::drop_while_view v_drop_while = std::ranges::drop_while_view(vi, [](int i)
                                                                              { return (i % 2) != 0; });
@@ -105,69 +99,7 @@ int main()
     std::cout << "v_drop_while : ";
     print(v_drop_while);
 
-    // std::ranges::keys_view and std::ranges_value_view
-    // Compiler error which I don't understand the reason for yet.
-
-    std::cout << std::endl;
-    using pair = std::pair<int, std::string>;
-    std::vector<pair> numbers{{1, "one"}, {2, "two"}, {3, "tree"}};
-
-    // Compiler error when you build views explicitly. Don't understand why yet
-    // auto k_view = std::ranges::keys_view(numbers);
-    // auto v_view = std::ranges::values_view(numbers);
-
-    auto k_view = std::views::keys(numbers);
-    auto v_view = std::views::values(numbers);
-    print(k_view);
-    print(v_view);
-
-    vi = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-
-    // std::views::filter()
-    std::cout << std::endl;
-    std::cout << "std::views::filter : " << std::endl;
-    auto evens1 = [](int i)
-    {
-        return (i % 2) == 0;
-    };
-    std::cout << "vi : ";
-    print(vi);
-    std::ranges::filter_view v_evens1 = std::views::filter(vi, evens1); // No computation
-    std::cout << "vi evens : ";
-    print(v_evens1); // Computation happens in the print function
-    // Print evens on the fly
-    std::cout << "vi evens : ";
-    print(std::views::filter(vi, evens1));
-    // Print odds on the fly
-    std::cout << "vi odds : ";
-    print(std::views::filter(vi, [](int i)
-                             { return (i % 2) != 0; }));
-
-    // Students example
-    std::cout << std::endl;
-    std::cout << "students example : " << std::endl;
-
-    std::vector<Student> class_room{{"Mike", 12}, {"John", 17}, {"Drake", 14}, {"Mary", 16}};
-
-    std::cout << std::endl;
-    std::cout << "classroom : " << std::endl;
-    for (auto &s : class_room)
-    {
-        std::cout << "   " << s << std::endl;
-    }
-
-    std::ranges::sort(class_room, std::less<>{}, &Student::m_age);
-
-    std::cout << std::endl;
-    std::cout << "classroom (after sort) : " << std::endl;
-    for (auto &s : class_room)
-    {
-        std::cout << "   " << s << std::endl;
-    }
-
-    std::cout << "students under 15 : ";
-    print(std::views::take_while(class_room, [](const Student &s)
-                                 { return (s.m_age < 15); }));
+    std::cout << "----------------" << std::endl;
 
     return 0;
 }
