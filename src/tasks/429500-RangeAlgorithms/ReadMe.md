@@ -2,6 +2,11 @@
 
 ## Notes
 1. Big feature of cpp 20.
+   1. Range Alogrithms
+   2. Projects
+   3. Views and View Adaptors
+   4. Function composition
+   5. Range Factories.
 2. The features in Range library will make your code easy to work with. 
 3. The features are as follows.
    1. Range Algorithms: Range algos are a bunch that work without you needing to use begin() and end() iterators.
@@ -19,7 +24,15 @@
 
    2. Range Algorithms. Work on containers directly. Here we dont have to specify the begin and end of the iterator. 
 
+6. `std::ranges::copy`. This is for copying into outputstream on the fly
+
+```cpp
+std::cout << std::endl;
+std::cout << "numbers using range: ";
+std::ranges::copy(numbers, std::ostream_iterator<int>(std::cout, " "));
+```
+
 ## References
 
-1. 
+1. https://en.cppreference.com/w/cpp/algorithm/ranges/copy
 

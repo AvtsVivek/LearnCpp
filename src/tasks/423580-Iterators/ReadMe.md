@@ -6,6 +6,8 @@
 
 ![Iterator](50_50_Iterator.jpg)
 
+3. Iterators are the glue that tie containers and algotithms. We will see algos later. 
+
 ## References
 
 1. 
