@@ -55,9 +55,9 @@ int main()
     // std::cout << "e.cend(): " << e.cend() << std::endl;
 
     std::cout << "single view example -----------" << std::endl;
-    //I am not very clear what this is yet. Need to look into this single view once again. 
-    // Produces a view that contains exactly one element of a specified value.
-    // The expression views::single(e) is expression-equivalent to single_view<std::decay_t<decltype((e))>>(e) for any suitable subexpression e.
+    // I am not very clear what this is yet. Need to look into this single view once again.
+    //  Produces a view that contains exactly one element of a specified value.
+    //  The expression views::single(e) is expression-equivalent to single_view<std::decay_t<decltype((e))>>(e) for any suitable subexpression e.
     constexpr std::ranges::single_view sv1{3.1415}; // uses (const T&) constructor
     static_assert(sv1);
     static_assert(not sv1.empty());

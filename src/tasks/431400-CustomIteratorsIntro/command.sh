@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/429700-RangeFactories
+cd src/tasks/431400-CustomIteratorsIntro
 
-cd src/apps/429700-RangeFactories
+cd src/apps/431400-CustomIteratorsIntro
 
 start .
 
@@ -21,10 +21,9 @@ g++ "-static" -o main.exe .\*.cpp
 # Try the following, if the above does not work.
 g++ "-static" -o main.exe .\*.cpp -std=c++20
 
-# Try the following cpp 23, if the above does not work.
+# Try the following, if the above does not work.
 g++ "-static" -o main.exe .\*.cpp -std=c++23
 
 dir
 
 .\main.exe
-

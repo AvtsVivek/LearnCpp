@@ -13,8 +13,6 @@ std::ostream& operator<<( std::ostream& out,const  std::vector<T>& vec){
     return out;
 }
 
-
-
 int main(){
 
     //Source collection
