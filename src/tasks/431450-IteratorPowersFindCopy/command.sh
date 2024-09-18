@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/431500-IteratorPowers
+cd src/tasks/431450-IteratorPowersFindCopy
 
-cd src/apps/431500-IteratorPowers
+cd src/apps/431450-IteratorPowersFindCopy
 
 start .
 

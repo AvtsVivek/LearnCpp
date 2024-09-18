@@ -26,7 +26,12 @@
    3.  A alogirthm that works for bidirectional iterator should also work with forward iterator.
    4.  A alogirthm that works for random access iterator should also work with bidirectional iterator. 
 
-10. Some algorithms needs specific iterators.
+10. Here it is.
+
+![Iterators types are hierarchical](50_50_Iterators_Hierarchy.jpg) 
+
+
+11. Some algorithms needs specific iterators.
 
 | Sl. No.   | Algorithm     | Price                     |
 | :-----:   | :------       | ----:                     |
@@ -36,7 +41,9 @@
 | 4.        |std::find()    | Random Access iterator    |
 
 
+
 ## References
 
-1. 
+1. https://en.cppreference.com/w/cpp/algorithm/ranges/find
+2. 
 
