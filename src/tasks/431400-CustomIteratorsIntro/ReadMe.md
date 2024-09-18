@@ -18,10 +18,11 @@
 9. Iterators types are hierarchical.
    1.  A forward iterators is also an input iterator, a bidirectional iterator is also a forward iterator, a random access iterator is also a bidirectional iterator. 
    2.  So its like this.
-       1.  Input iterator.
+       1.  Input Iterator, Output Iterators.
        2.  Forward Iterator.
        3.  Bidiretional Iterator.
        4.  Random Access Iterator.
+       5.  Contiguous Iterators
    3.  A alogirthm that works for bidirectional iterator should also work with forward iterator.
    4.  A alogirthm that works for random access iterator should also work with bidirectional iterator. 
 
