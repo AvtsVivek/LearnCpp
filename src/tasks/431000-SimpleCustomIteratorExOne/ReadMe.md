@@ -111,7 +111,7 @@ private:
 };
 ```
 
-14. As you can see every operator involves the usage of the private pointer `m_ptr`. Also, notice the friend declaration for the two comparison operators: this is handy way to define the operators as non-member functions, yet being able to access private parts of the Iterator class (rationale here).
+14. As you can see every operator involves the usage of the private pointer `m_ptr`. Also, notice the friend declaration for the two comparison operators: this is handy way to define the operators as non-member functions, yet being able to access private member parts of the Iterator class (rationale here).
 
 15. Prepareing the container. Our iterator is good to go. The last step is to give our custom container the ability to create Iterator objects. This is done by adding two public methods begin() and end() that return instances of the Iterator class, representing the first and the last element respectively:
 
@@ -123,7 +123,7 @@ public:
     // Iterator definition here ...
 
     Iterator begin() { return Iterator(&m_data[0]); }
-    Iterator end()   { return Iterator(&m_data[200]); } // 200 is out of bounds
+    Iterator end()   { return Iterator(&m_data[20]); } // 20 is out of bounds
 };
 ```
 
@@ -131,6 +131,19 @@ public:
 
 17. Time to test our iterator. Both the custom container and its iterator are now ready. Let's test them with the range-based for loop:
 
+18. A plus operator with int is also added as follows.
+
+```cpp
+Iterator operator+(const int &right_operand)
+{
+    // std::cout << "right oprand: " << right_operand << std::endl;
+    for (int i = 0; i < right_operand; i++)
+    {
+        m_ptr++;
+    }
+    return *this;
+}
+```
 
 
 ## References

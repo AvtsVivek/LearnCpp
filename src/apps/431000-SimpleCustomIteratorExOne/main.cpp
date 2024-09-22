@@ -34,6 +34,16 @@ public:
             return tmp;
         }
 
+        Iterator operator+(const int &right_operand)
+        {
+            // std::cout << "right oprand: " << right_operand << std::endl;
+            for (int i = 0; i < right_operand; i++)
+            {
+                m_ptr++;
+            }
+            return *this;
+        }
+
         friend bool operator==(const Iterator &a, const Iterator &b) { return a.m_ptr == b.m_ptr; };
         friend bool operator!=(const Iterator &a, const Iterator &b) { return a.m_ptr != b.m_ptr; };
 
@@ -43,9 +53,9 @@ public:
 
     // ...
     Iterator begin() { return Iterator(&m_data[0]); }
-    Iterator end() { return Iterator(&m_data[200]); } // 200 is out of bounds
+    Iterator end() { return Iterator(&m_data[20]); } // 20 is out of bounds
 private:
-    int m_data[200];
+    int m_data[20] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 };
 
 int main()
@@ -69,6 +79,35 @@ int main()
     //     const auto i = *it;
     //     std::cout << i << "\n";
     // }
+
+    auto it = integers.begin();
+
+    std::cout << "---------------" << std::endl;
+
+    std::cout << *it << std::endl;
+
+    it++;
+
+    std::cout << *it << std::endl;
+
+    it++;
+
+    std::cout << *it << std::endl;
+
+    it++;
+
+    std::cout << *it << std::endl;
+
+    it = it + 4;
+
+    std::cout << *it << std::endl;
+
+    std::cout << "---------------" << std::endl;
+
+    std::fill(it, integers.end(), 3);
+
+    for (auto i : integers)
+        std::cout << i << "\n";
 
     return 0;
 }
