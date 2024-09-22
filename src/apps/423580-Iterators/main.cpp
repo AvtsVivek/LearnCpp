@@ -40,8 +40,9 @@ int main()
     std::cout << "third elt : " << *it_begin << std::endl;
     std::cout << "it == end_it : " << (it_begin == it_end) << std::endl;
 
-    ++it_begin;
-    std::cout << "fourth elt : " << *it_begin << std::endl;
+    // ++it_begin;
+    auto next_it_test = it_begin + 1;
+    std::cout << "fourth elt : " << *next_it_test << std::endl;
     std::cout << "it == end_it : " << (it_begin == it_end) << std::endl;
 
     ++it_begin;

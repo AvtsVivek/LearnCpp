@@ -39,7 +39,7 @@ int main()
     // Iterator through which we can write
 
     std::cout << "---------------(copy)-----------" << std::endl;
-    std::vector<int> dest(numbers.size());  // A new destination container of type vector
+    std::vector<int> dest(numbers.size()); // A new destination container of type vector
     // std::vector<int> dest; //  BAD! Probably a crash
     std::cout << "numbers : " << numbers << std::endl;
     std::cout << "dest : " << dest << std::endl;

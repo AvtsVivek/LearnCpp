@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/431400-CustomIteratorsIntro
+cd src/tasks/430900-CustomIteratorsIntro
 
-cd src/apps/431400-CustomIteratorsIntro
+cd src/apps/430900-CustomIteratorsIntro
 
 start .
 
