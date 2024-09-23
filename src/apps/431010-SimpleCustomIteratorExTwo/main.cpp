@@ -14,11 +14,7 @@ public:
         using pointer = int *;   // or also value_type*
         using reference = int &; // or also value_type&
 
-        Iterator(pointer ptr) : m_ptr(ptr)
-        {
-            std::cout << "Ctor.." << std::endl;
-            std::cout << "Value of *m_ptr: " << *m_ptr << std::endl;
-        }
+        Iterator(pointer ptr) : m_ptr(ptr) {}
 
         reference operator*() const { return *m_ptr; }
         pointer operator->() { return m_ptr; }
@@ -26,7 +22,6 @@ public:
         // Prefix increment
         Iterator &operator++()
         {
-            std::cout << "&operator++().." << std::endl;
             m_ptr++;
             return *this;
         }
@@ -34,22 +29,27 @@ public:
         // Postfix increment
         Iterator operator++(int)
         {
-            std::cout << "operator++(int).." << std::endl;
             Iterator tmp = *this;
             ++(*this);
             return tmp;
+        }
+
+        Iterator operator+(const int &right_operand)
+        {
+            std::cout << "right oprand: " << right_operand << std::endl;
+            for (int i = 0; i < right_operand; i++)
+            {
+                m_ptr++;
+            }
+            return *this;
         }
 
     private:
         pointer m_ptr;
     };
 
-    Iterator begin()
-    {
-        std::cout << "begin().." << std::endl;
-        return Iterator(&m_data[0]);
-    }
-    // Iterator end() { return Iterator(&m_data[20]); } // 20 is out of bounds
+    // ...
+    Iterator begin() { return Iterator(&m_data[0]); }
 private:
     int m_data[20] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 };
@@ -67,6 +67,20 @@ int main()
     it++;
 
     std::cout << *it << std::endl;
+
+    it++;
+
+    std::cout << *it << std::endl;
+
+    it++;
+
+    std::cout << *it << std::endl;
+
+    it = it + 4;
+
+    std::cout << *it << std::endl;
+
+    std::cout << "---------------" << std::endl;
 
     return 0;
 }

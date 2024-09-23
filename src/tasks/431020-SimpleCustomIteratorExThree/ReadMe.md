@@ -1,7 +1,7 @@
 # Auto
 
 ## Notes
-1. An iterator is an object that points to an element inside a container. Like a pointer, an iterator can be used to access the element it points to and can be moved through the contents of the container. Each container in the C++ Standard Library provides its own iterator, as well as some methods to retrieve it. Using iterators is quite easy: obtain an instance from a container, move it around where needed and then get the pointed element.
+1. An iterator is an object that points to an element inside a container. Like a pointer, an iterator can be used to access the element it points to and can be moved through the content of the container. Each container in the C++ Standard Library provides its own iterator, as well as some methods to retrieve it. Using iterators is quite easy: obtain an instance from a container, move it around where needed and then get the pointed element.
 
 2. Concretely, an iterator is a simple class that provides a bunch of operators: increment ++, dereference * and few others which make it very similar to a pointer and the arithmetic operations you can perform on it. In fact, iterators are a generalization of pointers, which are often used as a foundation when writing the iterator itself.
 
@@ -83,6 +83,7 @@ private:
 13. Implementing operators. We are building a `mutable Forward Iterator`, which inherits properties from both Input and Output Iterators. The resulting iterator must support the following operations:
     1.  *iterator and iterator->x — dereferenceable, to get the value it points to;
     2.  ++iterator and iterator++ — incrementable, to move it one step forward, both prefix and postfix versions. The latter must return something dereferenceable;
+    3.  iterator_a == iterator_b and iterator_a != iterator_b — comparable with another iterator;
 This is done by implementing some custom operators in the Iterator class, like this:
 
 ```cpp
@@ -101,6 +102,9 @@ struct Iterator
     // Postfix increment
     Iterator operator++(int) { Iterator tmp = *this; ++(*this); return tmp; }
 
+    friend bool operator== (const Iterator& a, const Iterator& b) { return a.m_ptr == b.m_ptr; };
+    friend bool operator!= (const Iterator& a, const Iterator& b) { return a.m_ptr != b.m_ptr; };     
+
 private:
 
     pointer m_ptr;
@@ -109,7 +113,7 @@ private:
 
 14. As you can see every operator involves the usage of the private pointer `m_ptr`. Also, notice the friend declaration for the two comparison operators: this is handy way to define the operators as non-member functions, yet being able to access private member parts of the Iterator class (rationale here).
 
-15. Prepareing the container. Our iterator is good to go. The last step is to give our custom container the ability to create Iterator objects. This is done by adding one public methods `begin()` that return instance of the Iterator class, representing the first element:
+15. Prepareing the container. Our iterator is good to go. The last step is to give our custom container the ability to create Iterator objects. This is done by adding two public methods begin() and end() that return instances of the Iterator class, representing the first and the last element respectively:
 
 ```cpp
 class Integers
@@ -119,18 +123,31 @@ public:
     // Iterator definition here ...
 
     Iterator begin() { return Iterator(&m_data[0]); }
+    Iterator end()   { return Iterator(&m_data[20]); } // 20 is out of bounds
 };
 ```
 
-16. Time to test our iterator. Both the custom container and its iterator are now ready. Let's test them with simple increment operator:
+16. The end() method returns an iterator that refers to an invalid memory address, past the end of our raw array. Such iterator is just a placeholder used to determine when the boundary has been reached: it should never be accessed directly.
 
+17. Time to test our iterator. Both the custom container and its iterator are now ready. Let's test them with the range-based for loop:
+
+18. A plus operator with int is also added as follows.
+
+```cpp
+Iterator operator+(const int &right_operand)
+{
+    // std::cout << "right oprand: " << right_operand << std::endl;
+    for (int i = 0; i < right_operand; i++)
+    {
+        m_ptr++;
+    }
+    return *this;
+}
+```
 
 
 ## References
 
 1. https://internalpointers.com/post/writing-custom-iterators-modern-cpp
-
-
-
 
 
