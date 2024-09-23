@@ -55,7 +55,7 @@ public:
     Iterator begin() { return Iterator(&m_data[0]); }
     Iterator end() { return Iterator(&m_data[20]); } // 20 is out of bounds
 private:
-    int m_data[20] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int m_data[20] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 };
 
 int main()
@@ -63,6 +63,8 @@ int main()
     Integers integers;
     for (auto i : integers)
         std::cout << i << " ";
+
+    std::cout << std::endl;
 
     // The following is same as above. The following is just a syntactic sugar
 
