@@ -50,6 +50,7 @@ public:
 
     // ...
     Iterator begin() { return Iterator(&m_data[0]); }
+
 private:
     int m_data[20] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 };
@@ -77,6 +78,10 @@ int main()
     std::cout << *it << std::endl;
 
     it = it + 4;
+
+    std::cout << *it << std::endl;
+
+    it = it + 2;
 
     std::cout << *it << std::endl;
 
