@@ -4,6 +4,8 @@
 
 1. Implementing operators. We are building a `mutable Forward Iterator`, which inherits properties from both Input and Output Iterators. The resulting iterator must support the following operations:
     1.  iterator_a == iterator_b and iterator_a != iterator_b — comparable with another iterator;
+    2.  For now, we will just impliment, != operator. 
+    3.  We will be testing range based for loop, where we need the != operator. == operator is not needed at this point. 
 This is done by implementing some custom operators in the Iterator class, like this:
 
 ```cpp
@@ -13,7 +15,6 @@ struct Iterator
     // Iterator constructors here...
     // Prefix and postfix increment
 
-    friend bool operator== (const Iterator& a, const Iterator& b) { return a.m_ptr == b.m_ptr; };
     friend bool operator!= (const Iterator& a, const Iterator& b) { return a.m_ptr != b.m_ptr; };     
 
 private:
@@ -45,7 +46,7 @@ for (auto i : integers)
     std::cout << i << " ";
 ```
 
-6. The following is same as above. The following is just a syntactic sugar
+6. The following is same as above. The following is just a syntactic sugar. So as you can see, != operator is needed, and we have defined it earlier.
 
 ```cpp
 for (auto it = integers.begin(), end = integers.end(); it != end; ++it)
@@ -54,6 +55,15 @@ for (auto it = integers.begin(), end = integers.end(); it != end; ++it)
     std::cout << i << " ";
 }
 ```
+
+7. Also try the fill algorithm. This also work.Note, we have not yet defined the == operator at this point. 
+
+```cpp
+std::fill(it, integers.end(), 3);
+```
+
+8. Note, without != operator, fill will not work. The range based for loop also will not work without the != operator.
+
 ## References
 
 1. https://internalpointers.com/post/writing-custom-iterators-modern-cpp

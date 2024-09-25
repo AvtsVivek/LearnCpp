@@ -44,7 +44,7 @@ public:
             return *this;
         }
 
-        friend bool operator==(const Iterator &a, const Iterator &b) { return a.m_ptr == b.m_ptr; };
+        // friend bool operator==(const Iterator &a, const Iterator &b) { return a.m_ptr == b.m_ptr; };
         friend bool operator!=(const Iterator &a, const Iterator &b) { return a.m_ptr != b.m_ptr; };
 
     private:
@@ -61,8 +61,9 @@ private:
 int main()
 {
     Integers integers;
-    for (auto i : integers)
-        std::cout << i << " ";
+
+    // for (auto i : integers)
+    //     std::cout << i << " ";
 
     std::cout << std::endl;
 
@@ -76,32 +77,14 @@ int main()
 
     auto it = integers.begin();
 
-    std::cout << "---------------" << std::endl;
-
-    std::cout << *it << std::endl;
-
-    it++;
-
-    std::cout << *it << std::endl;
-
-    it++;
-
-    std::cout << *it << std::endl;
-
-    it++;
-
-    std::cout << *it << std::endl;
-
-    it = it + 4;
-
-    std::cout << *it << std::endl;
+    std::cout << std::endl;
 
     std::cout << "---------------" << std::endl;
 
     std::fill(it, integers.end(), 3);
 
-    for (auto i : integers)
-        std::cout << i << " ";
+    // for (auto i : integers)
+    //     std::cout << i << " ";
 
     return 0;
 }
