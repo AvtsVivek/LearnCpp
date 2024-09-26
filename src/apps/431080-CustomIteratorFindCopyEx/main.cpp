@@ -63,5 +63,25 @@ int main()
         std::cout << "numbers does not contain: " << 8 << '\n';
     }
 
+    Integers integers_dest;
+
+    auto it_dest = integers_dest.begin();
+
+    std::cout << "---------------" << std::endl;
+
+    std::fill(it_dest, integers_dest.end(), 0);
+
+    for (auto i : integers_dest)
+        std::cout << i << " ";
+
+    // dest.begin() has to be an output iterator, have to be able to write though it
+    std::copy(integers.begin(), integers.end(), integers_dest.begin()); // Compiler Error dest.cbegin()
+                                                                        // is not an output iterator
+
+    std::cout << std::endl;
+
+    for (auto i : integers_dest)
+        std::cout << i << " ";
+
     return 0;
 }

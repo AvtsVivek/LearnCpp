@@ -7,7 +7,11 @@
 
 3. The Find algorithm. The requirement for the Find alog is that we are able to read through the container. Iterators returned by begin() are input iterators. . That's al std::ranges::find needs. 
 
-4. 
+4. `dest.begin()` has to be an output iterator, have to be able to write though it. If we make it a const iterator like  `dest.cbegin()` is not an output iterator, so a compiler error will result.
+
+```cpp
+std::ranges::copy(numbers.cbegin(), numbers.cend(), dest.begin()); 
+```
 
 ## References
 

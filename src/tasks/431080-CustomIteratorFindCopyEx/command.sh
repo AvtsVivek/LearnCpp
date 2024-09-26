@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/431080-SimpleCustomIteratorExEight
+cd src/tasks/431080-CustomIteratorFindCopyEx
 
-cd src/apps/431080-SimpleCustomIteratorExEight
+cd src/apps/431080-CustomIteratorFindCopyEx
 
 start .
 
@@ -27,3 +27,4 @@ g++ "-static" -o main.exe .\*.cpp -std=c++23
 dir
 
 .\main.exe
+

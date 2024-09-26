@@ -44,8 +44,8 @@ public:
             return *this;
         }
 
-        // friend bool operator==(const Iterator &a, const Iterator &b) { return a.m_ptr == b.m_ptr; };
-        friend bool operator!=(const Iterator &a, const Iterator &b) { return a.m_ptr != b.m_ptr; };
+        friend bool operator==(const Iterator &a, const Iterator &b) { return a.m_ptr == b.m_ptr; };
+        // friend bool operator!=(const Iterator &a, const Iterator &b) { return a.m_ptr != b.m_ptr; };
 
     private:
         pointer m_ptr;

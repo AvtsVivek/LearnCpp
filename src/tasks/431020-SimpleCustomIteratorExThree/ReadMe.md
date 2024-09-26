@@ -62,7 +62,18 @@ for (auto it = integers.begin(), end = integers.end(); it != end; ++it)
 std::fill(it, integers.end(), 3);
 ```
 
-8. Note, without != operator, fill will not work. The range based for loop also will not work without the != operator.
+8. Note till this point, without != operator, fill will not work. The range based for loop also will not work without the != operator.
+
+9. Now try changing != to == as follows. It will work.
+
+```cpp        
+friend bool operator==(const Iterator &a, const Iterator &b) { return a.m_ptr == b.m_ptr; };
+// friend bool operator!=(const Iterator &a, const Iterator &b) { return a.m_ptr != b.m_ptr; };
+```
+
+10. So the final conclusion is, one of the two `!=` or `==` must be defined.
+
+11. 
 
 ## References
 
