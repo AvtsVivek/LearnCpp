@@ -12,7 +12,7 @@
 
 1. https://en.cppreference.com/w/cpp/algorithm/ranges/find
 2. https://en.cppreference.com/w/cpp/algorithm/ranges/copy
-3. asdf
-4. asdf
+3. 
+4. 
 
 
