@@ -46,7 +46,7 @@ for (auto i : integers)
     std::cout << i << " ";
 ```
 
-6. The following is same as above. The following is just a syntactic sugar. So as you can see, != operator is needed, and we have defined it earlier.
+6. The following is same as above. The above is just a syntactic sugar for the below. So as you can see, != operator is needed, and we have defined it earlier.
 
 ```cpp
 for (auto it = integers.begin(), end = integers.end(); it != end; ++it)
