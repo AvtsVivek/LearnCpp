@@ -8,7 +8,8 @@ class Integers
 public:
     struct Iterator
     {
-        using iterator_category = std::forward_iterator_tag;
+        // using iterator_category = std::forward_iterator_tag; // This is giving a compiler error.
+        using iterator_category = std::bidirectional_iterator_tag; // What you need is this bidirectional
         using difference_type = std::ptrdiff_t;
         using value_type = int;
         using pointer = int *;   // or also value_type*
@@ -34,8 +35,23 @@ public:
             return tmp;
         }
 
+        // Prefix decrement
+        Iterator &operator--()
+        {
+            m_ptr--;
+            return *this;
+        }
+
+        // Postfix decrement
+        Iterator operator--(int)
+        {
+            Iterator tmp = *this;
+            --(*this);
+            return tmp;
+        }
+
         friend bool operator==(const Iterator &a, const Iterator &b) { return a.m_ptr == b.m_ptr; };
-        // friend bool operator!=(const Iterator &a, const Iterator &b) { return a.m_ptr != b.m_ptr; };
+        friend bool operator!=(const Iterator &a, const Iterator &b) { return a.m_ptr != b.m_ptr; };
 
     private:
         pointer m_ptr;
@@ -45,23 +61,21 @@ public:
     Iterator begin() { return Iterator(&m_data[0]); }
     Iterator end() { return Iterator(&m_data[20]); } // 20 is out of bounds
 private:
-    int m_data[20] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 7, 15};
+    int m_data[20] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
 };
 
 int main()
 {
     Integers integers;
 
-    std::cout << "-----------------(replace)---------------" << std::endl;
+    for (auto i : integers)
+        std::cout << i << " ";
 
-    std::cout << "integers: " << std::endl;
+    std::cout << std::endl;
 
-    // replacing every instance of 7 with 345. The iterator needs an
-    // operator++ to move forward. See possible implementation
+    std::cout << "-----------(using reverse function)---------" << std::endl;
 
-    std::replace(integers.begin(), integers.end(), 7, 345);
-
-    std::cout << "After Replace: " << std::endl;
+    std::reverse(integers.begin(), integers.end());
 
     for (auto i : integers)
         std::cout << i << " ";
