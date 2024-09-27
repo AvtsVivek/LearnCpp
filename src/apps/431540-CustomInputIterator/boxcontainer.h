@@ -8,6 +8,7 @@ template <typename T>
 	requires std::is_default_constructible_v<T>
 class BoxContainer
 {
+
 	// static_assert(std::is_default_constructible_v<T>,"Types stored in BoxContainer must have a default constructor");
 
 	static const size_t DEFAULT_CAPACITY = 5;

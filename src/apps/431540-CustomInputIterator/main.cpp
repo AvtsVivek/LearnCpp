@@ -3,21 +3,9 @@
 #include <vector>
 #include "boxcontainer.h"
 
-template <typename T>
-std::ostream &operator<<(std::ostream &out, const std::vector<T> &vec)
-{
-    out << " [ ";
-    for (auto i : vec)
-    {
-        out << i << " ";
-    }
-    out << "]";
-    return out;
-}
-
 int main()
 {
-
+    std::cout << "Here we go.." << std::endl;
     // std::vector<int> box1 {8,1,4,2,5,3,7,9};
     BoxContainer<int> box1;
     box1.add(5);
@@ -45,12 +33,12 @@ int main()
     // std::ranges::reverse(box1.begin(),box1.end());
 
     // Range based for loop
-    
-    for(auto n : box1){
+
+    for (auto n : box1)
+    {
         std::cout << n << " ";
     }
     std::cout << std::endl;
-    
 
     return 0;
 }

@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/431070-SimpleCustomIteratorExSeven
+cd src/tasks/431050-CustomConstIteratorNoCodeDuplication
 
-cd src/apps/431070-SimpleCustomIteratorExSeven
+cd src/apps/431050-CustomConstIteratorNoCodeDuplication
 
 start .
 
