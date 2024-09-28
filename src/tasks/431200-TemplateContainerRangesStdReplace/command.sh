@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/431620-CustomForwardIterator
+cd src/tasks/431200-TemplateContainerRangesStdReplace
 
-cd src/apps/431620-CustomForwardIterator
+cd src/apps/431200-TemplateContainerRangesStdReplace
 
 start .
 
