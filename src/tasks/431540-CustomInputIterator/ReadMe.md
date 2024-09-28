@@ -9,7 +9,10 @@
 2. Needs to provide the type aliases expected by the standard template library.
 3. These types alias help alogrithms work better. 
 4. Modify the box container and make it support input iterators.
-5. 
+5. In this example, at this point, 
+   1. Range based for loop works.
+   2. Find algo works.
+   3. Reverse does not work.
 
 
 ## References

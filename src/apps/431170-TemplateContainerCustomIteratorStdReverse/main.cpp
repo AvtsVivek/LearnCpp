@@ -73,6 +73,7 @@ public:
         }
 
         friend bool operator==(const Iterator &a, const Iterator &b) { return a.m_ptr == b.m_ptr; };
+        friend bool operator<(const Iterator &a, const Iterator &b) { return a.m_ptr < b.m_ptr; };
         friend bool operator!=(const Iterator &a, const Iterator &b) { return a.m_ptr != b.m_ptr; };
 
     private:
@@ -95,53 +96,24 @@ int main()
 
     auto it = integers.begin();
 
-    std::cout << std::endl;
+    std::cout << std::endl
+              << "-------Reverse--------" << std::endl;
 
-    std::cout << "---------------" << std::endl;
-
-    std::cout << *it << std::endl;
-
-    it++;
-
-    std::cout << *it << std::endl;
-
-    it++;
-
-    std::cout << *it << std::endl;
-
-    it++;
-
-    std::cout << *it << std::endl;
-
-    it = it + 4;
-
-    std::cout << *it << std::endl;
-
-    it = it + 2;
-
-    std::cout << *it << std::endl;
-
-    it = it - 2;
-
-    std::cout << *it << std::endl;
-
-    it--;
-
-    std::cout << *it << std::endl;
-
-    std::cout << "-------Fill--------" << std::endl;
-
-    std::fill(it, integers.end(), 3);
+    std::reverse(integers.begin(), integers.end());
 
     for (auto i : integers)
         std::cout << i << " ";
 
-    std::cout << std::endl << "------Ranges-Fill--------" << std::endl;
+    std::cout << std::endl
+              << "-------Ranges Reverse--------" << std::endl;
 
-    std::ranges::fill(it, integers.end(), 7);
+    std::ranges::reverse(integers.begin(), integers.end());
 
     for (auto i : integers)
         std::cout << i << " ";
+
+    std::cout << std::endl
+              << "-------The -- operator and it -5 sutff " << std::endl;
 
     return 0;
 }
