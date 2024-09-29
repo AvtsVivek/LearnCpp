@@ -181,13 +181,5 @@ int main(){
     */
     std::cout << "End!" << std::endl;
  
-    
-    
-   
-
-    
-   
-
-
     return 0;
 }
