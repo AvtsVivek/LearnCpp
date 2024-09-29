@@ -57,7 +57,7 @@ public:
 				using reference_type         = T&;
 
 		Iterator() = default;
-        Iterator(pointer_type ptr) : m_ptr(ptr) {}
+        Iterator(pointer_type ptr) : m_ptr(ptr) {}	
     
     	reference_type operator*() const {
             return *m_ptr;

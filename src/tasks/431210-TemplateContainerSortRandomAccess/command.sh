@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/431700-CustomRandomAccessIterator
+cd src/tasks/431210-TemplateContainerSortRandomAccess
 
-cd src/apps/431700-CustomRandomAccessIterator
+cd src/apps/431210-TemplateContainerSortRandomAccess
 
 start .
 

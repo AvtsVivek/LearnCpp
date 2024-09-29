@@ -3,22 +3,25 @@
 #include <vector>
 #include <ranges>
 
+template <typename T>
 class Integers
 {
 public:
     struct Iterator
     {
-        // using iterator_category = std::forward_iterator_tag; // This is giving a compiler error.
         using iterator_category = std::random_access_iterator_tag;
         using difference_type = std::ptrdiff_t;
-        using value_type = int;
-        using pointer = int *;   // or also value_type*
-        using reference = int &; // or also value_type&
+        using value_type = T;
+        using pointer_type = T *;
+        using reference_type = T &;
 
-        Iterator(pointer ptr) : m_ptr(ptr) {}
+        Iterator() = default;
 
-        reference operator*() const { return *m_ptr; }
-        pointer operator->() { return m_ptr; }
+        Iterator(pointer_type ptr) : m_ptr(ptr) {}
+
+        reference_type operator*() const { return *m_ptr; }
+
+        pointer_type operator->() { return m_ptr; }
 
         // Prefix increment
         Iterator &operator++()
@@ -35,14 +38,11 @@ public:
             return tmp;
         }
 
-        // Prefix decrement
         Iterator &operator--()
         {
             m_ptr--;
             return *this;
         }
-
-        // Postfix decrement
         Iterator operator--(int)
         {
             Iterator tmp = *this;
@@ -79,7 +79,7 @@ public:
             return m_ptr - right.m_ptr;
         }
 
-        reference operator[](const difference_type offset) const
+        reference_type operator[](const difference_type offset) const
         {
             return *(*this + offset);
         }
@@ -115,27 +115,26 @@ public:
         friend bool operator!=(const Iterator &a, const Iterator &b) { return a.m_ptr != b.m_ptr; };
 
     private:
-        pointer m_ptr;
+        pointer_type m_ptr;
     };
 
     // ...
     Iterator begin() { return Iterator(&m_data[0]); }
     Iterator end() { return Iterator(&m_data[20]); } // 20 is out of bounds
 private:
-    // int m_data[20] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
-    int m_data[20] = {19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+    T m_data[20] = {19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
 };
 
 int main()
 {
-    Integers integers;
+    Integers<int> integers;
 
     for (auto i : integers)
         std::cout << i << " ";
 
     std::cout << std::endl;
 
-    std::cout << "-----------(std sort)---------" << std::endl;
+    std::cout << "-------- std sort --------" << std::endl;
 
     std::sort(integers.begin(), integers.end());
 
@@ -144,20 +143,25 @@ int main()
 
     std::cout << std::endl;
 
-    std::cout << "-----------(ranges sort)---------" << std::endl;
+    //////////////////////////////////////////////////////////////////////////////////////
 
-    // Ranges sort does not work without templates. 
-    // Integers integers_for_ranges_sort;
+    Integers<int> integers_ranges_sort;
 
-    // for (auto i : integers_for_ranges_sort)
-    //     std::cout << i << " ";
+    for (auto i : integers_ranges_sort)
+        std::cout << i << " ";
 
-    // std::cout << std::endl;
+    std::cout << std::endl;
 
-    // std::ranges::sort(integers_for_ranges_sort.begin(), integers_for_ranges_sort.end());
+    std::cout << "-------- ranges sort --------" << std::endl;
 
-    // for (auto i : integers_for_ranges_sort)
-    //     std::cout << i << " ";
+    std::ranges::sort(integers_ranges_sort);
+    // The following also works.
+    // std::ranges::sort(integers_ranges_sort.begin(), integers_ranges_sort.end());
+
+    for (auto i : integers_ranges_sort)
+        std::cout << i << " ";
+
+    std::cout << std::endl;
 
     return 0;
 }
