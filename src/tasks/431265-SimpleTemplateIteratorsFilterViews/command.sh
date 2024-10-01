@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/314320-SizeOfAnArray
+cd src/tasks/431265-SimpleTemplateIteratorsFilterViews
 
-cd src/apps/314320-SizeOfAnArray
+cd src/apps/431265-SimpleTemplateIteratorsFilterViews
 
 start .
 
@@ -27,7 +27,4 @@ g++ "-static" -o main.exe .\*.cpp -std=c++23
 dir
 
 .\main.exe
-
-
-
 
