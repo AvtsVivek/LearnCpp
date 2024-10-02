@@ -4,16 +4,18 @@
 #include <ranges>
 #include "boxcontainer.h"
 
-
 template <typename T>
-void print(const BoxContainer<T>&  c){
-    for(auto i : c){ // Computation happens here.
+void print(const BoxContainer<T> &c)
+{
+    for (auto i : c)
+    { // Computation happens here.
         std::cout << i << " ";
     }
     std::cout << std::endl;
 }
 
-int main(){
+int main()
+{
 
     BoxContainer<int> vi;
     vi.add(5);
@@ -28,38 +30,33 @@ int main(){
 
     const BoxContainer<int> copy(vi);
 
-    //Printing a const container
+    // Printing a const container
     std::cout << "data : ";
-    for (auto it = copy.begin(); it!=copy.end(); ++it){
+    for (auto it = copy.begin(); it != copy.end(); ++it)
+    {
         std::cout << (*it) << " ";
     }
     std::cout << std::endl;
 
-    //Printing throgh a function
+    // Printing throgh a function
     std::cout << "copy : ";
     print(copy);
 
-
-    //Attempt to sort copy
-    //std::ranges::sort(copy); // Compiler error. Can't sort a const collection
+    // Attempt to sort copy
+    // std::ranges::sort(copy); // Compiler error. Can't sort a const collection
     std::ranges::sort(vi);
 
     std::cout << "vi : ";
     print(vi);
 
-
-    std::cout << "view taking only 3 : " ;
-    for(auto i : std::views::take(vi,3)){
-        std::cout << i << " " ;
+    std::cout << "view taking only 3 : ";
+    for (auto i : std::views::take(vi, 3))
+    {
+        std::cout << i << " ";
     }
     std::cout << std::endl;
-    
+
     std::cout << "End!" << std::endl;
 
-   
-
-
-   
- 
     return 0;
 }

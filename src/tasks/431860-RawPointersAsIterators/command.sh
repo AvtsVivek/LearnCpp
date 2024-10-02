@@ -3,7 +3,7 @@ cd ../../..
 
 cd src/tasks/431860-RawPointersAsIterators
 
-cd src/apps/431820-RawPointersAsIterators
+cd src/apps/431860-RawPointersAsIterators
 
 start .
 
@@ -20,6 +20,9 @@ g++ "-static" -o main.exe .\*.cpp
 
 # Try the following, if the above does not work.
 g++ "-static" -o main.exe .\*.cpp -std=c++20
+
+# Try the following, if the above does not work.
+g++ "-static" -o main.exe .\*.cpp -std=c++23
 
 dir
 

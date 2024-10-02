@@ -4,6 +4,16 @@
 #include <ranges>
 #include "box.h"
 
+template <typename T>
+void print(const BoxContainer<T> &c)
+{
+    for (auto i : c)
+    { // Computation happens here.
+        std::cout << i << " ";
+    }
+    std::cout << std::endl;
+}
+
 int main()
 {
 
@@ -29,6 +39,8 @@ int main()
         std::cout << (*it) << " ";
     }
     std::cout << std::endl;
+
+    // print(copy);
 
     return 0;
 }
