@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/431780-ConstantIterators
+cd src/tasks/431800-ConstCopy
 
-cd src/apps/431780-ConstantIterators
+cd src/apps/431800-ConstCopy
 
 start .
 
@@ -20,6 +20,9 @@ g++ "-static" -o main.exe .\*.cpp
 
 # Try the following, if the above does not work.
 g++ "-static" -o main.exe .\*.cpp -std=c++20
+
+# Try the following, if the above does not work.
+g++ "-static" -o main.exe .\*.cpp -std=c++23
 
 dir
 

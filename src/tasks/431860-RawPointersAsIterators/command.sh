@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/431860-WrappingIteratorsFromOtherContainers
+cd src/tasks/431860-RawPointersAsIterators
 
-cd src/apps/431860-WrappingIteratorsFromOtherContainers
+cd src/apps/431820-RawPointersAsIterators
 
 start .
 
