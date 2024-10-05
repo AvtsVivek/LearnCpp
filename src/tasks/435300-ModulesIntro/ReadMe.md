@@ -93,6 +93,17 @@
         2.  Keep this in mind. Luckily it supports flags that allow us to keep naming our interface files with the .ixx extension. The flag is -x c++module. See example below.
         3.  
 
+22. I faced the following problems while starting docker desktop on windows 11. It does not start.
+    1.  So did the following.
+    2.  Ran the command. `wsl -l`
+        1.  Windows Subsystem for Linux Distributions:
+        2.  docker-desktop-data (Default)
+        3.  docker-desktop
+    3.  See [this supre user answer](https://superuser.com/a/1758362/674525)
+    4.  wsl --unregister docker-desktop
+    5.  wsl --unregister docker-desktop-data
+
+
 ## References
 
 1. 

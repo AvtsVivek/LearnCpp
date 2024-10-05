@@ -1,5 +1,5 @@
 
-$files = get-childitem -path . -file -recurse -include ('*.exe', '*.pdb', '*.ilk', '*.obj', '*.dll', '*.exp', '*.lib', '*.o')
+$files = get-childitem -path . -file -recurse -include ('*.exe', '*.pdb', '*.ilk', '*.obj', '*.dll', '*.exp', '*.lib', '*.o', '*.pcm')
 "Here are the file that will be deleted."
 ($files).fullname
 ""
