@@ -24,6 +24,9 @@
 *.map
 *.exp
 
+# Clang pcm
+*.pcm
+
 # Precompiled Headers
 *.gch
 *.pch

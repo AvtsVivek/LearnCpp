@@ -12,7 +12,7 @@ $files | Remove-Item
 
 ""
 "Deleting bin and obj folders..."
-Get-ChildItem .\ -include bin, obj, gcm.cache -Recurse | ForEach-Object ($_) { Remove-Item $_.FullName -Force -Recurse }
+Get-ChildItem .\ -include bin, obj, Debug, Release, x64, gcm.cache -Recurse | ForEach-Object ($_) { Remove-Item $_.FullName -Force -Recurse }
 
 ""
 "Done......."

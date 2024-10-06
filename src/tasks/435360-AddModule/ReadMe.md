@@ -1,7 +1,7 @@
 # Auto
 
 ## Notes
-1. Now Adding module. 
+1. Now Adding module. In the earlier example, a VS project is created, we now add a module to it.
 
 2. Ctrl + Shift + A or right click on the project, Add -> New Item.
 

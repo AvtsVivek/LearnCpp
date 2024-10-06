@@ -1,14 +1,58 @@
 # Auto
 
 ## Notes
+
 1. Module with a few more features
-   1. Project files
-      1. math.ixx
-      2. main.cpp
-2. One has to do the research to get the exact steps to follow to build with a specific IDE or compiler.
-3. For Clang, see the [documentation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
-4. The instructions for each compiler are shared below.
-5. Compilation of this project on 3 major compilers:
+2. Project files
+   1. math.ixx
+   2. main.cpp
+
+3. If the module declaration has export in front of it, the file containing the module becomes a module interface file.
+4. In the math.ixx file, look for the following.
+
+```cpp
+export module math_stuff; // Module declaration
+```
+
+5. The collection of entities exported from a module file make up the module interface. If you look at the module interface, it comprises of three functions, `add`, `greet` and `print_name_length`. Thats because, there is an `export` keyword prefixed. 
+
+```cpp
+//Module purview
+export double add(double a, double b) {
+	return a + b;
+}
+
+export void greet(const std::string& name) {
+	std::string dest;
+	dest = "Hello ";
+	dest.append(name);
+	std::cout << dest << std::endl;
+}
+
+export void print_name_length(const char* c_str_name) {
+	std::cout << "Length : " << std::strlen(c_str_name) << std::endl;
+}
+```
+
+6. This is what make this file a module interace file or unit. This is a declaration of a new module. 
+
+7. There are three aspects to working with modules.
+   1. Include translation. Find the following in the module file(math.ixx). This is what we do in the global module fragment. 
+```cpp
+#include <cstring> // C function includes must show up here
+#include <string>
+```
+   2. Header imporation
+```cpp
+//Module preamble
+import <iostream>;
+```
+   3. Module importation. Now in the main.cpp file, look for `import math_stuff;`. This is module importation.
+8. As done in earlier example, create a VS project, add the module and change the main file as well.
+9. One has to do the research to get the exact steps to follow to build with a specific IDE or compiler.
+10. For Clang, see the [documentation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+11.  The instructions for each compiler are shared below.
+12.  Compilation of this project on 3 major compilers:
    1. Visual C++ (Windows)
       1. Create a console project
       2. Set the standard to C++20

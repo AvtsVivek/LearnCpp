@@ -25,19 +25,19 @@
 
 ![Choose cpp 20](55_50_CppTwnetyLangageSelection.jpg)
 
-7. Also choose the following option
+7. Also choose yes for the following option
 
 ![ScanSourceModule](56_50_ScanSourcesFromModules.jpg)
 
-7. Build, run and debug.
+8. Build, run and debug.
 
-8. Now Adding module. 
+9. Now Adding module. 
 
-9. Ctrl + Shift + A or right click on the project, Add -> New Item.
+10. Ctrl + Shift + A or right click on the project, Add -> New Item.
 
 ![New Module](57_50_NewModule.jpg)
 
-10. Change the contents of the module file to the following.
+11. Change the contents of the module file to the following.
 
 ```cpp
 module;
@@ -51,7 +51,6 @@ export void say_something() {
 	std::cout << "Saying something..." << std::endl;
 }
 ```
-
 
 
 

@@ -102,6 +102,9 @@
     3.  See [this supre user answer](https://superuser.com/a/1758362/674525)
     4.  wsl --unregister docker-desktop
     5.  wsl --unregister docker-desktop-data
+    6.  Also stopped docker desktop and removed the following file, and so when I restarted the docker desktop, the file was recreated; addressing the possibility of its corruption
+        1.  C:\Users\YourUserName\AppData\Roaming\Docker\settings.json 
+    7.  
 
 
 ## References

@@ -125,3 +125,6 @@ clang++ -std=c++20 -stdlib=libc++ main.o my_math_module.o -o main.exe
 ls
 
 ./main.exe
+
+# Clean up.
+..\..\..\src\DeleteOutputFiles.ps1
