@@ -57,7 +57,7 @@ clang++ -std=c++20 math_stuff.pcm -c -o math_stuff.o
 clang++ -std=c++20 main.o math_stuff.o -o main
 
 
-# cpp 20, Worked
+# cpp 23, Worked
 
 clang++ -std=c++23 -x c++-system-header iostream --precompile -o iostream.pcm
 clang++ -std=c++23 -fmodule-file=iostream.pcm -x c++-module math.ixx --precompile -o math_stuff.pcm
@@ -75,7 +75,7 @@ clang++ -std=c++20 -stdlib=libc++ -x c++-system-header iostream --precompile -o 
 clang++ -std=c++20 -stdlib=libc++ -fmodule-file=iostream.pcm -x c++-module math.ixx --precompile -o math_stuff.pcm
 clang++ -std=c++20 -stdlib=libc++ -fmodule-file=iostream.pcm main.cpp -fprebuilt-module-path=. -c -o main.o
 clang++ -std=c++20 -stdlib=libc++ math_stuff.pcm -c -o math_stuff.o
-clang++ -std=c++20 -stdlib=libc++ main.o math_stuff.o -o main
+clang++ -std=c++20 -stdlib=libc++ main.o math_stuff.o -o main.exe
 
 exit
 # Clean up.
@@ -103,9 +103,14 @@ ls
 
 docker container run --name clangvivek -it -v ${PWD}:/home/vivektest teeks99/clang-ubuntu:18
 
+# DO NOT use this.
 docker container run --name clangvivek -it -v ${PWD}:/home/vivektest teeks99/clang-ubuntu
 
 docker container run --name clangvivek -v ${PWD}:/home/vivektest teeks99/clang-ubuntu:18
+
+docker container rm --force clangvivek
+
+docker rm $(docker ps --filter status=exited -q)
 
 docker container ls -a
 
@@ -128,17 +133,18 @@ ls -alh
 rm *.o
 rm *.pcm
 
-clang++ -std=c++20 -stdlib=libc++ -x c++-system-header iostream --precompile -o iostream.pcm
+clang++ -std=c++20 -x c++-system-header iostream --precompile -o iostream.pcm
 
-clang++ -std=c++20 -stdlib=libc++ -fmodule-file=iostream.pcm -x c++-module math.ixx --precompile -o math_stuff.pcm
+clang++ -std=c++20 -fmodule-file=iostream.pcm -x c++-module math.ixx --precompile -o math_stuff.pcm
 
-clang++ -std=c++20 -stdlib=libc++ main.cpp -fprebuilt-module-path=. -c -o main.o
+clang++ -std=c++20 -fmodule-file=iostream.pcm main.cpp -fprebuilt-module-path=. -c -o main.o
 
-clang++ -std=c++20 -stdlib=libc++ my_math_module.pcm -c -o my_math_module.o
+clang++ -std=c++20 math_stuff.pcm -c -o math_stuff.o
 
-clang++ -std=c++20 -stdlib=libc++ main.o my_math_module.o -o main.exe
+clang++ -std=c++20 main.o math_stuff.o -o main.exe
 
 ls
 
 ./main.exe
 
+exit # exit the container. 

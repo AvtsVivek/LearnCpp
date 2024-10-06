@@ -131,7 +131,6 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="math.ixx" />
-    <ClCompile Include="ModuleExTwo.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

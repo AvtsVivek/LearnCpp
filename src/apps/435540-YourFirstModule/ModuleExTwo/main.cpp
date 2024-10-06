@@ -6,7 +6,7 @@ int main()
     auto result = add(10, 20);
     std::cout << "result : " << result << std::endl;
 
-    greet("John");
+    greet("Vivek");
 
-    print_name_length("John");
+    print_name_length("Vivek Koppula");
 }
