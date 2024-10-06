@@ -8,5 +8,7 @@ int main()
 
     greet("Vivek");
 
+    greet("asdf");
+
     print_name_length("Vivek Koppula");
 }

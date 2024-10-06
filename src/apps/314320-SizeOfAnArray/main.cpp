@@ -7,6 +7,8 @@ int main()
 
     // 1. Counting Each Element
     std::cout << "Counting Each Element----------- " << std::endl;
+    std::cout << "Counting Each Element----------- " << std::endl;
+    std::cout << "Counting Each Element----------- " << std::endl;
 
     int c;
     int arr_manual_counting[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};

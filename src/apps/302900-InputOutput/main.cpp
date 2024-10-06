@@ -1,55 +1,51 @@
 #include <iostream>
 #include <string>
 
-int main(){
+int main()
+{
 
-   //Printing data
-  
-  
+  // Printing data
 
-   std::cout << "Hello C++20 " << std::endl;
+  std::cout << "Hello C++20 " << std::endl;
 
-   int age{21};
-   std::cout << "Age : " << age << std::endl;
+  int age{21};
+  std::cout << "Age : " << age << std::endl;
 
-   std::cerr << "Error message : Something is wrong" << std::endl;
-   std::clog << "Log message : Something happened " << std::endl; 
-  
-  
+  std::cerr << "Error message : Something is wrong" << std::endl;
+  std::clog << "Log message : Something happened " << std::endl;
 
-   //Data input
+  // Data input
 
-   int age1;
-   std::string name;
+  int age1;
+  std::string name;
 
-   std::cout << "Please type your name and age : " << std::endl;
+  std::cout << "Please type your name and age : " << std::endl;
 
-   //std::cin >> name;
-   //std::cin >> age1;
+  // std::cin >> name;
+  // std::cin >> age1;
 
-   // Chaining the input
+  // Chaining the input
 
-   std::cin >> name >> age1;
+  std::cin >> name >> age1;
 
-   std::cout << "Hello " << name << " you are " << age1 << " years old!" << std::endl;
+  std::cout << "Hello " << name << " you are " << age1 << " years old!" << std::endl;
 
-   
+  // Data with spaces
 
-    //Data with spaces
+  std::string full_name;
+  int age3;
 
-    std::string full_name;
-    int age3;
+  std::cout << "Please type in your full name and age " << std::endl;
+  std::cout << "Type full name, presse enter to get to next line and then type age " << std::endl;
 
-    std::cout << "Please type in your full name and age " << std::endl;
+  std::cin.ignore();
 
-    std::cin.ignore();
+  std::getline(std::cin, full_name);
 
-    std::getline(std::cin,full_name);
+  std::cin >> age3;
 
-    std::cin >> age3;
-
-    std::cout << "Hello " << full_name 
+  std::cout << "Hello " << full_name
             << " you are " << age3 << " years old!!!!" << std::endl;
- 
+
   return 0;
 }
