@@ -5,10 +5,34 @@
 2. Project files
    1. math.ixx
    2. main.cpp
+3. Observe the following, the export block does not have the implimentation, it only has declaration.
 
-3. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+```cpp
+//Module purview
+export{
+	double add(double a, double b);
+	void greet(const std::string& name);
+	void print_name_length(const char* c_str_name);
 
-4. Compilation of this project on 3 major compilers:
+	class Point {
+	public:
+		Point() = default;
+		Point(double x, double y);
+		friend std::ostream& operator << (std::ostream& out, const Point& point) {
+			out << "Point [ x : " << point.m_x << ", y : " << point.m_y << "]";
+			return out;
+		}
+	private:
+		double m_x;
+		double m_y;
+	};
+}
+```
+3. The implimentations are down below the declaration in the **same file**. Look for it.
+
+4. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+
+5. Compilation of this project on 3 major compilers:
    1. Visual C++ (Windows)
       1. Create a console project
       2. Set the standard to C++20
