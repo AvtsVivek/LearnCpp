@@ -1,12 +1,44 @@
 # Auto
 
 ## Notes
-1. Exploring block export with c++20 modules
-2. Project files
+1. Exploring block export with c++20 modules. Introduces explort blocks. So instead of the following, 
+```cpp
+//Module purview
+export double add(double a, double b) {
+	return a + b;
+}
+
+export void greet(const std::string& name) {
+	std::string dest;
+	dest = "Hello ";
+	dest.append(name);
+	std::cout << dest << std::endl;
+}
+```   
+
+```cpp
+//Module purview
+export{
+
+	double add(double a, double b) {
+		return a + b;
+	}
+
+	void greet(const std::string& name) {
+		std::string dest;
+		dest = "Hello ";
+		dest.append(name);
+		std::cout << dest << std::endl;
+	}
+}
+```
+
+2. asdf
+3. Project files
    1. math.ixx
    2. main.cpp
-3. Clang: [C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
-4. The instructions for each compiler are shared below.	
+4. Clang: [C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+5. The instructions for each compiler are shared below.	
    1. Visual C++ (Windows)
       1. Create a console project
       2. Set the standard to C++20
