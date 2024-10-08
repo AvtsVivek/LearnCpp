@@ -1,9 +1,11 @@
 
 cd ../../..
 
-cd src/tasks/435660-SeparateInterfaceDifferentFiles
+cd ../../../..
 
-cd src/apps/435660-SeparateInterfaceDifferentFiles
+cd src/tasks/435660-SeparateInterfaceDifferentFiles/DifferentsFileInterfaceImpli
+
+cd src/apps/435660-SeparateInterfaceDifferentFiles/DifferentsFileInterfaceImpli
 
 start .
 
@@ -34,9 +36,11 @@ g++ --version
 
 g++ -fmodules-ts -x c++-system-header iostream
 
-g++ -fmodules-ts -c -x c++ math.ixx
+g++ -fmodules-ts -c -x c++ Math.ixx
 
-g++ -fmodules-ts main.cpp math.o -o main.exe
+g++ -fmodules-ts -c math_impl.cpp
+
+g++ -fmodules-ts Main.cpp math.o math_impl.o -o main.exe
 
 # The following is attempted with cpp 23, did not work. Also did not work with cpp 20 as well.
 
@@ -65,9 +69,11 @@ cmd
 
 clang++ -std=c++20 -x c++-system-header iostream --precompile -o iostream.pcm
 clang++ -std=c++20 -fmodule-file=iostream.pcm -x c++-module math.ixx --precompile -o math_stuff.pcm
+clang++ -std=c++20 math_impl.cpp -fmodule-file=math_stuff=math_stuff.pcm -fmodule-file=iostream.pcm -c -o math_impl.o
 clang++ -std=c++20 -fmodule-file=iostream.pcm main.cpp -fprebuilt-module-path=. -c -o main.o
-clang++ -std=c++20 math_stuff.pcm -c -o math_stuff.o
-clang++ -std=c++20 main.o math_stuff.o -o main.exe
+clang++ -std=c++20 -fmodule-file=iostream.pcm math_stuff.pcm -c -o math_stuff.o
+clang++ -std=c++20 main.o math_stuff.o  math_impl.o -o main.exe
+
 
 .\main.exe
 
@@ -78,25 +84,20 @@ exit
 
 cmd
 
-# cpp 23, Worked
+# cpp 23, Working.
 
 clang++ -std=c++23 -x c++-system-header iostream --precompile -o iostream.pcm
 clang++ -std=c++23 -fmodule-file=iostream.pcm -x c++-module math.ixx --precompile -o math_stuff.pcm
+clang++ -std=c++23 math_impl.cpp -fmodule-file=math_stuff=math_stuff.pcm -fmodule-file=iostream.pcm -c -o math_impl.o
 clang++ -std=c++23 -fmodule-file=iostream.pcm main.cpp -fprebuilt-module-path=. -c -o main.o
-clang++ -std=c++23 math_stuff.pcm -c -o math_stuff.o
-clang++ -std=c++23 main.o math_stuff.o -o main
+clang++ -std=c++23 -fmodule-file=iostream.pcm math_stuff.pcm -c -o math_stuff.o
+clang++ -std=c++23 main.o math_stuff.o  math_impl.o -o main.exe
 
 .\main.exe
 
 # Clang(18). The following is not working, may be because, clang 18 is not installed. Not sure.
 
 cmd
-
-clang++ -std=c++20 -stdlib=libc++ -x c++-system-header iostream --precompile -o iostream.pcm
-clang++ -std=c++20 -stdlib=libc++ -fmodule-file=iostream.pcm -x c++-module math.ixx --precompile -o math_stuff.pcm
-clang++ -std=c++20 -stdlib=libc++ -fmodule-file=iostream.pcm main.cpp -fprebuilt-module-path=. -c -o main.o
-clang++ -std=c++20 -stdlib=libc++ math_stuff.pcm -c -o math_stuff.o
-clang++ -std=c++20 -stdlib=libc++ main.o math_stuff.o -o main.exe
 
 exit
 # Clean up.
@@ -156,11 +157,13 @@ clang++ -std=c++20 -x c++-system-header iostream --precompile -o iostream.pcm
 
 clang++ -std=c++20 -fmodule-file=iostream.pcm -x c++-module math.ixx --precompile -o math_stuff.pcm
 
+clang++ -std=c++20 math_impl.cpp -fmodule-file=math_stuff=math_stuff.pcm -fmodule-file=iostream.pcm -c -o math_impl.o
+
 clang++ -std=c++20 -fmodule-file=iostream.pcm main.cpp -fprebuilt-module-path=. -c -o main.o
 
-clang++ -std=c++20 math_stuff.pcm -c -o math_stuff.o
+clang++ -std=c++20 -fmodule-file=iostream.pcm math_stuff.pcm -c -o math_stuff.o
 
-clang++ -std=c++20 main.o math_stuff.o -o main.exe
+clang++ -std=c++20 main.o math_stuff.o  math_impl.o -o main.exe
 
 ls
 

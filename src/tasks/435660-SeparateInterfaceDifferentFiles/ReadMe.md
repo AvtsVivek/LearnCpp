@@ -6,8 +6,14 @@
    1. math.ixx
    2. math_impl.cpp (Contains the implementation code for the module inferface file)
    3. main.cpp
-3. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
-4. Compilation of this project on 3 major compilers:
+3. The module file Math.ixx has only declarations. The implimentation lives in its own file, `math_impl.cpp`, you can name it any way you want. In this file, the declaration does not have an explort keyword. This means its an implimentatioin file, its not declaring any new module. 
+
+```cpp
+module math_stuff; #// No export key word.
+```
+
+4. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+5. Compilation of this project on 3 major compilers:
    1. Visual C++ (Windows)
       1. Create a console project and rename the file containing main to main.cpp
       2. Set the standard to C++20
