@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/435700-MultipleImplementationFiles
+cd src/tasks/435740-MultiInterfaceFiles
 
-cd src/apps/435700-MultipleImplementationFiles
+cd src/apps/435740-MultiInterfaceFiles
 
 start .
 
