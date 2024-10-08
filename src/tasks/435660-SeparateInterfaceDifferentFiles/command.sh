@@ -132,15 +132,23 @@ docker container rm --force clangvivek
 
 docker rm $(docker ps --filter status=exited -q)
 
+## Ensure you are inside of the container.
+
 docker container ls -a
 
-docker container start clangvivek
+docker container start -i clangvivek # working.
 
-docker run -it -p 8091:8091 clangvivek
+docker container start -i $(docker ps -q -l) # Working
 
-docker container attach clangvivek
+docker run -it -p 8091:8091 clangvivek # not working
 
-## Ensure you are inside of the container.
+docker container attach clangvivek # not working.
+
+docker attach $(docker ps -q -l) # not wokring. 
+
+docker exec -it $(docker ps -q -l) # not working.
+
+docker run -it -d $(docker ps -q -l) # not working.
 
 uname -a
 
