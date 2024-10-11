@@ -57,14 +57,13 @@ int main()
 
     // Random access iteator : std::ranges::sort
     // Contiguous iterator : C++ 20 don't have a concrete example for this
-    
+
     std::cout << "----------------------(sort)----------------" << std::endl;
     std::cout << "numbers : " << numbers << std::endl;
 
-    //Sorting the collection
+    // Sorting the collection
     std::ranges::sort(numbers);
     std::cout << "numbers : " << numbers << std::endl;
-    
 
     return 0;
 }

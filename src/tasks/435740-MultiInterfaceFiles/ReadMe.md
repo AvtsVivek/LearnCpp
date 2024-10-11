@@ -8,8 +8,9 @@
    3. math_impl.cpp (Contains the implementation code for the module inferface file)
    4. print_impl.cpp
    5. main.cpp
-3. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
-4. Compilation steps on 3 major compilers:
+3. Here we have muliple interface files.
+4. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+5. Compilation steps on 3 major compilers:
    1. Visual C++ (Windows)
       1. Create a console project and rename the file containing main to main.cpp
       2. Set the standard to C++20

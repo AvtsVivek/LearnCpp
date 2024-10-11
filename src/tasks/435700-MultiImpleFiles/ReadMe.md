@@ -7,7 +7,8 @@
    2. math_impl.cpp (Contains the implementation code for the module inferface file)
    3. print_impl.cpp
    4. main.cpp
-3. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+3. One interface file, math.ixx and its implimentation is spread in two differnet files, math_impl.cpp and print_impl.cpp
+4. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
    1. Visual C++ (Windows)
       1. Create a console project and rename the file containing main to main.cpp
       2. Set the standard to C++20
