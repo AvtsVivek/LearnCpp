@@ -16,7 +16,7 @@ class BoxContainer
 ```
 3. 
 4. Project files
-   1. math.ixx
+   1. boxcontainer.ixx
    2. main.cpp
 5. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
 6. Compilation steps on 3 major compilers:

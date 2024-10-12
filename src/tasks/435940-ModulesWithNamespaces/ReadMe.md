@@ -1,12 +1,39 @@
 # Auto
 
 ## Notes
-1. Your first module with a few more features
-2. Project files
+1. Exporting stuff with namespace.
+2. The following shows two scenarios, first, exporting everything within the namespace. Both `Point` and `Line`.
+3. And the second one, just one function - `distance`. This is because, we are not exporting the namespace, but one functioin inside of it, explicitly.
+
+```cpp
+export namespace math {
+   // Exporting everything within this.
+	class Point
+	{ /* .... */ };
+
+	class Line
+	{ /* .... */ };
+}
+
+namespace math {
+	// exporting a function inside a namespce, not everything.
+	export double distance(const Point& p1, const Point& p2)
+	{
+		return sqrt(pow(p1.getX() - p2.getX(), 2) + pow(p1.getY() - p2.getY(), 2));
+	}
+
+	// We are not exporting the following
+	Point add(const Point& p1, const Point& p2)
+	{
+		return Point(p1.getX() + p2.getX(), p1.getY() + p2.getY());
+	}
+}
+```   
+3. Project files
    1. math.ixx
    2. main.cpp
-3. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
-4. Compilation steps on 3 major compilers:
+4. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+5. Compilation steps on 3 major compilers:
    1. Visual C++ (Windows)
       1. NOTE: concepts, vector and algorithm can be imported. 
       2. With the latest version of Visual C++.
