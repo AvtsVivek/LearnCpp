@@ -1,7 +1,7 @@
-# Demos Renaming of Project steps.
+
 
 ## Pre Req
-1. 101900-VisualStudioFirstConsoleApp
+1. 301900-VisualStudioFirstConsoleApp
 
 ## How the solution is built.
 1. Create a blank solution.
