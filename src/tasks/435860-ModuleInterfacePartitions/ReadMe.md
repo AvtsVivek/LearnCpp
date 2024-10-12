@@ -1,13 +1,16 @@
 # Auto
 
 ## Notes
-1. Submodules
-2. Project files
-   1. point.ixx
-   2. line.ixx
-   3. main.cpp
-3. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
-4. Compilation steps on 3 major compilers:
+1. This shows another way to split the module into parts. The earlier sub modules leak into user space, the users can peek into the modules and see how the code is split into different parts.
+2. If we want to hide your implimentatioin details, you can use the partition feature, that we have in cpp 20 modules
+3. So we have math, math:addition, math:multiplication. The latter both will be imported by our math module. But the way our project is broken up, is ***not*** going to be visible to the users of our module.
+4. Project files
+   1. add_partition.ixx
+   2. math.ixx
+   3. multi_partition.ixx
+   4. main.cpp
+5. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+6. Compilation steps on 3 major compilers:
    1. Visual C++ (Windows)
       1. Create a console project and rename the file containing main to main.cpp
       2. Set the standard to C++20

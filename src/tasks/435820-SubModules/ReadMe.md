@@ -1,7 +1,7 @@
 # Auto
 
 ## Notes
-1. Submodules. Cpp 20 does not support nested modules. 
+1. Submodules. Cpp 20 does not support nested modules. What we are doing is splitting here larger modules into smaller modules. This gives the ability to just import what they need. 
 
 2. Project files
    1. add_sub.ixx
