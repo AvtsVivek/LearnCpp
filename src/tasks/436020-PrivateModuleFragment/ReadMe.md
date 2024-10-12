@@ -1,12 +1,36 @@
 # Auto
 
 ## Notes
-1. Your first module with a few more features
-2. Project files
+1. Private Module Fragment.
+   1. We keep the declaration separate from the implementation in a single file.
+   2. It **SHOULD** be inside a single file.
+   3. Changes of code in the private fragment dont trigger recompilation of translation units that import the module.
+   4. Good for optimized builds.
+   5. 
+2. The part below `module: private` is the private module fragment. If we happen to need to change the private fragment, these changes would not trigger re compilation, of other module which will use this module math. This is the advantage, so this enhances the compilation speeds.
+
+```cpp
+module;
+export module math;
+
+namespace math {
+	export double add(double a, double b);
+}
+
+module: private;
+
+namespace math {
+	double add(double a, double b) {
+		return a + b;
+	}
+}
+```
+
+3. Project files
    1. math.ixx
    2. main.cpp
-3. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
-4. Compilation steps of this project on 3 major compilers:
+4. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+5. Compilation steps of this project on 3 major compilers:
    1. Visual C++ (Windows)
       1. NOTE: concepts, vector and algorithm can be imported.
       2. With the latest version of Visual C++.
