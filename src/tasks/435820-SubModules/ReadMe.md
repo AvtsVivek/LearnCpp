@@ -1,13 +1,48 @@
 # Auto
 
 ## Notes
-1. Submodules
+1. Submodules. Cpp 20 does not support nested modules. 
+
 2. Project files
-   1. point.ixx
-   2. line.ixx
-   3. main.cpp
-3. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) 
-4. Compilation steps on 3 major compilers:
+   1. add_sub.ixx
+   2. mult_div.ixx
+   3. math.ixx
+   4. main.cpp
+
+3. The module math is made up of two sub modules, `math.add_sub`, and `math.mult_div`. So depending on the need, they can import what ever they want.
+
+4. So 
+   1. if you need just `add`, then import `math.add_sub`
+
+```cpp
+import math.add_sub;
+
+int main()
+{
+    auto result = add(10, 20);
+    std::cout << "Adding two numbers 10 and 20: " << result << std::endl;
+}
+```
+
+   2. and if you need both `add` and `mult`, then you can import `math.add_sub` along with `math.mult_div` or just one `math`
+```cpp
+// import math;
+// OR the following two
+import math.add_sub;
+import math.mult_div;
+
+int main()
+{
+    auto result = add(10, 20);
+    std::cout << "Adding two numbers 10 and 20: " << result << std::endl;
+    auto result_mult = mult(10, 40);
+    std::cout << "Multiplying Two numbers 10 and 40: " << result_mult << std::endl;
+}
+```
+
+
+5. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) 
+6. Compilation steps on 3 major compilers:
    1. Visual C++ (Windows)
       1. Create a console project and rename the file containing main to main.cpp
       2. Set the standard to C++20

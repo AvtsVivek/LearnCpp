@@ -7,7 +7,7 @@ export{
 		return a * b;
 	}
 
-	double div(double a, double b) {
+	double divnumbers(double a, double b) {
 		return a / b;
 	}
 }
