@@ -1,9 +1,9 @@
 
 cd ../../..
 
-cd src/tasks/435980-VisibilityReachability
+cd src/tasks/435980-VisibilityReachability/VisReachExOne
 
-cd src/apps/435980-VisibilityReachability
+cd src/apps/435980-VisibilityReachability/VisReachExOne
 
 start .
 
