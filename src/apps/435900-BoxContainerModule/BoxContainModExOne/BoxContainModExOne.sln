@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BoxContainModExOne", "BoxContainModExOne.vcxproj", "{5A1A43EB-54E8-4A5A-83D6-30211E27774B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A1A43EB-54E8-4A5A-83D6-30211E27774B}.Debug|x64.ActiveCfg = Debug|x64
+		{5A1A43EB-54E8-4A5A-83D6-30211E27774B}.Debug|x64.Build.0 = Debug|x64
+		{5A1A43EB-54E8-4A5A-83D6-30211E27774B}.Debug|x86.ActiveCfg = Debug|Win32
+		{5A1A43EB-54E8-4A5A-83D6-30211E27774B}.Debug|x86.Build.0 = Debug|Win32
+		{5A1A43EB-54E8-4A5A-83D6-30211E27774B}.Release|x64.ActiveCfg = Release|x64
+		{5A1A43EB-54E8-4A5A-83D6-30211E27774B}.Release|x64.Build.0 = Release|x64
+		{5A1A43EB-54E8-4A5A-83D6-30211E27774B}.Release|x86.ActiveCfg = Release|Win32
+		{5A1A43EB-54E8-4A5A-83D6-30211E27774B}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8115E5F7-87B4-49C8-92D9-C43CDCBE20FE}
+	EndGlobalSection
+EndGlobal

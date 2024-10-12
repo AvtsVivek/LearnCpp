@@ -1,12 +1,25 @@
 # Auto
 
 ## Notes
-1. Your first module with a few more features
-2. Project files
+1. We will be converting the box container into a module.
+2. BoxContainer is a class template and to change it into a module, all we need to do is  prefix the template with export keyword.
+
+```cpp
+export module BoxContainer;
+
+import <iostream>;
+
+export template <typename T>
+	requires std::is_default_constructible_v<T>
+class BoxContainer
+{...}
+```
+3. 
+4. Project files
    1. math.ixx
    2. main.cpp
-3. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
-4. Compilation steps on 3 major compilers:
+5. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+6. Compilation steps on 3 major compilers:
    1. Visual C++ (Windows)
       1. NOTE: concepts, vector and algorithm can be imported
       2. with the latest version of Visual C++.
