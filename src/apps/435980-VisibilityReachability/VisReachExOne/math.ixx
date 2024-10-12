@@ -1,24 +1,31 @@
 module;
 #include <random>
+#include <iostream>
+
 export module math;
 
-import <iostream>;
+// The following will give compiler error in case of g++
+// import <iostream>;
 
-
-namespace math {
-	//A class to represent a Point in 2D space with x and y coordinates together with getters and setters
-	class Point {
+namespace math
+{
+	// A class to represent a Point in 2D space with x and y coordinates together with getters and setters
+	class Point
+	{
 	private:
 		double x;
 		double y;
+
 	public:
-		Point(double x, double y) {
+		Point(double x, double y)
+		{
 			this->x = x;
 			this->y = y;
 		}
 
-		//An outuput stream operator to print the point
-		friend std::ostream& operator<<(std::ostream& os, const Point& p) {
+		// An outuput stream operator to print the point
+		friend std::ostream &operator<<(std::ostream &os, const Point &p)
+		{
 			os << "(" << p.x << ", " << p.y << ")";
 			return os;
 		}
@@ -29,10 +36,11 @@ namespace math {
 	};
 }
 
-
-namespace math {
+namespace math
+{
 	// Function to generate a random 2D Point with x and y coordinates in the specified ranges
-	export Point generateRandomPoint() {
+	export Point generateRandomPoint()
+	{
 		// Create random number generator engines for x and y
 		std::random_device rd;
 		std::mt19937 genXY(rd());

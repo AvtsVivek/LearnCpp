@@ -29,11 +29,33 @@ namespace math {
 	}
 }
 ```   
-3. Project files
+   
+3. Directly importing gives compiler problems like the following.
+```txt
+during RTL pass: expand
+In file included from C:/Program Files/mingw64/include/c++/13.2.0/string:43,
+                 from C:/Program Files/mingw64/include/c++/13.2.0/bits/locale_classes.h:40,
+                 from C:/Program Files/mingw64/include/c++/13.2.0/bits/ios_base.h:41,
+                 from C:/Program Files/mingw64/include/c++/13.2.0/ios:44,
+                 from C:/Program Files/mingw64/include/c++/13.2.0/ostream:40,
+                 from C:/Program Files/mingw64/include/c++/13.2.0/iostream:41,
+of module C:/Program Files/mingw64/include/c++/13.2.0/iostream, imported at math.ixx:3:
+In member function 'constexpr _Tp* std::allocator< <template-parameter-1-1> >::allocate(std::size_t) [with _Tp = char]',
+    inlined from 'static constexpr _Tp* std::allocator_traits<std::allocator<_CharT> >::allocate(allocator_type&, size_type) [with _Tp = char]' at C:/Program Files/mingw64/include/c++/13.2.0/bits/alloc_traits.h:482:28,
+    inlined from 'static constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::pointer std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_S_allocate(_Char_alloc_type&, size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]' at C:/Program Files/mingw64/include/c++/13.2.0/bits/basic_string.h:126:39:
+C:/Program Files/mingw64/include/c++/13.2.0/bits/allocator.h:193:39: internal compiler error: in make_decl_rtl, at varasm.cc:1442
+  193 |             if (__builtin_mul_overflow(__n, sizeof(_Tp), &__n))
+      |                 ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+libbacktrace could not find executable to open
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+See <https://gcc.gnu.org/bugs/> for instructions.
+```
+4. So use include instead.
+5. Project files
    1. math.ixx
    2. main.cpp
-4. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
-5. Compilation steps on 3 major compilers:
+6. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+7. Compilation steps on 3 major compilers:
    1. Visual C++ (Windows)
       1. NOTE: concepts, vector and algorithm can be imported. 
       2. With the latest version of Visual C++.

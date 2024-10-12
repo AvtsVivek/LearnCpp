@@ -1,12 +1,47 @@
 # Auto
 
 ## Notes
-1. Your first module with a few more features
-2. Project files
+1. Visibility and Reachability
+   1. Every name we have expported so far was visible in the importing translation unit.
+   2. Some names in your nodule based code are reachable, but not visible.
+   3. A name is reachable when you cannot explicitly mention its name in other translation units, but it can be accessed indirectly.
+   4. Anything visible is also reachable, but the reverse is not true.
+2. The point class is not exported. But the function ` generateRandomPoint` is exported. So we can use it to generate a point.
+3. Directly importing gives compiler problems like the following.
+```txt
+during RTL pass: expand
+In file included from C:/Program Files/mingw64/include/c++/13.2.0/string:43,
+                 from C:/Program Files/mingw64/include/c++/13.2.0/bits/locale_classes.h:40,
+                 from C:/Program Files/mingw64/include/c++/13.2.0/bits/ios_base.h:41,
+                 from C:/Program Files/mingw64/include/c++/13.2.0/ios:44,
+                 from C:/Program Files/mingw64/include/c++/13.2.0/ostream:40,
+                 from C:/Program Files/mingw64/include/c++/13.2.0/iostream:41,
+of module C:/Program Files/mingw64/include/c++/13.2.0/iostream, imported at math.ixx:3:
+In member function 'constexpr _Tp* std::allocator< <template-parameter-1-1> >::allocate(std::size_t) [with _Tp = char]',
+    inlined from 'static constexpr _Tp* std::allocator_traits<std::allocator<_CharT> >::allocate(allocator_type&, size_type) [with _Tp = char]' at C:/Program Files/mingw64/include/c++/13.2.0/bits/alloc_traits.h:482:28,
+    inlined from 'static constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::pointer std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_S_allocate(_Char_alloc_type&, size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]' at C:/Program Files/mingw64/include/c++/13.2.0/bits/basic_string.h:126:39:
+C:/Program Files/mingw64/include/c++/13.2.0/bits/allocator.h:193:39: internal compiler error: in make_decl_rtl, at varasm.cc:1442
+  193 |             if (__builtin_mul_overflow(__n, sizeof(_Tp), &__n))
+      |                 ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+libbacktrace could not find executable to open
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+See <https://gcc.gnu.org/bugs/> for instructions.
+```
+
+4. So use include instead as follows. So in the following, instead of import <iostream>, use #include <iostream>
+```cpp
+#include <iostream>
+
+export module math;
+
+// The following will give compiler error in case of g++
+// import <iostream>;
+``` 
+4. Project files
    1. math.ixx
    2. main.cpp
-3. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
-4. Compilation steps on 3 major compilers:
+5. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
+6. Compilation steps on 3 major compilers:
    1. Visual C++ (Windows)
       1. NOTE: concepts, vector and algorithm can be imported.
       2. With the latest version of Visual C++.
