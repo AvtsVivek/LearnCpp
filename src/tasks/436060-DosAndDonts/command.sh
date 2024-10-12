@@ -1,9 +1,11 @@
 
 cd ../../..
 
-cd src/tasks/436060-DosAndDonts
+cd ../../../..
 
-cd src/apps/436060-DosAndDonts
+cd src/tasks/436060-DosAndDonts/DosAndDontsExOne
+
+cd src/apps/436060-DosAndDonts/DosAndDontsExOne
 
 start .
 

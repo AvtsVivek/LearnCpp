@@ -20,6 +20,7 @@ struct Point {
 
 
 //This is ok.
+
 export {
 	template <typename T> T add(T a, T b) { return a + b; }
 }
@@ -28,7 +29,7 @@ export template <typename T> T sub(T a, T b) { return a - b; }
 
 export template <typename T>
 concept Multipliable = requires (T a, T b) {
-	{a* b};
+	{ a* b };
 };
 
 export int VERSION = 1;

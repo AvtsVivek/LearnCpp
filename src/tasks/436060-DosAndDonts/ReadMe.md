@@ -1,12 +1,18 @@
 # Auto
 
 ## Notes
-1. Your first module with a few more features
+1. Dos and donts.
+   1. You can export the folloiwng.
+      1. Variables, functions, classes, function templates, class templates, concepts.
+   2. You cannot export entities with internal linkages, like names licing inside anomymous namespaces and those qualified with the static keyword
+   3. You can only export things that live at the namespace level. For example, you cannot export the nember variable of a class.
+   4. Template code should live in one module file, seperating into different interface files or implementation files will lead to weird errors
 2. Project files
    1. math.ixx
    2. main.cpp
 3. For Clang. [Standard C++ Modules documenation](https://clang.llvm.org/docs/StandardCPlusPlusModules.html) and repurposed it to compile the projects in this chapter.
-4. Compilation of this project on 3 major compilers:
+4. **I have not tried the following g++ and clang, and docker, in this example. LEFT OUT**
+5. Compilation of this project on 3 major compilers:
    1. Visual C++ (Windows)
       1. NOTE: concepts, vector and algorithm can be imported.
       2. With the latest version of Visual C++.
