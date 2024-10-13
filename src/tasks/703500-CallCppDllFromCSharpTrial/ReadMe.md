@@ -5,6 +5,12 @@
 
 ## How the solution is built.
 1. Create a blank solution.
+   1. Open Visual Studio
+	![Start Vs and Create New Project](images/50_20_StartVisualStudioCreateNewProject.jpg)
+
+   2. On the start window, choose create new project.
+	![Blank Solution](images/50_40_BlankSolution.jpg)
+ 
 2. Create a DLL Project
 
     ![Create a DLL Project](images/50_50CppDllProject.jpg)
