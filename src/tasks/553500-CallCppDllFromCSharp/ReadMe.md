@@ -21,7 +21,7 @@
 
 4. Similarly add a cpp file.   
 5. Next add a C# console project.
-6. We want the output of the Cpp project to be copied to the C# output directory. So do the following.
+6. We want the output of the Cpp project to be copied to the C# output directory. So do the following. Note the `\` after the Output folder name.
    1. Right click the SimpleCppDll project and select properties.
 
     	![Cpp Project Props](images/52_50_CppProjectConfig.jpg)
